@@ -4,6 +4,7 @@ export async function generateStaticParams() {
   return [{ lang: 'en' }, { lang: 'ru' }];
 }
 
-export default function Page({ params }) {
+export default async function Page({ params }) {
+  params = await params;
   return <HomePage lang={params.lang} />;
 }
