@@ -1,8 +1,12 @@
 'use client';
 import { useEffect } from 'react';
 import Link from 'next/link';
+import { useParams } from 'next/navigation';
 
 export default function ThankYouPage() {
+  const params = useParams();
+  const lang = params?.lang || 'en';
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       window.dataLayer = window.dataLayer || [];
@@ -25,7 +29,7 @@ export default function ThankYouPage() {
           I'll get back to you within 24 hours to discuss your event.
         </p>
         <Link
-          href="/"
+          href={`/${lang}`}
           className="inline-flex items-center justify-center bg-beige text-dark font-header text-lg uppercase px-12 py-4 hover:bg-white transition-colors duration-300"
         >
           Back to Home
