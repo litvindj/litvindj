@@ -16,10 +16,12 @@ export default function PolitykaPrywatnosci() {
 
       <div className="max-w-3xl mx-auto px-6 md:px-12 py-16 md:py-24">
 
-        <p className="font-header text-beige uppercase tracking-[0.3em] text-xs mb-6">
-          — Dokument prawny —
-        </p>
-        <h1 className="font-header text-white uppercase text-4xl md:text-6xl leading-none mb-4">
+        <div className="font-header text-beige uppercase tracking-[0.3em] text-xs mb-6 flex items-center gap-3">
+          <span className="w-8 h-px bg-beige/50" />
+          Dokument prawny
+          <span className="w-8 h-px bg-beige/50" />
+        </div>
+        <h1 className="font-header text-white uppercase text-4xl md:text-6xl leading-none mb-4 block w-full">
           Privacy Policy<br />& Cookies
         </h1>
         <div className="w-16 h-px bg-beige/40 mb-4" />
