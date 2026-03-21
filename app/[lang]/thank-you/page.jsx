@@ -18,19 +18,21 @@ export default function ThankYouPage() {
 
   return (
     <div className="bg-dark text-white min-h-screen flex flex-col items-center justify-center px-6">
-      <div className="text-center max-w-xl">
+      <div className="text-center max-w-xl w-full flex flex-col items-center">
 
-        <p className="font-header text-beige uppercase tracking-[0.3em] text-xs md:text-sm mb-8 block">
-          — Message Received —
-        </p>
+        <div className="font-header text-beige uppercase tracking-[0.3em] text-xs md:text-sm mb-8 flex items-center gap-3">
+          <span className="w-8 h-px bg-beige/50" />
+          Message Received
+          <span className="w-8 h-px bg-beige/50" />
+        </div>
 
-        <h1 className="font-header text-white uppercase text-6xl md:text-8xl leading-none mb-10 tracking-tight">
+        <h1 className="font-header text-white uppercase text-6xl md:text-8xl leading-none mb-10 tracking-tight w-full">
           Thank You
         </h1>
 
-        <div className="w-16 h-px bg-beige/40 mx-auto mb-10" />
+        <div className="w-16 h-px bg-beige/40 mb-10" />
 
-        <p className="text-grey text-base md:text-lg mb-16 leading-relaxed max-w-sm mx-auto">
+        <p className="text-grey text-base md:text-lg mb-16 leading-relaxed max-w-sm">
           I'll get back to you within 24 hours to discuss your event.
         </p>
 
