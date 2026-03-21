@@ -38,6 +38,7 @@ const Footer = () => {
               <input type="hidden" name="_subject" value="New Booking Request from Website!" />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="box" />
+              <input type="hidden" name="_next" value="https://litvindj.com/thank-you" />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <input type="text" name="name" placeholder={content.formName} required className={inputStyles} />
                 <input type="email" name="email" placeholder={content.formEmail} required className={inputStyles} />
@@ -53,7 +54,7 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col items-center mb-20 relative z-10">
-          <div className="w-full flex flex-col md:flex-row items-center justify-center gap-3 md:gap-8 border-y border-white/5 py-8">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-6 border-y border-white/5 py-8 w-full">
               <a href="tel:+48884325413" className="font-header text-white uppercase hover:text-beige transition-colors duration-300 text-lg md:text-2xl tracking-wider whitespace-nowrap">+48 884 325 413</a>
               <span className="w-2 h-2 bg-beige rounded-full opacity-60 shrink-0 hidden md:block" />
               <span className="font-header text-grey uppercase text-lg md:text-2xl tracking-wider whitespace-nowrap">Warsaw, Poland</span>

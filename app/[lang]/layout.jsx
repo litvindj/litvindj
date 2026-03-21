@@ -31,6 +31,7 @@ const SEO = {
 };
 
 export async function generateMetadata({ params }) {
+  params = await params;
   const lang = ['ru', 'pl'].includes(params.lang) ? params.lang : 'en';
   const seo = SEO[lang];
   const base = 'https://litvindj.com';
@@ -139,7 +140,8 @@ const schemaOrg = {
   ],
 };
 
-export default function LangLayout({ children, params }) {
+export default async function LangLayout({ children, params }) {
+  params = await params;
   const lang = ['ru', 'pl'].includes(params.lang) ? params.lang : 'en';
   const htmlLang = lang;
 
