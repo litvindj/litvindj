@@ -38,7 +38,7 @@ const Footer = () => {
               <input type="hidden" name="_subject" value="New Booking Request from Website!" />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="box" />
-              <input type="hidden" name="_next" value="https://litvindj.com/thank-you" />
+              <input type="hidden" name="_next" value={`https://litvindj.com/${language}/thank-you`} />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <input type="text" name="name" placeholder={content.formName} required className={inputStyles} />
                 <input type="email" name="email" placeholder={content.formEmail} required className={inputStyles} />
