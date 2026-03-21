@@ -12,18 +12,8 @@ body {
   overflow-x: hidden;
 }
 
-/* Anton для EN заголовков */
+/* Oswald для всех заголовков */
 .font-header {
-  font-family: var(--font-anton), 'Anton', sans-serif !important;
-  font-weight: 400;
-  transform: scaleY(0.9);
-  transform-origin: center;
-  letter-spacing: 0.04em;
-  display: inline-block;
-}
-
-/* RU: Oswald 700 — без сжатия, буквы высокие как в оригинале */
-html[lang="ru"] .font-header {
   font-family: var(--font-oswald), 'Oswald', sans-serif !important;
   font-weight: 700;
   transform: none;
