@@ -79,6 +79,11 @@ const Footer = () => {
               © 2026 Gennady Litvin. {content.rights}
               <span className="hidden sm:inline mx-3 opacity-30">|</span>
               <br className="sm:hidden" />
+              <a href={`/${language}/privacy-policy`}
+                className="hover:text-white transition-colors duration-300 border-b border-transparent hover:border-white pb-px">
+                Privacy Policy
+              </a>
+              <span className="mx-3 opacity-30">|</span>
               {content.design}{' '}
               <a href="https://onushch.com/" target="_blank" rel="noopener noreferrer"
                 className="font-bold text-beige hover:text-white transition-colors duration-300 border-b border-transparent hover:border-white pb-px">
