@@ -4,7 +4,6 @@ import Link from 'next/link';
 
 export default function ThankYouPage() {
   useEffect(() => {
-    // GTM dataLayer event — fires Google Ads conversion
     if (typeof window !== 'undefined') {
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({
