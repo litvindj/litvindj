@@ -13,7 +13,7 @@ module.exports = {
         charcoal: '#0e0e0e',
       },
       fontFamily: {
-        header: ['var(--font-anton)', 'Anton', 'sans-serif'],
+        header: ['var(--font-oswald)', 'Oswald', 'sans-serif'],
         body: ['var(--font-manrope)', 'Manrope', 'sans-serif'],
       },
       animation: {

@@ -1,8 +1,7 @@
-import { Anton, Oswald, Manrope } from 'next/font/google';
+import { Oswald, Manrope } from 'next/font/google';
 import '../globals.css';
 import { LanguageProvider } from '../../context/LanguageContext';
 
-const anton = Anton({ subsets: ['latin'], weight: ['400'], variable: '--font-anton', display: 'swap' });
 const oswald = Oswald({ subsets: ['latin', 'cyrillic'], weight: ['400', '500', '700'], variable: '--font-oswald', display: 'swap' });
 const manrope = Manrope({ subsets: ['latin', 'cyrillic'], weight: ['300', '400', '500', '600'], variable: '--font-manrope', display: 'swap' });
 
@@ -146,7 +145,7 @@ export default async function LangLayout({ children, params }) {
   const htmlLang = lang;
 
   return (
-    <html lang={htmlLang} className={`${anton.variable} ${oswald.variable} ${manrope.variable}`}>
+    <html lang={htmlLang} className={`${oswald.variable} ${manrope.variable}`}>
       <head>
         <script dangerouslySetInnerHTML={{ __html: `!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','33819537680993763');fbq('track','PageView');` }} />
         <noscript><img height="1" width="1" style={{display:'none'}} src="https://www.facebook.com/tr?id=33819537680993763&ev=PageView&noscript=1" /></noscript>

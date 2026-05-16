@@ -1,5 +1,6 @@
 'use client';
 import React from 'react';
+import Image from 'next/image';
 import Container from '../layout/Container';
 
 import { useLanguage } from '../../context/LanguageContext';
@@ -14,10 +15,12 @@ const Music = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-dark/80 z-10" />
         
-        <img 
-          src="/images/music-bg.webp" 
-          alt="Music Background" 
-          className="w-full h-full object-cover opacity-50 grayscale transform-gpu will-change-transform"
+        <Image
+          src="/images/music-bg.webp"
+          alt="Music Background"
+          fill
+          sizes="100vw"
+          className="object-cover opacity-50 grayscale"
         />
       </div>
 

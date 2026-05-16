@@ -1,8 +1,7 @@
-import { Anton, Oswald, Manrope } from 'next/font/google';
+import { Oswald, Manrope } from 'next/font/google';
 import './globals.css';
 import { LanguageProvider } from '../context/LanguageContext';
 
-const anton = Anton({ subsets: ['latin'], weight: ['400'], variable: '--font-anton', display: 'swap' });
 const oswald = Oswald({ subsets: ['latin', 'cyrillic'], weight: ['400', '500', '700'], variable: '--font-oswald', display: 'swap' });
 const manrope = Manrope({ subsets: ['latin', 'cyrillic'], weight: ['300', '400', '500', '600'], variable: '--font-manrope', display: 'swap' });
 
@@ -14,6 +13,7 @@ export const metadata = {
     languages: {
       'en': 'https://litvindj.com/en',
       'ru': 'https://litvindj.com/ru',
+      'pl': 'https://litvindj.com/pl',
       'x-default': 'https://litvindj.com',
     },
   },
@@ -41,7 +41,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${anton.variable} ${oswald.variable} ${manrope.variable}`}>
+    <html lang="en" className={`${oswald.variable} ${manrope.variable}`}>
       <head>
         <script dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NGFZW2NR');` }} />
       </head>
