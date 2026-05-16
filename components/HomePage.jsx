@@ -1,6 +1,5 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import Preloader from './layout/Preloader';
 import Navbar from './layout/Navbar';
 import Hero from './hero/Hero';
 import About from './about/About';
@@ -13,7 +12,7 @@ import BrandsMarquee from './layout/BrandsMarquee';
 import Footer from './layout/Footer';
 
 export default function HomePage() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [visible, setVisible] = useState(false);
   const heroWrapperRef = useRef(null);
   const aboutWrapperRef = useRef(null);
   const [isMobile, setIsMobile] = useState(false);
@@ -25,24 +24,30 @@ export default function HomePage() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
+  useEffect(() => { setVisible(true); }, []);
+
   useEffect(() => {
-    if (isMobile || isLoading) return;
+    if (isMobile) {
+      if (aboutWrapperRef.current) aboutWrapperRef.current.style.opacity = '';
+      return;
+    }
+    if (aboutWrapperRef.current) aboutWrapperRef.current.style.opacity = '0';
     let requestIds;
     const animate = () => {
       const scrollY = window.scrollY;
       const vh = window.innerHeight;
-      if (scrollY > vh * 1.5) { requestIds = requestAnimationFrame(animate); return; }
+      if (scrollY > vh * 2.0) { requestIds = requestAnimationFrame(animate); return; }
       const progress = scrollY / vh;
 
       if (heroWrapperRef.current) {
-        const opacity = Math.max(0, 1 - progress * 5);
+        const opacity = Math.max(0, 1 - progress * 3.5);
         heroWrapperRef.current.style.opacity = opacity;
         heroWrapperRef.current.style.visibility = opacity <= 0.01 ? 'hidden' : 'visible';
       }
 
       if (aboutWrapperRef.current) {
-        const startFade = 0.1;
-        const aboutProgress = Math.max(0, (progress - startFade) / (0.3 - startFade));
+        const startFade = 0.15;
+        const aboutProgress = Math.max(0, (progress - startFade) / (0.55 - startFade));
         const opacity = Math.min(1, aboutProgress);
         aboutWrapperRef.current.style.opacity = opacity;
       }
@@ -50,24 +55,22 @@ export default function HomePage() {
     };
     requestIds = requestAnimationFrame(animate);
     return () => cancelAnimationFrame(requestIds);
-  }, [isMobile, isLoading]);
+  }, [isMobile]);
 
   return (
     <div className="bg-dark text-white min-h-screen relative selection:bg-beige selection:text-dark">
-      {isLoading && <Preloader finishLoading={() => setIsLoading(false)} />}
-
-      <div className={`transition-opacity duration-1000 ease-out ${isLoading ? 'opacity-0' : 'opacity-100'}`}>
+      <div className={`transition-opacity duration-700 ease-out ${visible ? 'opacity-100' : 'opacity-0'}`}>
         <Navbar />
 
         <main className="w-full relative">
-          <div id="about-section" className="relative w-full lg:h-[130vh]">
+          <div id="about-section" className="relative w-full lg:h-[170vh]">
             <div className="relative w-full lg:sticky lg:top-0 lg:h-screen lg:overflow-hidden">
               <div id="hero-image-layer" ref={heroWrapperRef}
                 className="w-full h-[100svh] z-10 lg:absolute lg:inset-0 lg:h-full will-change-transform origin-center">
                 <Hero />
               </div>
               <div ref={aboutWrapperRef}
-                className="relative w-full z-20 bg-dark lg:absolute lg:inset-0 lg:h-full lg:bg-transparent lg:opacity-0 lg:flex lg:items-center lg:justify-center will-change-transform">
+                className="relative w-full z-20 bg-dark lg:absolute lg:inset-0 lg:h-full lg:bg-transparent lg:flex lg:items-center lg:justify-center will-change-transform">
                 <About />
               </div>
             </div>

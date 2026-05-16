@@ -15,9 +15,8 @@ const Stats = ({ language }) => {
       let progress;
 
       if (window.innerWidth >= 1024) {
-        // Sticky-зона = 30vh (130vh - 100vh viewport)
-        // scrollY идёт от 0 до 30vh пока About появляется
-        progress = Math.max(0, Math.min(1, window.scrollY / (vh * 0.3)));
+        const raw = window.scrollY / vh;
+        progress = Math.max(0, Math.min(1, (raw - 0.15) / (0.7 - 0.15)));
       } else {
         if (!ref.current) return;
         const rect = ref.current.getBoundingClientRect();
