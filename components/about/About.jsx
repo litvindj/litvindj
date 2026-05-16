@@ -1,6 +1,62 @@
 'use client';
 import Image from 'next/image';
+import { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
+
+const Stats = ({ language }) => {
+  const ref = useRef(null);
+  const [events, setEvents] = useState(0);
+  const [years,  setYears]  = useState(0);
+  const [brands, setBrands] = useState(0);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const vh = window.innerHeight;
+      let progress;
+
+      if (window.innerWidth >= 1024) {
+        // Sticky-зона = 30vh (130vh - 100vh viewport)
+        // scrollY идёт от 0 до 30vh пока About появляется
+        progress = Math.max(0, Math.min(1, window.scrollY / (vh * 0.3)));
+      } else {
+        if (!ref.current) return;
+        const rect = ref.current.getBoundingClientRect();
+        progress = Math.max(0, Math.min(1, (vh * 0.8 - rect.top) / (vh * 0.7)));
+      }
+
+      setEvents(Math.floor(progress * 500));
+      setYears( Math.floor(progress * 6));
+      setBrands(Math.floor(progress * 25));
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  const labels = {
+    en: ['Events', 'Years', 'Brands'],
+    ru: ['Ивентов', 'Лет', 'Брендов'],
+    pl: ['Eventów', 'Lat', 'Marek'],
+  };
+  const [l1, l2, l3] = labels[language] || labels.en;
+
+  return (
+    <div ref={ref} className="grid grid-cols-3 gap-4 border-t border-white/10 pt-8 mb-10">
+      {[
+        { count: events, suffix: '+', label: l1 },
+        { count: years,  suffix: '+', label: l2 },
+        { count: brands, suffix: '+', label: l3 },
+      ].map(({ count, suffix, label }) => (
+        <div key={label} className="flex flex-col">
+          <span className="font-header text-3xl md:text-4xl text-white leading-none tabular-nums">
+            {count}{suffix}
+          </span>
+          <span className="text-beige text-[10px] uppercase tracking-widest mt-1 font-bold">{label}</span>
+        </div>
+      ))}
+    </div>
+  );
+};
 
 const About = () => {
   const { t, language } = useLanguage();
@@ -52,6 +108,7 @@ const About = () => {
             </p>
           </div>
 
+          <Stats language={language} />
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 border-t border-white/10 pt-8">
             <div>
               <span className={`block text-beige text-[10px] uppercase mb-3 font-bold ${language === 'ru' ? 'tracking-wide' : 'tracking-widest'}`}>
