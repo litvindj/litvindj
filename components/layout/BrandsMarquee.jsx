@@ -18,19 +18,53 @@ const BrandsMarquee = () => {
   const trackRef = useRef(null);
   const containerRef = useRef(null);
   const xRef = useRef(0);
+  const isDragging = useRef(false);
+  const dragStartX = useRef(0);
+  const dragStartOffset = useRef(0);
 
   useEffect(() => {
     let id;
 
+    const getLoop = () => trackRef.current ? trackRef.current.scrollWidth / 3 : 0;
+
+    const clamp = (x) => {
+      const w = getLoop();
+      if (!w) return x;
+      let v = x % -w;
+      if (v > 0) v -= w;
+      return v;
+    };
+
     const animate = () => {
-      if (trackRef.current) {
+      if (!isDragging.current && trackRef.current) {
         xRef.current -= 0.6;
-        const singleSetWidth = trackRef.current.scrollWidth / 3;
-        if (Math.abs(xRef.current) >= singleSetWidth) xRef.current = 0;
+        const w = getLoop();
+        if (w && Math.abs(xRef.current) >= w) xRef.current = 0;
         trackRef.current.style.transform = `translate3d(${xRef.current}px, 0, 0)`;
       }
       id = requestAnimationFrame(animate);
     };
+
+    const onTouchStart = (e) => {
+      isDragging.current = true;
+      dragStartX.current = e.touches[0].clientX;
+      dragStartOffset.current = xRef.current;
+    };
+
+    const onTouchMove = (e) => {
+      if (!isDragging.current || !trackRef.current) return;
+      e.preventDefault();
+      const delta = e.touches[0].clientX - dragStartX.current;
+      xRef.current = clamp(dragStartOffset.current + delta);
+      trackRef.current.style.transform = `translate3d(${xRef.current}px, 0, 0)`;
+    };
+
+    const onTouchEnd = () => { isDragging.current = false; };
+
+    const container = containerRef.current;
+    container.addEventListener('touchstart', onTouchStart, { passive: true });
+    container.addEventListener('touchmove', onTouchMove, { passive: false });
+    container.addEventListener('touchend', onTouchEnd);
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -43,15 +77,21 @@ const BrandsMarquee = () => {
       { threshold: 0 }
     );
 
-    if (containerRef.current) observer.observe(containerRef.current);
+    observer.observe(container);
 
-    return () => { cancelAnimationFrame(id); observer.disconnect(); };
+    return () => {
+      cancelAnimationFrame(id);
+      observer.disconnect();
+      container.removeEventListener('touchstart', onTouchStart);
+      container.removeEventListener('touchmove', onTouchMove);
+      container.removeEventListener('touchend', onTouchEnd);
+    };
   }, []);
 
   return (
     <div ref={containerRef} className="py-12 md:py-20 border-y border-white/5 overflow-hidden bg-charcoal relative z-30 select-none">
-      <div className="absolute left-0 top-0 bottom-0 w-20 md:w-32 bg-gradient-to-r from-charcoal to-transparent z-20" />
-      <div className="absolute right-0 top-0 bottom-0 w-20 md:w-32 bg-gradient-to-l from-charcoal to-transparent z-20" />
+      <div className="absolute left-0 top-0 bottom-0 w-20 md:w-32 bg-gradient-to-r from-charcoal to-transparent z-20 pointer-events-none" />
+      <div className="absolute right-0 top-0 bottom-0 w-20 md:w-32 bg-gradient-to-l from-charcoal to-transparent z-20 pointer-events-none" />
       <div ref={trackRef} className="flex w-max items-center" style={{ willChange: 'transform' }}>
         {marqueeItems.map((brand, i) => (
           <div key={i} className="flex shrink-0 items-center justify-center px-8 md:px-16 group/logo">
