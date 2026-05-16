@@ -24,7 +24,11 @@ export default function HomePage() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  useEffect(() => { setVisible(true); }, []);
+  useEffect(() => {
+    history.scrollRestoration = 'manual';
+    window.scrollTo(0, 0);
+    setVisible(true);
+  }, []);
 
   useEffect(() => {
     if (isMobile) {
