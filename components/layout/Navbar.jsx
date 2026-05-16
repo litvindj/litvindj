@@ -5,9 +5,7 @@ import { useLanguage } from '../../context/LanguageContext';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('Home');
-  const [langMenuOpen, setLangMenuOpen] = useState(false);
   const isManualScroll = useRef(false);
-  const langMenuRef = useRef(null);
   const { language, setLanguage, t } = useLanguage();
 
   useEffect(() => {
@@ -72,65 +70,22 @@ const Navbar = () => {
     { code: 'ru', label: 'RU' },
   ];
 
-  const mobileLangRef = useRef(null);
-
-  // Закрываем оба меню при клике вне
-  useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (langMenuRef.current && !langMenuRef.current.contains(e.target)) {
-        if (mobileLangRef.current && !mobileLangRef.current.contains(e.target)) {
-          setLangMenuOpen(false);
-        }
-      }
-    };
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
-
-  // Desktop дропдаун
-  const DesktopLangSwitcher = () => (
-    <div className="relative" ref={langMenuRef}>
-      <button
-        onClick={() => setLangMenuOpen(!langMenuOpen)}
-        className="font-header text-sm tracking-widest uppercase transition-colors flex items-center gap-1 text-white/80 hover:text-white"
-      >
-        <span className="text-beige">{language.toUpperCase()}</span>
-        <span className="text-white/40 text-xs">▾</span>
-      </button>
-      {langMenuOpen && (
-        <div className="absolute top-8 right-0 bg-dark border border-white/10 shadow-2xl z-[999] min-w-[80px]">
-          {langs.map((lang) => (
-            <button key={lang.code} onClick={() => { setLanguage(lang.code); setLangMenuOpen(false); }}
-              className={`w-full text-left px-4 py-2 font-header text-sm uppercase tracking-widest transition-colors hover:bg-white/5 ${language === lang.code ? 'text-beige' : 'text-white/60 hover:text-white'}`}>
-              {lang.label}
-            </button>
-          ))}
-        </div>
-      )}
-    </div>
-  );
-
-  // Mobile дропдаун
-  const MobileLangSwitcher = () => (
-    <div className="relative" ref={mobileLangRef}>
-      <button
-        onClick={(e) => { e.stopPropagation(); setLangMenuOpen(!langMenuOpen); }}
-        className="font-header text-sm tracking-widest uppercase text-white flex items-center gap-1"
-      >
-        <span className="text-beige">{language.toUpperCase()}</span>
-        <span className="text-white/40 text-xs">▾</span>
-      </button>
-      {langMenuOpen && (
-        <div className="absolute top-8 right-0 bg-dark border border-white/10 shadow-2xl z-[999] min-w-[80px]">
-          {langs.map((lang) => (
-            <button key={lang.code}
-              onClick={(e) => { e.stopPropagation(); setLanguage(lang.code); setLangMenuOpen(false); }}
-              className={`w-full text-left px-4 py-2 font-header text-sm uppercase tracking-widest transition-colors hover:bg-white/5 ${language === lang.code ? 'text-beige' : 'text-white/60 hover:text-white'}`}>
-              {lang.label}
-            </button>
-          ))}
-        </div>
-      )}
+  const LangSwitcher = () => (
+    <div className="flex items-center gap-3">
+      {langs.map((lang) => (
+        <button
+          key={lang.code}
+          onClick={() => setLanguage(lang.code)}
+          className={`relative font-header text-xs tracking-widest uppercase transition-colors duration-200 pb-0.5 ${
+            language === lang.code ? 'text-beige' : 'text-white/40 hover:text-white/70'
+          }`}
+        >
+          {lang.label}
+          {language === lang.code && (
+            <span className="absolute bottom-0 left-0 w-full h-px bg-beige" />
+          )}
+        </button>
+      ))}
     </div>
   );
 
@@ -156,13 +111,13 @@ const Navbar = () => {
             </a>
           ))}
           <div className="pointer-events-auto ml-4">
-            <DesktopLangSwitcher />
+            <LangSwitcher />
           </div>
         </div>
 
         {/* Mobile */}
         <div className="md:hidden z-[60] flex items-center gap-4 pointer-events-auto">
-          <MobileLangSwitcher />
+          <LangSwitcher />
           <button onClick={() => setIsOpen(!isOpen)}
             className="focus:outline-none p-3 rounded-full bg-black/30 backdrop-blur-md border border-white/10 flex items-center justify-center w-12 h-12 transition-all duration-300 hover:border-beige/50"
             aria-label="Toggle Menu">
