@@ -39,7 +39,7 @@ const BrandsMarquee = () => {
       if (!isDragging.current && trackRef.current) {
         xRef.current -= 0.6;
         const w = getLoop();
-        if (w && Math.abs(xRef.current) >= w) xRef.current = 0;
+        if (w && Math.abs(xRef.current) >= w) xRef.current += w;
         trackRef.current.style.transform = `translate3d(${xRef.current}px, 0, 0)`;
       }
       id = requestAnimationFrame(animate);
