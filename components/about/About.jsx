@@ -96,15 +96,16 @@ const About = () => {
             </span>
           </h2>
 
-          <div className="space-y-4 mb-10 text-grey text-sm md:text-base font-light leading-relaxed max-w-lg">
+          <div className="space-y-4 mb-6 text-grey text-sm md:text-base font-light leading-relaxed max-w-lg">
             <p>{t('about.desc1')}</p>
             <p className="text-white font-normal">{t('about.desc2')}</p>
-            <p className="pt-4 border-t border-white/10 mt-6 flex flex-wrap items-baseline gap-2">
-              <span className={`text-beige text-xs font-bold uppercase ${language === 'ru' ? 'tracking-wide' : 'tracking-widest'}`}>
-                {t('about.languagesLabel')}:
-              </span>
-              <span className="text-grey text-xs font-bold tracking-wide">{t('about.languagesList')}</span>
-            </p>
+          </div>
+
+          <div className="py-5 border-t border-white/10 flex flex-wrap items-center gap-2">
+            <span className={`text-beige text-xs font-bold uppercase ${language === 'ru' ? 'tracking-wide' : 'tracking-widest'}`}>
+              {t('about.languagesLabel')}:
+            </span>
+            <span className="text-grey text-xs font-bold tracking-wide">{t('about.languagesList')}</span>
           </div>
 
           <Stats language={language} />
