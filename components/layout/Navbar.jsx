@@ -57,7 +57,7 @@ const Navbar = () => {
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
       let extraOffset = 0;
       if (isProfile) {
-        const factor = window.innerWidth < 1024 ? 1.0 : 0.85;
+        const factor = window.innerWidth < 1024 ? 1.0 : 0.55;
         extraOffset = window.innerHeight * factor;
       }
       window.scrollTo({ top: elementPosition + extraOffset, behavior: 'smooth' });
