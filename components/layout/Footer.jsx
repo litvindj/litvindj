@@ -1,11 +1,13 @@
 'use client';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import Container from './Container';
 import { useLanguage } from '../../context/LanguageContext';
 
 const Footer = () => {
   const { getData, language } = useLanguage();
   const content = getData('footer');
+  const router = useRouter();
   const [status, setStatus] = useState('idle');
 
   const handleSubmit = async (e) => {
@@ -23,9 +25,7 @@ const Footer = () => {
       body: JSON.stringify(data),
     });
     if (res.ok) {
-      setStatus('success');
-      form.reset();
-      setTimeout(() => setStatus('idle'), 5000);
+      router.push(`/${language}/thank-you`);
     } else {
       setStatus('error');
       setTimeout(() => setStatus('idle'), 5000);
