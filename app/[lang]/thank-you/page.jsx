@@ -10,9 +10,12 @@ export default function ThankYouPage() {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        event: 'form_submit_success',
-      });
+      window.dataLayer.push({ event: 'form_submit_success' });
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'conversion', {
+          send_to: 'AW-17986003521/tvxdCNvj1YEcEMHEsoBD',
+        });
+      }
     }
   }, []);
 
