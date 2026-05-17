@@ -10,7 +10,7 @@ Nieważne, czy to gala korporacyjna dla 500 gości, czy kameralne urodziny dla 3
 
 ## Co dzieje się przez te dwie godziny
 
-**Pierwsze, co robię, to słucham.** Nie muzyki — przestrzeni. Każde miejsce ma swój własny charakter akustyczny. Hotelowa sala balowa z wysokim sufitem i marmurową podłogą brzmi zupełnie inaczej niż letni taras czy restauracja z nisko zawieszonymi lampami. Chodzę po sali, klaszczę, mówię głośno. Mapuję pogłos, martwe strefy, miejsca gdzie dźwięk się kumuluje.
+**Pierwsze, co robię, to słucham.** Nie muzyki — przestrzeni. Każde miejsce ma swój własny charakter akustyczny. Hotelowa sala balowa z wysokim sufitem i marmurową podłogą brzmi zupełnie inaczej niż letni taras czy restauracja z nisko zawieszonymi lampami. Chodzę po sali, klaszczę, mówię głośno. Mapuję pogłos, martwe strefy, miejsca, gdzie dźwięk się kumuluje.
 
 **Potem rozstawiam sprzęt.** Ustawienie głośników to decyzja, a nie oczywistość. W zależności od kształtu sali, lokalizacji parkietu i rozmieszczenia stołów, optymalna pozycja głośników może być zupełnie inna od tej, gdzie venue zwykle je ustawia. Błąd w tej decyzji oznacza, że goście blisko głośników ogłuchną, a ci w rogu nic nie usłyszą.
 
@@ -18,7 +18,7 @@ Nieważne, czy to gala korporacyjna dla 500 gości, czy kameralne urodziny dla 3
 
 **Kontrola sprzętu i przygotowanie planów awaryjnych.** Sprawdzam każdy kabel, każde połączenie, każdy element wyposażenia. Jeśli coś ma się zepsuć — niech zepsuje się teraz, a nie podczas pierwszego tańca lub przemówienia prezesa. Mam zapasy dla najważniejszych rzeczy: dwa laptopy, awaryjną playlistę, zapasowe kable.
 
-**Koordynacja z zespołem.** Spotykam się z koordynatorem eventu, kierownikiem venue i personelem cateringowym. Dowiaduję się dokładnie, kiedy będą przemówienia, kiedy zaczyna się serwowanie kolacji, kiedy para wejdzie na salę, kiedy przyniosą tort. Te momenty wymagają precyzji co do sekundy — muzyka musi zatrzymać się w dokładnie właściwym momencie i znów zabrzmieć dokładnie we właściwym.
+**Koordynacja z zespołem.** Spotykam się z koordynatorem eventu, kierownikiem venue i personelem cateringowym. Dowiaduję się dokładnie, kiedy będą przemówienia, kiedy zaczyna się serwowanie kolacji, kiedy wejdą kluczowi goście, kiedy przyniosą tort. Te momenty wymagają precyzji co do sekundy — muzyka musi zatrzymać się w dokładnie właściwym momencie i znów zabrzmieć dokładnie we właściwym.
 
 ## Prawdziwy powód: spokój ducha
 
@@ -26,7 +26,7 @@ Istnieje wersja tej pracy, gdzie przyjeżdżasz 20 minut przed, szybko podłącz
 
 Gdy przyjeżdżam dwie godziny wcześniej, coś się zmienia. Stres znika. Przestaję być kimś, kto gna w wyścigu z czasem, i staję się kimś, kto jest w pełni obecny — kto potrafi *wyczuć* salę, gdy goście zaczynają przybywać, zauważyć energię, podejmować decyzje ze spokojnego miejsca.
 
-Goście tego nie widzą. Wchodzą i wszystko po prostu *działa*. Muzyka już buduje nastrój, poziomy są właściwe, nie ma niezręcznych ciszy ani technicznych problemów. Ta niewidoczna przygotowania to właśnie produkt. To jest to, co tak naprawdę sprzedaję.
+Goście tego nie widzą. Wchodzą i wszystko po prostu *działa*. Muzyka już buduje nastrój, poziomy są właściwe, nie ma niezręcznych ciszy ani technicznych problemów. Te niewidoczne przygotowania to właśnie produkt. To jest to, co tak naprawdę sprzedaję.
 
 ## Co to oznacza dla Ciebie jako klienta
 

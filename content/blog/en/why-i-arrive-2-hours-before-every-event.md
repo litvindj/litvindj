@@ -18,7 +18,7 @@ It doesn't matter whether it's a corporate gala for 500 guests or an intimate bi
 
 **Gear check and backup preparation.** I run through every cable, every connection, every piece of equipment. If something is going to fail, I want it to fail now — not during the first dance or the CEO's speech. I have backups for the things that matter most: two laptops, an emergency playlist, spare cables.
 
-**Coordination with the team.** I meet the event coordinator, the venue manager, the catering staff. I find out exactly when speeches are happening, when dinner service starts, when the couple will walk in, when the cake arrives. These moments require cue-point precision — the music needs to stop at exactly the right second and start again at exactly the right one.
+**Coordination with the team.** I meet the event coordinator, the venue manager, the catering staff. I find out exactly when speeches are happening, when dinner service starts, when key guests will enter, when the cake arrives. These moments require cue-point precision — the music needs to stop at exactly the right second and start again at exactly the right moment.
 
 ## The Real Reason: Peace of Mind
 
