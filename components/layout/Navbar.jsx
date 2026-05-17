@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
+import Link from 'next/link';
 import { useLanguage } from '../../context/LanguageContext';
 
 const Navbar = () => {
@@ -21,6 +22,7 @@ const Navbar = () => {
     { name: t('navbar.Music'),    targetId: 'music-section',    isProfile: false, originalName: 'Music' },
     { name: t('navbar.Gallery'),  targetId: 'gallery-section',  isProfile: false, originalName: 'Gallery' },
     { name: t('navbar.Contact'),  targetId: 'footer-section',   isProfile: false, originalName: 'Contact' },
+    { name: t('navbar.Blog'),     href: `/${language}/blog`,    isProfile: false, originalName: 'Blog' },
   ];
 
   useEffect(() => {
@@ -101,14 +103,24 @@ const Navbar = () => {
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-6 lg:gap-10 xl:gap-12 text-white pointer-events-auto">
           {links.map((link) => (
-            <a key={link.originalName} href={`#${link.targetId}`}
-              onClick={(e) => handleScroll(e, link.targetId, link.isProfile, link.originalName)}
-              className={`group relative font-header uppercase transition-colors cursor-pointer text-center
-                ${language === 'ru' ? 'text-xs lg:text-sm tracking-normal font-medium' : 'text-xs lg:text-sm tracking-[0.2em]'}
-                ${activeSection === link.originalName ? 'text-white' : 'text-white/60 hover:text-white'}`}>
-              {link.name}
-              <span className={`absolute -bottom-2 left-0 h-0.5 bg-beige transition-all duration-300 ${activeSection === link.originalName ? 'w-full' : 'w-0 group-hover:w-full'}`} />
-            </a>
+            link.href ? (
+              <Link key={link.originalName} href={link.href}
+                className={`group relative font-header uppercase transition-colors cursor-pointer text-center
+                  ${language === 'ru' ? 'text-xs lg:text-sm tracking-normal font-medium' : 'text-xs lg:text-sm tracking-[0.2em]'}
+                  text-white/60 hover:text-white`}>
+                {link.name}
+                <span className="absolute -bottom-2 left-0 h-0.5 bg-beige transition-all duration-300 w-0 group-hover:w-full" />
+              </Link>
+            ) : (
+              <a key={link.originalName} href={`#${link.targetId}`}
+                onClick={(e) => handleScroll(e, link.targetId, link.isProfile, link.originalName)}
+                className={`group relative font-header uppercase transition-colors cursor-pointer text-center
+                  ${language === 'ru' ? 'text-xs lg:text-sm tracking-normal font-medium' : 'text-xs lg:text-sm tracking-[0.2em]'}
+                  ${activeSection === link.originalName ? 'text-white' : 'text-white/60 hover:text-white'}`}>
+                {link.name}
+                <span className={`absolute -bottom-2 left-0 h-0.5 bg-beige transition-all duration-300 ${activeSection === link.originalName ? 'w-full' : 'w-0 group-hover:w-full'}`} />
+              </a>
+            )
           ))}
           <div className="pointer-events-auto ml-4">
             <LangSwitcher />
@@ -133,14 +145,24 @@ const Navbar = () => {
         <div className={`fixed inset-0 bg-dark z-[50] flex flex-col items-center justify-center transition-all duration-500 pointer-events-auto ${isOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'}`}>
           <nav className="flex flex-col gap-6 text-center w-full px-6 overflow-y-auto mt-20 items-center justify-center">
             {links.map((link, i) => (
-              <a key={link.originalName} href={`#${link.targetId}`}
-                onClick={(e) => handleScroll(e, link.targetId, link.isProfile, link.originalName)}
-                className={`font-header uppercase transition-all duration-300 cursor-pointer border-b border-white/5 last:border-none w-full text-center block pb-4
-                  ${language === 'ru' ? 'text-3xl tracking-normal font-medium' : 'text-4xl tracking-widest'}
-                  ${activeSection === link.originalName ? 'text-beige' : 'text-white hover:text-beige'}`}
-                style={{ opacity: isOpen ? 1 : 0, transform: isOpen ? 'translateY(0)' : 'translateY(20px)', transitionDelay: `${isOpen ? 100 + i * 50 : 0}ms` }}>
-                {link.name}
-              </a>
+              link.href ? (
+                <Link key={link.originalName} href={link.href} onClick={() => setIsOpen(false)}
+                  className={`font-header uppercase transition-all duration-300 cursor-pointer border-b border-white/5 last:border-none w-full text-center block pb-4
+                    ${language === 'ru' ? 'text-3xl tracking-normal font-medium' : 'text-4xl tracking-widest'}
+                    text-white hover:text-beige`}
+                  style={{ opacity: isOpen ? 1 : 0, transform: isOpen ? 'translateY(0)' : 'translateY(20px)', transitionDelay: `${isOpen ? 100 + i * 50 : 0}ms` }}>
+                  {link.name}
+                </Link>
+              ) : (
+                <a key={link.originalName} href={`#${link.targetId}`}
+                  onClick={(e) => handleScroll(e, link.targetId, link.isProfile, link.originalName)}
+                  className={`font-header uppercase transition-all duration-300 cursor-pointer border-b border-white/5 last:border-none w-full text-center block pb-4
+                    ${language === 'ru' ? 'text-3xl tracking-normal font-medium' : 'text-4xl tracking-widest'}
+                    ${activeSection === link.originalName ? 'text-beige' : 'text-white hover:text-beige'}`}
+                  style={{ opacity: isOpen ? 1 : 0, transform: isOpen ? 'translateY(0)' : 'translateY(20px)', transitionDelay: `${isOpen ? 100 + i * 50 : 0}ms` }}>
+                  {link.name}
+                </a>
+              )
             ))}
           </nav>
         </div>

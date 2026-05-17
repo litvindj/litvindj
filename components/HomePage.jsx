@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import Navbar from './layout/Navbar';
 import Hero from './hero/Hero';
 import About from './about/About';
@@ -23,9 +23,10 @@ export default function HomePage() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  useEffect(() => {
-    history.scrollRestoration = 'manual';
-    window.scrollTo(0, 0);
+  useLayoutEffect(() => {
+    if (!window.location.hash) {
+      window.scrollTo(0, 0);
+    }
   }, []);
 
   useEffect(() => {
@@ -61,7 +62,7 @@ export default function HomePage() {
 
   return (
     <div className="bg-dark text-white min-h-screen relative selection:bg-beige selection:text-dark">
-      <div>
+      <div style={{ animation: 'pageFadeIn 0.7s ease-out' }}>
         <Navbar />
 
         <main className="w-full relative">
@@ -72,7 +73,7 @@ export default function HomePage() {
                 <Hero />
               </div>
               <div ref={aboutWrapperRef}
-                className="relative w-full z-20 bg-dark lg:absolute lg:inset-0 lg:h-full lg:bg-transparent lg:flex lg:items-center lg:justify-center will-change-transform">
+                className="relative w-full z-20 bg-dark lg:absolute lg:inset-0 lg:h-full lg:bg-transparent lg:flex lg:items-center lg:justify-center will-change-transform lg:opacity-0">
                 <About />
               </div>
             </div>

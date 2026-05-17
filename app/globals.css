@@ -6,6 +6,11 @@ html {
   scroll-behavior: smooth;
 }
 
+@keyframes pageFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 body {
   font-family: var(--font-manrope), 'Manrope', sans-serif;
   font-weight: 500;
@@ -29,3 +34,23 @@ body {
   background: #D8C3A5;
   color: #050505;
 }
+
+/* Blog article typography */
+.prose-blog h2 {
+  font-family: var(--font-oswald), 'Oswald', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+.prose-blog p { margin-bottom: 1.25rem; }
+.prose-blog strong { color: #ffffff; font-weight: 600; }
+.prose-blog em { font-style: italic; color: #D8C3A5; }
+.prose-blog ul { list-style: none; margin-bottom: 1.25rem; }
+.prose-blog ul li { padding-left: 1.25rem; position: relative; margin-bottom: 0.5rem; }
+.prose-blog ul li::before { content: '—'; position: absolute; left: 0; color: #D8C3A5; }
+.prose-blog a { color: #D8C3A5; text-decoration: none; border-bottom: 1px solid transparent; }
+.prose-blog a:hover { border-bottom-color: #D8C3A5; }
