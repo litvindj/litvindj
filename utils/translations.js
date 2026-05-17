@@ -138,7 +138,7 @@ export const translations = {
       title: "Available for clubs, private, and corporate events worldwide.",
       subtitle: "Let’s talk dates and details.",
       rights: "All rights reserved.",
-      design: "Design & Developed by",
+      design: "Designed & Developed by",
       formName: "Your Name",
       formEmail: "Your Email",
       formMessage: "Event details (Date, Location, Format)",
@@ -192,7 +192,7 @@ export const translations = {
         {
           id: '03',
           title: 'Командная Синергия',
-          description: 'Четкая и структурная коммуникация с организаторами, ведущими и техниками. Я гарантирую, что звук идеально дополняет каждую речь, презентацию и шоу-момент.'
+          description: 'Четкая и структурированная коммуникация с организаторами, ведущими и техниками. Я гарантирую, что звук идеально дополняет каждую речь, презентацию и шоу-момент.'
         },
         {
           id: '04',
@@ -220,7 +220,7 @@ export const translations = {
         { id: '04', title: 'Фэшн-События', description: 'Тщательно отобранная музыка, дополняющая визуальную концепцию и эстетику показов.' },
         { id: '05', title: 'Бизнес / Нетворкинг', description: 'Легкая фоновая музыка, способствующая общению и создающая деловую среду.' },
         { id: '06', title: 'Частные и VIP', description: 'Персонализированный выбор, адаптируемый под энергию гостей и характер события.' },
-        { id: '07', title: 'Рестораны и Лаунж', description: 'Атмосферная музыка, плавно переходящая от фона до оживленного настроения.' },
+        { id: '07', title: 'Рестораны и Лаунж', description: 'Атмосферная музыка, плавно переходящая от фонового звучания к оживлённому вечернему настроению.' },
         { id: '08', title: 'Клубные Ивенты', description: 'Энергичные сеты для удержания танцпола всю ночь.' },
       ]
     },
@@ -243,7 +243,7 @@ export const translations = {
       label: "В эфире",
       title: "Звуковая",
       titleStroke: "Подборка",
-      desc: "Кураторская коллекция треков, определяющая мое текущее звучание.",
+      desc: "Кюрированная подборка треков, определяющая моё текущее звучание.",
     },
     gallery: {
       title: "Полные сеты",
@@ -295,7 +295,7 @@ export const translations = {
         { id: '01', title: 'Indywidualna Selekcja', description: "Muzyka starannie dobrana do koncepcji, formatu i publiczności eventu. Dostosowuję dźwięk, głośność i poziom energii zarówno do formalnych eventów korporacyjnych, jak i relaksowanych prywatnych uroczystości." },
         { id: '02', title: 'Płynny Przebieg', description: "Płynne przejścia i pełna kontrola atmosfery przez cały czas trwania eventu. Muzyka jest zsynchronizowana z harmonogramem, kluczowymi momentami i programem." },
         { id: '03', title: 'Synergia z Teamem', description: "Jasna i ustrukturyzowana komunikacja z organizatorami, prowadzącymi i ekipą techniczną. Dbam o to, aby dźwięk idealnie uzupełniał każde przemówienie i moment show." },
-        { id: '04', title: 'Adaptacyjny Nastrój', description: "Elastyczność w czasie rzeczywistym, oparta na dynamice publiczności. Od subtelnych wibracji w tle podczas kolacji po energiczne momenty taneczne — natychmiastowo i naturalnie." },
+        { id: '04', title: 'Adaptacyjny Nastrój', description: "Elastyczność w czasie rzeczywistym, oparta na dynamice publiczności. Od subtelnych wibracji w tle podczas kolacji po energiczne momenty taneczne — natychmiast i naturalnie." },
         { id: '05', title: 'Kontrola Energii', description: "Silna świadomość tłumu i profesjonalne odczytywanie sali. Dostosowuję tempo, styl i intensywność na podstawie reakcji gości — stawiając atmosferę eventu ponad osobiste preferencje." },
       ],
       bookBtn: "Zarezerwuj Termin",
@@ -307,7 +307,7 @@ export const translations = {
       titlePart2: "Oferuję",
       description: "Profesjonalny dźwięk dopasowany do unikalnej kultury i formatu Twojego eventu.",
       items: [
-        { id: '01', title: 'Eventy Korporacyjne', description: 'Profesjonalna muzyka dopasowana do kultury firmy i formatu eventu — od konferencji i gali po imprezy biurowe i team celebrations.' },
+        { id: '01', title: 'Eventy Korporacyjne', description: 'Profesjonalna muzyka dopasowana do kultury firmy i formatu eventu — od konferencji i gali po imprezy biurowe i uroczystości firmowe.' },
         { id: '02', title: 'Wesela', description: 'Starannie dobrana muzyka na każdy moment dnia, od ceremonii i kolacji po energiczny parkiet dla wszystkich pokoleń.' },
         { id: '03', title: 'Eventy Brandowe', description: 'Dźwięk odzwierciedlający tożsamość marki i wspierający atmosferę premier produktów, otwarć sklepów i eventów promocyjnych.' },
         { id: '04', title: 'Eventy Fashion', description: 'Starannie dobrana muzyka, która uzupełnia wizualną koncepcję, tempo i estetykę pokazów mody.' },
