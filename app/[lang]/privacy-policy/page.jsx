@@ -190,11 +190,11 @@ export default function PolitykaPrywatnosci() {
 
           <section>
             <h2 className="font-header text-white uppercase text-lg md:text-xl mb-4 tracking-wide">
-              8. Safety Measures
+              8. Security Measures
             </h2>
             <p>
               This site processes the data of users in a lawful and proper manner, adopting appropriate 
-              security measures to prevent unauthorized access, disclosure, modification, or unauthorized 
+              security measures to prevent unauthorized access, disclosure, modification, or
               destruction of data. However, no data transmission and no storage system can be guaranteed 
               as 100% secure. Users who have reason to believe that their interactions with us are no 
               longer secure are asked to report the issue immediately to{' '}
