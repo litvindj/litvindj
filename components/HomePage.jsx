@@ -71,7 +71,7 @@ export default function HomePage() {
 
   return (
     <div className="bg-dark text-white min-h-screen relative selection:bg-beige selection:text-dark">
-      <div style={{ animation: 'pageFadeIn 0.7s ease-out' }}>
+      <div>
         <Navbar />
 
         <main className="w-full relative">
