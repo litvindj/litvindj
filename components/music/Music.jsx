@@ -43,7 +43,7 @@ const Music = () => {
 
           <h2 className={`font-header uppercase leading-none text-white mb-6
             ${language === 'ru' 
-              ? 'text-4xl md:text-7xl tracking-normal' 
+              ? 'text-5xl md:text-7xl tracking-normal'
               : 'text-6xl md:text-8xl'}`} 
           >
             {content.title} <span className="text-transparent" style={{ WebkitTextStroke: '1px #D8C3A5' }}>
