@@ -59,7 +59,7 @@ export default function RootPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrg) }}
       />
-      <HomePage lang="en" />
+      <HomePage />
     </>
   );
 }
