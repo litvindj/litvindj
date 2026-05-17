@@ -113,7 +113,7 @@ const Footer = () => {
               <br className="sm:hidden" />
               <a href={`/${language}/privacy-policy`}
                 className="hover:text-white transition-colors duration-300 border-b border-transparent hover:border-white pb-px">
-                Privacy Policy
+                {content.privacyPolicy}
               </a>
               <span className="mx-3 opacity-30">|</span>
               {content.design}{' '}
