@@ -21,10 +21,6 @@ body {
   display: inline-block;
 }
 
-.font-body {
-  font-family: var(--font-manrope), 'Manrope', sans-serif !important;
-}
-
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: #050505; }
 ::-webkit-scrollbar-thumb { background: #D8C3A5; }

@@ -14,16 +14,6 @@ module.exports = {
       },
       fontFamily: {
         header: ['var(--font-oswald)', 'Oswald', 'sans-serif'],
-        body: ['var(--font-manrope)', 'Manrope', 'sans-serif'],
-      },
-      animation: {
-        marqueeBounce: 'marqueeBounce 40s linear infinite alternate',
-      },
-      keyframes: {
-        marqueeBounce: {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-50%)' },
-        },
       },
     },
   },
