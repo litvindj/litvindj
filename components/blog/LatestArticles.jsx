@@ -17,7 +17,7 @@ export default function LatestArticles({ allPosts }) {
   if (!posts?.length) return null;
 
   return (
-    <section className="py-24 md:py-32 bg-dark relative border-t border-white/5">
+    <section className="py-16 md:py-20 bg-dark relative border-t border-white/5">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:items-center">
 
