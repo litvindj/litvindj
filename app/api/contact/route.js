@@ -10,7 +10,7 @@ export async function POST(request) {
   const resend = new Resend(process.env.RESEND_API_KEY);
 
   const { error } = await resend.emails.send({
-    from: 'Booking Form <onboarding@resend.dev>',
+    from: 'Booking Form <noreply@litvindj.com>',
     to: 'booking@litvindj.com',
     replyTo: email,
     subject: 'New Booking Request from Website!',
