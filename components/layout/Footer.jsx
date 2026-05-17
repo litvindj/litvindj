@@ -1,10 +1,36 @@
 'use client';
+import { useState } from 'react';
 import Container from './Container';
 import { useLanguage } from '../../context/LanguageContext';
 
 const Footer = () => {
   const { getData, language } = useLanguage();
   const content = getData('footer');
+  const [status, setStatus] = useState('idle');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('loading');
+    const form = e.target;
+    const data = {
+      name: form.name.value,
+      email: form.email.value,
+      message: form.message.value,
+    };
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+    if (res.ok) {
+      setStatus('success');
+      form.reset();
+      setTimeout(() => setStatus('idle'), 5000);
+    } else {
+      setStatus('error');
+      setTimeout(() => setStatus('idle'), 5000);
+    }
+  };
 
   const socialLinks = [
     { name: 'Instagram', url: 'https://www.instagram.com/litvin.dj?igsh=MWJmZDl6d3dzanh4ag==', action: 'Follow',
@@ -33,21 +59,25 @@ const Footer = () => {
                 {content.subtitle}
               </p>
             </div>
-            <form action="https://formsubmit.co/booking@litvindj.com" method="POST"
+            <form onSubmit={handleSubmit}
               className="w-full flex flex-col gap-5 text-left bg-charcoal/30 p-8 md:p-10 border border-white/5 shadow-2xl">
-              <input type="hidden" name="_subject" value="New Booking Request from Website!" />
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_template" value="box" />
-              <input type="hidden" name="_next" value={`https://litvindj.com/${language}/thank-you`} />
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <input type="text" name="name" placeholder={content.formName} required className={inputStyles} />
                 <input type="email" name="email" placeholder={content.formEmail} required className={inputStyles} />
               </div>
               <textarea name="message" placeholder={content.formMessage} required rows="4" className={`${inputStyles} resize-none`}></textarea>
+              {status === 'success' && (
+                <p className="text-green-400 text-sm font-header uppercase tracking-wider">Message sent successfully!</p>
+              )}
+              {status === 'error' && (
+                <p className="text-red-400 text-sm font-header uppercase tracking-wider">Something went wrong. Please try again.</p>
+              )}
               <div className="flex justify-center lg:justify-start mt-4">
-                <button type="submit" className="group relative inline-flex items-center justify-center bg-beige text-dark font-header text-lg md:text-xl uppercase px-14 py-4 overflow-hidden transition-transform duration-300 hover:scale-105 active:scale-95 shadow-lg">
+                <button type="submit" disabled={status === 'loading'} className="group relative inline-flex items-center justify-center bg-beige text-dark font-header text-lg md:text-xl uppercase px-14 py-4 overflow-hidden transition-transform duration-300 hover:scale-105 active:scale-95 shadow-lg disabled:opacity-60 disabled:scale-100">
                   <span className="absolute inset-0 w-full h-full bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-                  <span className={`relative z-10 ${language === 'ru' ? 'tracking-normal font-medium' : 'tracking-wider group-hover:tracking-widest'}`}>{content.formSend}</span>
+                  <span className={`relative z-10 ${language === 'ru' ? 'tracking-normal font-medium' : 'tracking-wider group-hover:tracking-widest'}`}>
+                    {status === 'loading' ? '...' : content.formSend}
+                  </span>
                 </button>
               </div>
             </form>
