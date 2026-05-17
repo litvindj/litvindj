@@ -162,7 +162,7 @@ export const translations = {
       title1: "Архитектор",
       title2: "Звука",
       desc1:
-        "Я диджей, специализирующийся на корпоративных мероприятиях, свадьбах и частных праздниках — от камерных встреч до масштабных брендовых событий. За 6 лет и более 500 ивентов я научился создавать музыку, которая подчеркивает атмосферу, отражает суть бренда и следует естественному ритму мероприятия.",
+        "Я диджей, специализирующийся на корпоративных мероприятиях, свадьбах и частных праздниках — от камерных встреч до масштабных брендовых событий. За более чем 6 лет и 500+ ивентов я сфокусировался на музыке, которая подчеркивает атмосферу, отражает суть бренда и следует естественному ритму мероприятия.",
       desc2:
         "От фоновой музыки за ужином до полного танцпола ночью — каждый сет тщательно адаптируется под гостей, расписание и формат. Базируюсь в Варшаве, работаю по всему миру.",
       languagesLabel: "Языки",
@@ -278,7 +278,7 @@ export const translations = {
       title1: "Architekt",
       title2: "Dźwięku",
       desc1: "Jestem DJ-em specjalizującym się w eventach korporacyjnych, weselach i prywatnych uroczystościach — od kameralnych spotkań po duże doświadczenia brandowe. Przez ponad 6 lat i 500+ eventów skupiam się na muzyce, która wzmacnia atmosferę miejsca, odzwierciedla markę lub okazję i podąża za naturalnym rytmem imprezy.",
-      desc2: "Od subtelnej muzyki w tle podczas kolacji po pełny parkiet w nocy — każdy set jest starannie dopasowany do gości, harmonogramu i formatu eventu. Działam z Warszawy, dostępny na eventy na całym świecie.",
+      desc2: "Od subtelnej muzyki w tle podczas kolacji po pełny parkiet w nocy — każdy set jest starannie dopasowany do gości, harmonogramu i formatu eventu. Działam z Warszawy, dostępny dla eventów na całym świecie.",
       languagesLabel: "Języki",
       languagesList: "Angielski, Polski, Rosyjski",
       resident: "Rezydent (Warszawa)",
