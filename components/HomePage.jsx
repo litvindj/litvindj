@@ -30,6 +30,15 @@ export default function HomePage() {
   }, []);
 
   useEffect(() => {
+    if (window.location.hash) {
+      const timer = setTimeout(() => {
+        history.replaceState(null, '', window.location.pathname);
+      }, 300);
+      return () => clearTimeout(timer);
+    }
+  }, []);
+
+  useEffect(() => {
     if (isMobile) {
       if (aboutWrapperRef.current) aboutWrapperRef.current.style.opacity = '';
       return;
