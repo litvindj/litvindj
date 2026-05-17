@@ -78,7 +78,6 @@ export default async function BlogPostPage({ params }) {
           <h2 className="font-header text-white uppercase text-2xl md:text-3xl leading-tight mb-4 w-full">
             {t.ctaTitle}
           </h2>
-          <p className="text-grey/70 text-sm leading-relaxed mb-8 max-w-lg">{t.ctaDesc}</p>
           <a href={`/${lang}/#footer-section`}
             className="group relative inline-flex items-center justify-center bg-beige text-dark font-header text-sm uppercase px-10 py-4 overflow-hidden transition-transform duration-300 hover:scale-105 active:scale-95 shadow-lg tracking-wider">
             <span className="absolute inset-0 w-full h-full bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
