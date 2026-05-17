@@ -1,5 +1,4 @@
 'use client';
-import React from 'react';
 import Container from '../layout/Container';
 import { useLanguage } from '../../context/LanguageContext';
 

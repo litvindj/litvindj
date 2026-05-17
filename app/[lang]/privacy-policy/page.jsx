@@ -150,7 +150,7 @@ export default function PolitykaPrywatnosci() {
               {[
                 'Google LLC – Google Analytics, Google Ads, Google Tag Manager',
                 'Meta Platforms Ireland Ltd – Facebook Pixel',
-                'FormSubmit.co – contact form processing service',
+                'Resend – contact form processing service',
                 'Netlify Inc. – website hosting',
               ].map((item, i) => (
                 <li key={i} className="flex gap-3">
