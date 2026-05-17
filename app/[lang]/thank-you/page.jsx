@@ -8,10 +8,9 @@ export default function ThankYouPage() {
   const lang = params?.lang || 'en';
 
   useEffect(() => {
-    if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
-      window.gtag('event', 'conversion', {
-        send_to: 'AW-17986003521/tvxdCNvj1YEcEMHEsoBD',
-      });
+    if (typeof window !== 'undefined') {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'form_submit_success' });
     }
   }, []);
 
