@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useLanguage } from '../../context/LanguageContext';
 
 const Navbar = () => {
@@ -8,6 +9,8 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState('Home');
   const isManualScroll = useRef(false);
   const { language, setLanguage, t } = useLanguage();
+  const pathname = usePathname();
+  const isBlogPage = pathname?.includes('/blog');
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : 'unset';
@@ -21,8 +24,8 @@ const Navbar = () => {
     { name: t('navbar.Rider'),    targetId: 'rider-section',    isProfile: false, originalName: 'Rider' },
     { name: t('navbar.Music'),    targetId: 'music-section',    isProfile: false, originalName: 'Music' },
     { name: t('navbar.Gallery'),  targetId: 'gallery-section',  isProfile: false, originalName: 'Gallery' },
+    { name: t('navbar.Blog'),     targetId: 'articles-section', isProfile: false, originalName: 'Blog' },
     { name: t('navbar.Contact'),  targetId: 'footer-section',   isProfile: false, originalName: 'Contact' },
-    { name: t('navbar.Blog'),     href: `/${language}/blog`,    isProfile: false, originalName: 'Blog' },
   ];
 
   useEffect(() => {
@@ -107,9 +110,9 @@ const Navbar = () => {
               <Link key={link.originalName} href={link.href}
                 className={`group relative font-header uppercase transition-colors cursor-pointer text-center
                   ${language === 'ru' ? 'text-xs lg:text-sm tracking-normal font-medium' : 'text-xs lg:text-sm tracking-[0.2em]'}
-                  text-white/60 hover:text-white`}>
+                  ${activeSection === link.originalName || isBlogPage ? 'text-white' : 'text-white/60 hover:text-white'}`}>
                 {link.name}
-                <span className="absolute -bottom-2 left-0 h-0.5 bg-beige transition-all duration-300 w-0 group-hover:w-full" />
+                <span className={`absolute -bottom-2 left-0 h-0.5 bg-beige transition-all duration-300 ${activeSection === link.originalName || isBlogPage ? 'w-full' : 'w-0 group-hover:w-full'}`} />
               </Link>
             ) : (
               <a key={link.originalName} href={`#${link.targetId}`}
@@ -149,7 +152,7 @@ const Navbar = () => {
                 <Link key={link.originalName} href={link.href} onClick={() => setIsOpen(false)}
                   className={`font-header uppercase transition-all duration-300 cursor-pointer border-b border-white/5 last:border-none w-full text-center block pb-4
                     ${language === 'ru' ? 'text-3xl tracking-normal font-medium' : 'text-4xl tracking-widest'}
-                    text-white hover:text-beige`}
+                    ${activeSection === link.originalName || isBlogPage ? 'text-beige' : 'text-white hover:text-beige'}`}
                   style={{ opacity: isOpen ? 1 : 0, transform: isOpen ? 'translateY(0)' : 'translateY(20px)', transitionDelay: `${isOpen ? 100 + i * 50 : 0}ms` }}>
                   {link.name}
                 </Link>

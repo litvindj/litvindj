@@ -9,9 +9,10 @@ import TechnicalRider from './offer/TechnicalRider';
 import Music from './music/Music';
 import VideoGallery from './gallery/VideoGallery';
 import BrandsMarquee from './layout/BrandsMarquee';
+import LatestArticles from './blog/LatestArticles';
 import Footer from './layout/Footer';
 
-export default function HomePage() {
+export default function HomePage({ allLatestPosts = {} }) {
   const heroWrapperRef = useRef(null);
   const aboutWrapperRef = useRef(null);
   const [isMobile, setIsMobile] = useState(false);
@@ -94,6 +95,7 @@ export default function HomePage() {
           <div id="music-section"    className="relative z-30 bg-dark"><Music /></div>
           <div id="gallery-section"  className="relative z-30 bg-dark"><VideoGallery /></div>
           <div                       className="relative z-30 bg-dark"><BrandsMarquee /></div>
+          <div id="articles-section" className="relative z-30 bg-dark"><LatestArticles allPosts={allLatestPosts} /></div>
           <div id="footer-section"   className="relative z-30"><Footer /></div>
         </main>
       </div>
