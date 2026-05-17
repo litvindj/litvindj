@@ -19,14 +19,19 @@ const Footer = () => {
       email: form.email.value,
       message: form.message.value,
     };
-    const res = await fetch('/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data),
-    });
-    if (res.ok) {
-      router.push(`/${language}/thank-you`);
-    } else {
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      if (res.ok) {
+        router.push(`/${language}/thank-you`);
+      } else {
+        setStatus('error');
+        setTimeout(() => setStatus('idle'), 5000);
+      }
+    } catch {
       setStatus('error');
       setTimeout(() => setStatus('idle'), 5000);
     }
@@ -66,9 +71,6 @@ const Footer = () => {
                 <input type="email" name="email" placeholder={content.formEmail} required className={inputStyles} />
               </div>
               <textarea name="message" placeholder={content.formMessage} required rows="4" className={`${inputStyles} resize-none`}></textarea>
-              {status === 'success' && (
-                <p className="text-green-400 text-sm font-header uppercase tracking-wider">Message sent successfully!</p>
-              )}
               {status === 'error' && (
                 <p className="text-red-400 text-sm font-header uppercase tracking-wider">Something went wrong. Please try again.</p>
               )}

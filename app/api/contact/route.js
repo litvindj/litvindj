@@ -1,5 +1,9 @@
 import { Resend } from 'resend';
 
+function escapeHtml(str) {
+  return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
 export async function POST(request) {
   const { name, email, message } = await request.json();
 
@@ -16,10 +20,10 @@ export async function POST(request) {
     subject: 'New Booking Request from Website!',
     html: `
       <h2>New Booking Request</h2>
-      <p><strong>Name:</strong> ${name}</p>
-      <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
+      <p><strong>Name:</strong> ${escapeHtml(name)}</p>
+      <p><strong>Email:</strong> <a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></p>
       <p><strong>Message:</strong></p>
-      <p>${message.replace(/\n/g, '<br>')}</p>
+      <p>${escapeHtml(message).replace(/\n/g, '<br>')}</p>
     `,
   });
 
