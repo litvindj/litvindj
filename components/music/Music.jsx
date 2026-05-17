@@ -5,8 +5,8 @@ import Container from '../layout/Container';
 import { useLanguage } from '../../context/LanguageContext';
 
 const Music = () => {
-  const { getData, language } = useLanguage(); 
-  const content = getData('music'); 
+  const { getData, language } = useLanguage();
+  const content = getData('music');
 
   return (
     <section className="py-24 md:py-32 bg-dark relative border-t border-white/5 overflow-hidden">

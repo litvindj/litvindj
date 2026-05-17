@@ -3,9 +3,9 @@ import Container from '../layout/Container';
 import { useLanguage } from '../../context/LanguageContext';
 
 const Events = () => {
-  const { getData, language } = useLanguage(); 
+  const { getData, language } = useLanguage();
   const content = getData('events');
-  const eventTypes = content.items;  
+  const eventTypes = content.items;
 
   return (
     <section id="events-section" className="py-24 md:py-32 bg-dark relative z-30 border-t border-white/5">

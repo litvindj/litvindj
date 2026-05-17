@@ -1,10 +1,7 @@
 'use client';
 import Image from 'next/image';
-import { useLanguage } from '../../context/LanguageContext';
 
 const Hero = () => {
-  const { t } = useLanguage();
-
   return (
     <section className="relative w-full h-svh flex flex-col items-center justify-center overflow-hidden bg-dark">
       <div className="absolute inset-0 z-0 pointer-events-none">
