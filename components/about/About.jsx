@@ -61,11 +61,7 @@ const About = () => {
   const { t, language } = useLanguage();
 
   return (
-    <section className="w-full flex flex-col lg:flex-row bg-dark relative lg:min-h-screen lg:overflow-hidden">
-
-      <div className="hidden lg:block absolute top-1/2 right-0 -translate-y-1/2 text-[40vh] font-header text-white/3 leading-none select-none pointer-events-none z-0">
-        01
-      </div>
+    <section className="w-full flex flex-col lg:flex-row bg-dark relative lg:min-h-screen">
 
       <div className="w-full h-full grid grid-cols-1 lg:grid-cols-2">
 
