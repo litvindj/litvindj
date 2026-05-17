@@ -10,9 +10,6 @@ export const translations = {
       Gallery: "Gallery",
       Contact: "Contact",
     },
-    hero: {
-      official: "Official Website",
-    },
     about: {
       label: "Biography",
       title1: "Sound",
@@ -29,10 +26,9 @@ export const translations = {
         "Disney, Coca-Cola, Philips, Drift Masters, Deloitte, Santander Bank, Ernst & Young, Volkswagen, BetterMe, Doubletop, LUXMED and others.",
     },
     services: {
-      label: "Process", // Змінив лейбл на "Процес", бо це "Як я працюю"
+      label: "Process",
       titlePart1: "How I",
       titlePart2: "Work",
-      // Розділив підзаголовок, щоб виділити другу частину
       subtitleMain: "Elevating events through sound with precision, energy, and professionalism — ",
       subtitleHighlight: "trusted by brands, companies, and private clients.",
       items: [
@@ -141,7 +137,6 @@ export const translations = {
     footer: {
       title: "Available for clubs, private, and corporate events worldwide.",
       subtitle: "Let’s talk dates and details.",
-      btn: "Get in touch",
       rights: "All rights reserved.",
       design: "Design & Developed by",
       formName: "Your Name",
@@ -161,9 +156,6 @@ export const translations = {
       Music: "Музыка",
       Gallery: "Галерея",
       Contact: "Контакты",
-    },
-    hero: {
-      official: "Официальный Сайт",
     },
     about: {
       label: "Биография",
@@ -228,7 +220,7 @@ export const translations = {
         { id: '04', title: 'Фэшн-События', description: 'Тщательно отобранная музыка, дополняющая визуальную концепцию и эстетику показов.' },
         { id: '05', title: 'Бизнес / Нетворкинг', description: 'Легкая фоновая музыка, способствующая общению и создающая деловую среду.' },
         { id: '06', title: 'Частные и VIP', description: 'Персонализированный выбор, адаптируемый под энергию гостей и характер события.' },
-        { id: '07', title: 'Рестораны и Лаунж', description: 'Атмосферная музыка, плавно переходящая від фона до оживленного настроения.' },
+        { id: '07', title: 'Рестораны и Лаунж', description: 'Атмосферная музыка, плавно переходящая от фона до оживленного настроения.' },
         { id: '08', title: 'Клубные Ивенты', description: 'Энергичные сеты для удержания танцпола всю ночь.' },
       ]
     },
@@ -261,7 +253,6 @@ export const translations = {
       title:
         "Доступен для клубов, частных и корпоративных ивентов по всему миру.",
       subtitle: "Обсудим даты и детали.",
-      btn: "Связаться",
       rights: "Все права защищены.",
       design: "Дизайн и разработка",
       formName: "Ваше имя",
@@ -281,9 +272,6 @@ export const translations = {
       Music: "Muzyka",
       Gallery: "Galeria",
       Contact: "Kontakt",
-    },
-    hero: {
-      official: "Oficjalna Strona",
     },
     about: {
       label: "Biografia",
@@ -356,7 +344,6 @@ export const translations = {
     footer: {
       title: "Dostępny dla klubów, imprez prywatnych i eventów korporacyjnych na całym świecie.",
       subtitle: "Porozmawiajmy o terminach i szczegółach.",
-      btn: "Skontaktuj się",
       rights: "Wszelkie prawa zastrzeżone.",
       design: "Projekt i realizacja",
       formName: "Twoje imię",

@@ -125,8 +125,8 @@ export default function PolitykaPrywatnosci() {
               {[
                 'Technical Cookies – necessary for the website to function properly',
                 'Functional Cookies – used to store selected settings and provide customized features',
-                'Analytical Cookies – Google Analytics (G-DC83QX8CKF) – used to collect information on usage habits and visited pages',
-                'Marketing Cookies – Google Ads (AW-17986003521), Facebook Pixel (338195376809937) – used to display personalized advertisements',
+                'Analytical Cookies – Google Analytics (G-J3CN7R2Z67) – used to collect information on usage habits and visited pages',
+                'Marketing Cookies – Google Ads (AW-17986003521), Facebook Pixel (33819537680993763) – used to display personalized advertisements',
               ].map((item, i) => (
                 <li key={i} className="flex gap-3">
                   <span className="text-beige shrink-0">—</span>
