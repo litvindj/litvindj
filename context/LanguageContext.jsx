@@ -15,23 +15,22 @@ function detectLanguage() {
   return 'en';
 }
 
-export const LanguageProvider = ({ children, initialLang = 'en' }) => {
-  // Всегда стартуем с 'en' на сервере (SSR), потом переключаем на клиенте
-  const [language, setLanguageState] = useState('en');
+export const LanguageProvider = ({ children, initialLang }) => {
+  const [language, setLanguageState] = useState(initialLang || 'en');
 
   useEffect(() => {
-    // Если передан явный язык (из URL /ru, /pl) — используем его
-    if (initialLang !== 'en') {
+    if (initialLang) {
+      // URL явно задаёт язык — всегда используем его
       setLanguageState(initialLang);
+      localStorage.setItem('dj-lang', initialLang);
       return;
     }
-    // Иначе — определяем язык устройства
+    // Корневая страница — используем сохранённый или определяем по устройству
     const saved = localStorage.getItem('dj-lang');
     if (saved && ['en', 'ru', 'pl'].includes(saved)) {
       setLanguageState(saved);
     } else {
-      const detected = detectLanguage();
-      setLanguageState(detected);
+      setLanguageState(detectLanguage());
     }
   }, [initialLang]);
 
