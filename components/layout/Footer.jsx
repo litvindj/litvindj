@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import Container from './Container';
 import { useLanguage } from '../../context/LanguageContext';
 
@@ -7,6 +8,7 @@ const Footer = () => {
   const { getData, language } = useLanguage();
   const content = getData('footer');
   const [status, setStatus] = useState('idle');
+  const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -23,7 +25,7 @@ const Footer = () => {
       body: JSON.stringify(data),
     });
     if (res.ok) {
-      window.location.href = `/${language}/thank-you`;
+      router.push(`/${language}/thank-you`);
     } else {
       setStatus('error');
       setTimeout(() => setStatus('idle'), 5000);
