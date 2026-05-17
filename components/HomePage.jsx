@@ -12,7 +12,6 @@ import BrandsMarquee from './layout/BrandsMarquee';
 import Footer from './layout/Footer';
 
 export default function HomePage() {
-  const [visible, setVisible] = useState(false);
   const heroWrapperRef = useRef(null);
   const aboutWrapperRef = useRef(null);
   const [isMobile, setIsMobile] = useState(false);
@@ -27,7 +26,6 @@ export default function HomePage() {
   useEffect(() => {
     history.scrollRestoration = 'manual';
     window.scrollTo(0, 0);
-    setVisible(true);
   }, []);
 
   useEffect(() => {
@@ -63,7 +61,7 @@ export default function HomePage() {
 
   return (
     <div className="bg-dark text-white min-h-screen relative selection:bg-beige selection:text-dark">
-      <div className={`transition-opacity duration-700 ease-out ${visible ? 'opacity-100' : 'opacity-0'}`}>
+      <div>
         <Navbar />
 
         <main className="w-full relative">
