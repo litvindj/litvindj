@@ -56,9 +56,9 @@ export default function LatestArticles({ allPosts }) {
               {posts.map((post) => (
                 <li
                   key={post.slug}
-                  className="relative border-b border-white/10 py-8 md:py-10 transition-all duration-500 hover:!text-white lg:hover:pl-4 hover:border-beige/30 group/item"
+                  className="relative border-b border-white/10 py-8 md:py-10 transition-colors duration-500 hover:!text-white hover:border-beige/30 group/item"
                 >
-                  <Link href={`/${lang}/blog/${post.slug}`} className="flex items-start justify-between gap-6">
+                  <Link href={`/${lang}/blog/${post.slug}`} className="flex items-start justify-between gap-6 lg:group-hover/item:translate-x-4 transition-transform duration-500">
                     <div className="flex-1 min-w-0">
                       <span className="block text-beige/50 text-[10px] font-bold uppercase tracking-widest mb-3 group-hover/item:text-beige transition-colors duration-300">
                         {new Date(post.date).toLocaleDateString(
