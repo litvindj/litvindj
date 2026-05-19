@@ -31,7 +31,7 @@ const VideoGallery = () => {
     <section ref={sectionRef} className="relative w-full overflow-hidden border-t border-white/5 bg-dark" style={{ height: '100vh' }}>
       <div className="absolute inset-0 z-0 bg-black">
         <video ref={videoRef} loop muted playsInline preload="none"
-          className="w-full h-full object-cover grayscale transform-gpu will-change-transform">
+          className="w-full h-full object-cover grayscale">
         </video>
         <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
         <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-dark to-transparent z-20 opacity-90 pointer-events-none" />
