@@ -36,7 +36,7 @@ export const translations = {
         {
           id: '01',
           title: 'Custom Curation',
-          description: 'Music carefully tailored to the event’s concept, format, and audience. I adapt sound, volume, and energy level for both formal corporate settings and relaxed private celebrations.'
+          description: ‘Music carefully tailored to the event’s concept, format, and audience. Sound, volume, and energy level adapt to both formal corporate settings and relaxed private celebrations.’
         },
         {
           id: '02',
@@ -46,7 +46,7 @@ export const translations = {
         {
           id: '03',
           title: 'Team Synergy',
-          description: 'Clear and structured communication with organizers, hosts, and technical crews. I ensure sound complements every speech, presentation, and show moment seamlessly.'
+          description: 'Clear and structured communication with organizers, hosts, and technical crews. Sound complements every speech, presentation, and show moment seamlessly.'
         },
         {
           id: '04',
@@ -56,7 +56,7 @@ export const translations = {
         {
           id: '05',
           title: 'Energy Control',
-          description: 'Strong crowd awareness and professional room reading. I adjust tempo, style, and intensity based on guests’ reactions — prioritizing the event atmosphere over personal preferences.'
+          description: ‘Strong crowd awareness and professional room reading. Tempo, style, and intensity shift based on guests’ reactions — event atmosphere always over personal preferences.’
         },
       ],
       bookBtn: "Book a Date",
@@ -297,11 +297,11 @@ export const translations = {
       subtitleMain: "Podnoszę poziom eventów poprzez dźwięk z precyzją, energią i profesjonalizmem — ",
       subtitleHighlight: "zaufany przez marki, firmy i klientów prywatnych.",
       items: [
-        { id: '01', title: 'Indywidualna Selekcja', description: "Muzyka starannie dobrana do koncepcji, formatu i publiczności eventu. Dostosowuję dźwięk, głośność i poziom energii zarówno do formalnych eventów korporacyjnych, jak i relaksowanych prywatnych uroczystości." },
+        { id: '01', title: 'Indywidualna Selekcja', description: "Muzyka starannie dobrana do koncepcji, formatu i publiczności eventu. Dźwięk, głośność i poziom energii dostosowują się zarówno do formalnych eventów korporacyjnych, jak i relaksowanych prywatnych uroczystości." },
         { id: '02', title: 'Płynny Przebieg', description: "Płynne przejścia i pełna kontrola atmosfery przez cały czas trwania eventu. Muzyka jest zsynchronizowana z harmonogramem, kluczowymi momentami i programem." },
-        { id: '03', title: 'Synergia z Teamem', description: "Jasna i ustrukturyzowana komunikacja z organizatorami, prowadzącymi i ekipą techniczną. Dbam o to, aby dźwięk idealnie uzupełniał każde przemówienie i moment show." },
+        { id: '03', title: 'Synergia z Teamem', description: "Jasna i ustrukturyzowana komunikacja z organizatorami, prowadzącymi i ekipą techniczną. Dźwięk idealnie uzupełnia każde przemówienie i moment show." },
         { id: '04', title: 'Adaptacyjny Nastrój', description: "Elastyczność w czasie rzeczywistym, oparta na dynamice publiczności. Od subtelnych wibracji w tle podczas kolacji po energiczne momenty taneczne — natychmiast i naturalnie." },
-        { id: '05', title: 'Kontrola Energii', description: "Silna świadomość tłumu i profesjonalne odczytywanie sali. Dostosowuję tempo, styl i intensywność na podstawie reakcji gości — stawiając atmosferę eventu ponad osobiste preferencje." },
+        { id: '05', title: 'Kontrola Energii', description: "Silna świadomość tłumu i profesjonalne odczytywanie sali. Tempo, styl i intensywność dostosowują się do reakcji gości — atmosfera eventu zawsze ponad osobiste preferencje." },
       ],
       bookBtn: "Zarezerwuj Termin",
       bookDesc: "Gotowy stworzyć coś wyjątkowego?"
