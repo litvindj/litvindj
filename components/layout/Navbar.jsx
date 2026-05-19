@@ -99,8 +99,8 @@ const Navbar = () => {
       <nav className="fixed top-0 left-0 w-full z-50 px-6 md:px-12 py-6 flex justify-between items-center transition-all duration-300 pointer-events-none">
 
         <a href="#" onClick={(e) => handleScroll(e, 'root', false, 'Home')}
-          className="font-header text-3xl text-white mix-blend-difference hover:text-beige transition-colors tracking-tighter z-[60] relative select-none pointer-events-auto">
-          G L
+          className="font-header text-lg text-white mix-blend-difference hover:text-beige transition-colors tracking-tighter z-[60] relative select-none pointer-events-auto" style={{ transform: 'scaleY(0.78)' }}>
+          LITVIN
         </a>
 
         {/* Desktop */}
