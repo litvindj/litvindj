@@ -36,7 +36,7 @@ export const translations = {
         {
           id: '01',
           title: 'Custom Curation',
-          description: ‘Music carefully tailored to the event’s concept, format, and audience. Sound, volume, and energy level adapt to both formal corporate settings and relaxed private celebrations.’
+          description: "Music carefully tailored to the event’s concept, format, and audience. Sound, volume, and energy level adapt to both formal corporate settings and relaxed private celebrations."
         },
         {
           id: '02',
@@ -56,7 +56,7 @@ export const translations = {
         {
           id: '05',
           title: 'Energy Control',
-          description: ‘Strong crowd awareness and professional room reading. Tempo, style, and intensity shift based on guests’ reactions — event atmosphere always over personal preferences.’
+          description: "Strong crowd awareness and professional room reading. Tempo, style, and intensity shift based on guests’ reactions — event atmosphere always over personal preferences."
         },
       ],
       bookBtn: "Book a Date",
