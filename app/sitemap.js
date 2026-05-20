@@ -20,10 +20,10 @@ export default function sitemap() {
   );
 
   return [
-    { url: 'https://litvindj.com',                   lastModified: '2026-05-18', changeFrequency: 'monthly', priority: 1.0 },
-    { url: 'https://litvindj.com/en',                lastModified: '2026-05-18', changeFrequency: 'monthly', priority: 0.9 },
-    { url: 'https://litvindj.com/ru',                lastModified: '2026-05-18', changeFrequency: 'monthly', priority: 0.9 },
-    { url: 'https://litvindj.com/pl',                lastModified: '2026-05-18', changeFrequency: 'monthly', priority: 0.9 },
+    { url: 'https://litvindj.com',                   lastModified: '2026-05-21', changeFrequency: 'monthly', priority: 1.0 },
+    { url: 'https://litvindj.com/en',                lastModified: '2026-05-21', changeFrequency: 'monthly', priority: 0.9 },
+    { url: 'https://litvindj.com/ru',                lastModified: '2026-05-21', changeFrequency: 'monthly', priority: 0.9 },
+    { url: 'https://litvindj.com/pl',                lastModified: '2026-05-21', changeFrequency: 'monthly', priority: 0.9 },
     { url: 'https://litvindj.com/en/privacy-policy', lastModified: '2026-05-16', changeFrequency: 'yearly',  priority: 0.2 },
     { url: 'https://litvindj.com/ru/privacy-policy', lastModified: '2026-05-16', changeFrequency: 'yearly',  priority: 0.2 },
     { url: 'https://litvindj.com/pl/privacy-policy', lastModified: '2026-05-16', changeFrequency: 'yearly',  priority: 0.2 },
