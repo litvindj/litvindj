@@ -28,7 +28,7 @@ Profesjonalny DJ zna te wspólne mianowniki. Ale ważniejsze jest to, że wie, k
 
 ## Struktura jako ratownik
 
-Na trudnym evencie z mieszaną publicznością kluczem jest struktura czasowa. Zamiast całą noc balansować między grupami, profesjonalny DJ buduje bloki — i każdy blok ma swój charakter. Wczesny wieczór należy do nastroju bardziej eleganciego, który nie wyklucza starszych gości. Środek nocy, kiedy starsi siadają, to czas na energetyczny parkiet dla młodszych. Koniec wieczoru to miejsce na wspólne, znane klasyki.
+Na trudnym evencie z mieszaną publicznością kluczem jest struktura czasowa. Zamiast całą noc balansować między grupami, profesjonalny DJ buduje bloki — i każdy blok ma swój charakter. Wczesny wieczór należy do nastroju bardziej eleganckiego, który nie wyklucza starszych gości. Środek nocy, kiedy starsi siadają, to czas na energetyczny parkiet dla młodszych. Koniec wieczoru to miejsce na wspólne, znane klasyki.
 
 Ta struktura nie jest widoczna dla gości. Nikt nie czuje, że "teraz jest blok dla dziadków". Ale każda grupa ma swój moment — i każda wychodzi z poczuciem, że ten wieczór też był dla niej.
 

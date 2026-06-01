@@ -8,7 +8,7 @@ Brand launch to nie impreza. To komunikat.
 
 Każdy element w sali — oświetlenie, wizualizacje, catering, lista gości — został wybrany po to, żeby powiedzieć coś konkretnego o marce. Muzyka nie jest wyjątkiem. Na brand launchu DJ set to nie rozrywka. To część doświadczenia marki.
 
-Większość ludzi nie zwraca świadomie uwagi na muzykę na dobrze zrealizowanym evencie brandowym. O to właśnie chodzi. Gdy muzyka jest dobrana właściwie, staje się niewidoczna — kształtuje nastrój, kontroluje energię i wspiera narrację bez zwracania na siebie uwagi. Gdy jest zła, wszyscy to czują, nawet jeśli nie potrafią wyjaśnić dlaczego.
+Większość ludzi nie zwraca świadomie uwagi na muzykę na dobrze zrealizowanym evencie brandowym. O to właśnie chodzi. Gdy muzyka jest dobrana właściwie, staje się niewidoczna — kształtuje nastrój, kontroluje energię i wspiera narrację bez zwracania na siebie uwagi. Gdy jest zła, wszyscy to czują, nawet jeśli nie potrafią wyjaśnić, dlaczego.
 
 ## Muzyka jako język marki
 

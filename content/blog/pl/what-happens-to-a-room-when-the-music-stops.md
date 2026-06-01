@@ -22,7 +22,7 @@ To nie jest brak muzyki. To jest muzyczna decyzja — równie świadoma jak wyb�
 
 ## Kiedy muzyka wraca
 
-Moment, w którym muzyka wraca po celowej przerwie, to jeden z najpotężniejszych narzędzi w zestawie DJ-a. Sala zebrała energię, skupiła uwagę — i teraz, kiedy dźwięk wraca, jest gotowa reagować. To jest moment, który profesjonalny DJ może wykorzystać, żeby podbić parkiet, zmienić nastrój lub zaznaczyć nowy rozdział wieczoru.
+Moment, w którym muzyka wraca po celowej przerwie, to jedno z najpotężniejszych narzędzi w zestawie DJ-a. Sala zebrała energię, skupiła uwagę — i teraz, kiedy dźwięk wraca, jest gotowa reagować. To jest moment, który profesjonalny DJ może wykorzystać, żeby podbić parkiet, zmienić nastrój lub zaznaczyć nowy rozdział wieczoru.
 
 Kiedy muzyka wraca niestarannie — zbyt głośno, zbyt nagle, z przypadkowego miejsca playlisty — ta szansa jest zmarnowana. Sala dostaje komunikat o braku kontroli, nie o precyzji.
 
@@ -36,4 +36,4 @@ Twoi goście nie będą analizować tych momentów. Ale poczują je. Dobrze popr
 
 Kiedy rozmawiasz z DJ-em przed eventem, zapytaj o przerwy w muzyce. Kiedy planuje ściszyć? Kiedy całkowicie wyłączyć? Jak obsługuje przemówienia i toasty? Co się dzieje, jeśli wystąpi problem techniczny?
 
-Dobry DJ ma konkretne odpowiedzi na każde z tych pytań. Ktoś, kto traktuje muzykę jako tło, nie zastanawiał się nad nimi nigdy.
+Dobry DJ ma konkretne odpowiedzi na każde z tych pytań. Ktoś, kto traktuje muzykę jako tło, nigdy się nad nimi nie zastanawiał.

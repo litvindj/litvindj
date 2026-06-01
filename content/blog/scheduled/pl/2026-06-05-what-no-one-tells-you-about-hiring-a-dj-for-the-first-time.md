@@ -24,7 +24,7 @@ Pytaj DJ-a o rider techniczny z wyprzedzeniem. Dobry DJ ma przygotowany dokument
 
 Rozmowa z DJ-em przed eventem to nie jest odhaczenie pola na liście zadań. To jest moment, który decyduje o tym, jak dobrze DJ zrozumie twój event i twoich gości.
 
-Poświęć na briefing tyle czasu, ile potrzeba. Mów o gościach, o kontekście eventu, o tym, co dla ciebie ważne. Dobry DJ będzie zadawał pytania, które zaskoczą cię głębokością — nie tylko "jaki gatunek muzyki?", ale "jak opisałbyś nastrój, w którym chcesz żeby goście wychodzili?" Jeśli jedynym pytaniem jest lista zakazanych piosenek — masz słabego DJ-a.
+Poświęć na briefing tyle czasu, ile potrzeba. Mów o gościach, o kontekście eventu, o tym, co dla ciebie ważne. Dobry DJ będzie zadawał pytania, które zaskoczą cię głębokością — nie tylko "jaki gatunek muzyki?", ale "jak opisałbyś nastrój, w którym chcesz, żeby goście wychodzili?" Jeśli jedynym pytaniem jest lista zakazanych piosenek — masz słabego DJ-a.
 
 ## Co się dzieje kiedy coś pójdzie nie tak
 

@@ -6,7 +6,7 @@ description: "Większość gości nie widzi tego, co dzieje się przed rozpoczę
 
 Dwie godziny. Za każdym razem.
 
-Nieważne, czy to gala korporacyjna dla 500 gości, czy kameralne urodziny dla 30 osób. Jestem na miejscu dwie godziny przed przybyciem pierwszych gości. Nie dlatego, że tak mówi umowa — większość umów tego nie wymaga — ale dlatego, że nauczyłem się, iż różnica między dobrym a wyjątkowym eventem niemal zawsze rozstrzyga się zanim zabrzmią pierwsze dźwięki.
+Nieważne, czy to gala korporacyjna dla 500 gości, czy kameralne urodziny dla 30 osób. Jestem na miejscu dwie godziny przed przybyciem pierwszych gości. Nie dlatego, że tak mówi umowa — większość umów tego nie wymaga — ale dlatego, że nauczyłem się, iż różnica między dobrym a wyjątkowym eventem niemal zawsze rozstrzyga się, zanim zabrzmią pierwsze dźwięki.
 
 ## Co dzieje się przez te dwie godziny
 
@@ -30,6 +30,6 @@ Goście tego nie widzą. Wchodzą i wszystko po prostu *działa*. Muzyka już bu
 
 ## Co to oznacza dla Ciebie jako klienta
 
-Zatrudniając mnie, płacisz nie tylko za kogoś, kto wciska play na playliście. Płacisz za dwie godziny niewidocznej pracy, która umożliwia wszystko inne. Płacisz za możliwość skupienia się na gościach, swoim biznesie, swojej celebracji — bez martwienia się, czy dźwięk jest właściwy, czy przejścia są płynne.
+Zatrudniając mnie, płacisz nie tylko za kogoś, kto wciska play na playliście. Płacisz za dwie godziny niewidocznej pracy, która umożliwia wszystko inne. Płacisz za możliwość skupienia się na gościach, swoim biznesie, swojej uroczystości — bez martwienia się, czy dźwięk jest właściwy, czy przejścia są płynne.
 
 Dwie godziny przed początkiem Twojego eventu już tam jestem. Twój wieczór jest już budowany.

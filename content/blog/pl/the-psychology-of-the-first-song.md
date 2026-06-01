@@ -24,7 +24,7 @@ Kiedy muzyka staje się tłem, odzyskanie uwagi sali wymaga nieproporcjonalnie d
 
 Nie ma jednego idealnego pierwszego utworu. Jest pierwszy utwór na to konkretne wydarzenie, z tymi konkretnymi gośćmi, w tej konkretnej sali, o tej konkretnej porze. Wesele koktajlowe w letni wieczór wymaga czegoś zupełnie innego niż gala korporacyjna w listopadzie. Launch produktu dla branży modowej to inny świat niż jubileusz firmy z pięćdziesięcioletnim stażem.
 
-Profesjonalny DJ bierze pod uwagę wszystkie te zmienne — i wybiera. Nie losowo, nie z playlisty na autopilocie, ale z precyzją człowieka, który zna swoją publiczność zanim jeszcze zagrał pierwszą nutę.
+Profesjonalny DJ bierze pod uwagę wszystkie te zmienne — i wybiera. Nie losowo, nie z playlisty na autopilocie, ale z precyzją człowieka, który zna swoją publiczność zanim jeszcze zagra pierwszą nutę.
 
 ## Skąd ta wiedza pochodzi
 

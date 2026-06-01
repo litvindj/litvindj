@@ -26,7 +26,7 @@ Ten timing nie jest omawiany na bieżąco — jest zaplanowany z projektantem i 
 
 Goście pokazu mody — buyers, dziennikarze, influencerzy, osoby z branży — mają inny próg muzyczny niż goście typowego eventu korporacyjnego. Słyszeli setki pokazów. Rozpoznają kliszę natychmiast. Muzyczny banał na pokazie mody jest tak samo widoczny jak źle skrojona marynarka na wybiegu.
 
-Profesjonalny DJ na pokazach mody musi rozumieć aktualne estetyczne kody branży — co brzmi świeżo, co już przebrzmiało, jakie referencje są cenione a jakie są zbyt oczywiste. Ta wiedza jest aktualizowana razem z samą branżą, bo trendy muzyczne i modowe poruszają się w podobnym rytmie.
+Profesjonalny DJ na pokazach mody musi rozumieć aktualne estetyczne kody branży — co brzmi świeżo, co już przebrzmiało, jakie referencje są cenione, a jakie są zbyt oczywiste. Ta wiedza jest aktualizowana razem z samą branżą, bo trendy muzyczne i modowe poruszają się w podobnym rytmie.
 
 ## Akustyczne wyzwania przestrzeni pokazowej
 
@@ -36,6 +36,6 @@ DJ na pokazie mody często nie ma komfortu standardowej instalacji sprzętowej. 
 
 ## Dlaczego to jest satysfakcjonująca praca
 
-Pokaz mody to event, na którym muzyka ma realny wpływ artystyczny na efekt końcowy. Kiedy zestaw muzyczny i kolekcja rozmawiają ze sobą — goście to czują, branżowe media to komentują, a projektant pamięta dźwięk swojego pokazu tak samo jak pamieta swoje ubrania na wybiegu.
+Pokaz mody to event, na którym muzyka ma realny wpływ artystyczny na efekt końcowy. Kiedy zestaw muzyczny i kolekcja rozmawiają ze sobą — goście to czują, branżowe media to komentują, a projektant pamięta dźwięk swojego pokazu tak samo jak pamięta swoje ubrania na wybiegu.
 
 To jest poziom wpływu, który DJ na standardowym evencie rzadko osiąga. I właśnie dlatego dla DJ-a z prawdziwymi ambicjami muzycznymi, pokazy mody są jednym z najbardziej wymagających i satysfakcjonujących zleceń.

@@ -6,11 +6,11 @@ description: "Niezapamiętywalna muzyka to nie neutralność. To nieudana szansa
 
 Gdybyś zapytał pięćdziesięciu gości po typowym evencie korporacyjnym, co grała muzyka — większość nie pamiętałaby. Nie dlatego, że muzyka była cicha. Dlatego, że była przewidywalna. A to, co przewidywalne, mózg przetwarza jako tło i przestaje rejestrować.
 
-Muzyka tłem to nie jest sukces. To jest stracona szansa.
+Muzyka w tle to nie jest sukces. To jest stracona szansa.
 
 ## Mechanizm przewidywalności
 
-Mózg ludzki jest maszyną do rozpoznawania wzorców. Kiedy muzyka jest przewidywalna — ten sam gatunek, to samo tempo, ten sam poziom energii przez cztery godziny — mózg po kilkunastu minutach klasyfikuje ją jako część środowiska i prestaje jej słuchać.
+Mózg ludzki jest maszyną do rozpoznawania wzorców. Kiedy muzyka jest przewidywalna — ten sam gatunek, to samo tempo, ten sam poziom energii przez cztery godziny — mózg po kilkunastu minutach klasyfikuje ją jako część środowiska i przestaje jej słuchać.
 
 To jest dosłownie to samo, co dzieje się z szumem klimatyzacji w biurze. Słyszysz go kiedy wchodzisz. Po dziesięciu minutach przestajesz go słyszeć. Jest w tle.
 
@@ -32,10 +32,10 @@ Ten moment, kiedy sala reaguje zaskoczeniem i radością na niespodziewany utwó
 
 Instrukcja "zagraj coś dla każdego" jest przepisem na niezapamiętywalne. Muzyka, która stara się nikogo nie urazić, nie zachwyca nikogo. To kompromis, który eliminuje właśnie tę cechę — zaskoczenie i charakter — która sprawia, że muzyka jest zapamiętywalna.
 
-Lepszą instrukcją jest: "zagraj coś, co ma charakter, co pasuje do tej sali i tych gości, i pozwól sobie na odwagę kiedy sala jest gotowa". To jest brief, który daje DJ-owi przestrzeń na stworzenie czegoś niezapomnianego.
+Lepszą instrukcją jest: "zagraj coś, co ma charakter, co pasuje do tej sali i tych gości, i pozwól sobie na odwagę, kiedy sala jest gotowa". To jest brief, który daje DJ-owi przestrzeń na stworzenie czegoś niezapomnianego.
 
 ## Co możesz zrobić jako klient
 
-Daj DJ-owi space. Jasno określ zakazy i kluczowe momenty — i poza tym zaufaj jego wiedzy o tym, jak prowadzić muzykę wieczoru. Klient, który precyzyjnie zarządza każdą decyzją muzyczną, dostaje dokładnie to, o co prosił — i zwykle to jest właśnie to banalnie przewidywalne, co nie zostaje zapamiętane.
+Daj DJ-owi przestrzeń. Jasno określ zakazy i kluczowe momenty — i poza tym zaufaj jego wiedzy o tym, jak prowadzić muzykę wieczoru. Klient, który precyzyjnie zarządza każdą decyzją muzyczną, dostaje dokładnie to, o co prosił — i zwykle to jest właśnie to banalnie przewidywalne, co nie zostaje zapamiętane.
 
 Zapamiętywalna muzyka wymaga przestrzeni na decyzje, które nie są z góry zaplanowane. To jest przestrzeń, którą daje się DJ-owi w briefingu — albo się jej nie daje.

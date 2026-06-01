@@ -10,7 +10,7 @@ Event planner i DJ mają różne perspektywy, ale ten sam cel. Planner widzi ca�
 
 Dla event plannera najważniejsze jest to, żeby DJ był elementem, o który nie trzeba się martwić. Planner ma na głowie dwadzieścia innych zmiennych — i muzyka powinna być tą, która działa sama, bez zarządzania.
 
-To oznacza: DJ przyjeżdża na czas, instaluje się sprawnie, nie potrzebuje trzymania za rękę, ma sprzęt awaryjny, reaguje na zmiany harmonogramu bez dramatu i komunikuje się jasno kiedy potrzebuje informacji. Profesjonalny DJ, który rozumie potrzeby event plannera, ułatwia im pracę — nie dodaje do niej kolejnych zadań.
+To oznacza: DJ przyjeżdża na czas, instaluje się sprawnie, nie potrzebuje trzymania za rękę, ma sprzęt awaryjny, reaguje na zmiany harmonogramu bez dramatu i komunikuje się jasno, kiedy potrzebuje informacji. Profesjonalny DJ, który rozumie potrzeby event plannera, ułatwia im pracę — nie dodaje do niej kolejnych zadań.
 
 ## Elastyczność bez chaosu
 
@@ -20,7 +20,7 @@ Elastyczność DJ-a to nie tylko granie innej muzyki — to też gotowość do p
 
 ## Komunikacja przed eventem
 
-Dobre współpraca zaczyna się przed eventem. Event planner potrzebuje DJ-a, który aktywnie komunikuje swoje wymagania techniczne z wyprzedzeniem — nie dwa dni przed, ale tydzień, dwa tygodnie wcześniej. Lista inputów, wymagania dotyczące prądu, przestrzeń potrzebna do instalacji, czas przyjazdu.
+Dobra współpraca zaczyna się przed eventem. Event planner potrzebuje DJ-a, który aktywnie komunikuje swoje wymagania techniczne z wyprzedzeniem — nie dwa dni przed, ale tydzień, dwa tygodnie wcześniej. Lista inputów, wymagania dotyczące prądu, przestrzeń potrzebna do instalacji, czas przyjazdu.
 
 Planner, który dostaje te informacje późno, musi radzić sobie z nimi w czasie, kiedy ma już inne priorytety. Profesjonalny DJ wie, że jego porządek organizacyjny odciąża cały team odpowiedzialny za produkcję eventu.
 

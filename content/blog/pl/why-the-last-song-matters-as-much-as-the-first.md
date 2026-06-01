@@ -10,15 +10,15 @@ Dla DJ-a oznacza to jedno: ostatni utwór nie jest mniej ważny niż pierwszy. J
 
 ## Co ostatni utwór robi z pamięcią
 
-Kiedy goście wychodzą z eventu, ostatni utwór zostaje z nimi. Dosłownie — melodia lub rytm ciągnie się przez kolejne minuty, czasem godziny. Ten muzyczny echo wpływa na to, jak oceniają cały wieczór podczas jazdy do domu, podczas rozmowy z partnerem przed snem, gdy następnego dnia ktoś pyta "jak było?"
+Kiedy goście wychodzą z eventu, ostatni utwór zostaje z nimi. Dosłownie — melodia lub rytm ciągnie się przez kolejne minuty, czasem godziny. To muzyczne echo wpływa na to, jak oceniają cały wieczór podczas jazdy do domu, podczas rozmowy z partnerem przed snem, gdy następnego dnia ktoś pyta "jak było?"
 
 Jeśli ostatni utwór był przypadkowy — bo DJ skończył o czasie i zagrał, co akurat było następne na playliście — goście wychodzą z doświadczeniem, które się urywa, nie kończy. Jeśli był świadomy — zapamiętują wieczór jako kompletny, zaokrąglony, przemyślany.
 
 ## Pożegnanie z energią czy pożegnanie z emocją
 
-Istnieje strategiczne pytanie na każdy event: czy kończyć na szczycie energii, czy powoli schodzić w dół? Nie ma jednej odpowiedzi. Na weselu, gdzie część gości zostaje do rana, schodzenie z energii byłoby błędem. Na gali korporacyjnej, gdzie event kończy się o 23:00 i wszyscy mają rano spotkania, brutalne schodzenie z peak jest najgrzeczniejszą rzeczą, jaką DJ może zrobić.
+Istnieje strategiczne pytanie na każdy event: czy kończyć na szczycie energii, czy powoli schodzić w dół? Nie ma jednej odpowiedzi. Na weselu, gdzie część gości zostaje do rana, schodzenie z energii byłoby błędem. Na gali korporacyjnej, gdzie event kończy się o 23:00 i wszyscy mają rano spotkania, płynne schodzenie z piku jest najgrzeczniejszą rzeczą, jaką DJ może zrobić.
 
-Profesjonalny DJ wie, jak zakończyć event — i robi to zaplanowanie. Nie gasi muzyki nagle. Prowadzi ostatni blok tak, żeby goście czuli, że wieczór zmierza do końca, że czas pakować płaszcze, że to był dobry wieczór i szkoda, że się skończyło.
+Profesjonalny DJ wie, jak zakończyć event — i robi to planowo. Nie gasi muzyki nagle. Prowadzi ostatni blok tak, żeby goście czuli, że wieczór zmierza do końca, że czas pakować płaszcze, że to był dobry wieczór i szkoda, że się skończyło.
 
 ## Utwór, który wszyscy zaśpiewają
 
@@ -34,6 +34,6 @@ Te decyzje mają duży wpływ na to, jak goście będą o evencie mówić tydzie
 
 ## Ostatnie pięć minut
 
-Ostatnie pięć minut to osobna umiejętność. DJ musi wyczuć, że sala jest gotowa skończyć — nawet jeśli część gości jeszcze tańczy. Musi przejść przez to okienko precyzyjnie: nie za wcześnie, bo odcinasz energię, nie za późno, bo event się ciągnie i ludzie wychodzą zmęczeni zamiast zachwyceni.
+Ostatnie pięć minut to osobna umiejętność. DJ musi wyczuć, że sala jest gotowa skończyć — nawet jeśli część gości jeszcze tańczy. Musi trafić w to okienko precyzyjnie: nie za wcześnie, bo odcinasz energię, nie za późno, bo event się ciągnie i ludzie wychodzą zmęczeni zamiast zachwyceni.
 
 Kiedy to wychodzi, goście wychodzą z poczuciem, że wieczór był kompletny. I właśnie to poczucie niosą ze sobą.

@@ -4,7 +4,7 @@ date: "2026-05-31"
 description: "Szablon muzyczny to najkrótsza droga do przeciętnego eventu. Każda sala wymaga własnego podejścia."
 ---
 
-Jedną z najszybszych metod oceny DJ-a jest proste pytanie: czy masz "standardowy set" na eventy korporacyjne? Jeśli odpowiedź brzmi "tak" — to jest wystarczająca informacja.
+Jednym z najszybszych sposobów oceny DJ-a jest proste pytanie: czy masz "standardowy set" na eventy korporacyjne? Jeśli odpowiedź brzmi "tak" — to jest wystarczająca informacja.
 
 Standardowy set jest produktem lenistwa, nie planowania. Oznacza, że DJ zbudował repertuar, który nie obraża nikogo i nie zachwyca nikogo, i odtwarza go na każdym evencie z drobnymi modyfikacjami. Twoi goście dostają coś, co zagrał już setki razy. I to słychać.
 

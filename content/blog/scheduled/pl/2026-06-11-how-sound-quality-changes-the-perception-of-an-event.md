@@ -24,7 +24,7 @@ Różnica między dobrym i słabym sprzętem jest słyszalna nawet dla niemuzyka
 
 Sala konferencyjna z wykładziną i tapicerowanymi ścianami brzmi zupełnie inaczej niż kamienna posadzka i wysokie okna ekskluzywnego pałacu. Namiot eventowy z materiałowymi ścianami ma inną akustykę niż industrialny loft ze stalowymi elementami.
 
-Profesjonalny DJ przed eventem ocenia akustykę sali i dostosowuje ustawienia sprzętu do jej charakterystyki. Zbyt dużo pogłosu? Equalizer i właściwe rozmieszczenie głośników mogą to zmitygować. Sala pochłaniająca dźwięk? Odpowiednia moc i pozycja głośników dają wystarczające pokrycie nawet bez odbić.
+Profesjonalny DJ przed eventem ocenia akustykę sali i dostosowuje ustawienia sprzętu do jej charakterystyki. Zbyt dużo pogłosu? Equalizer i właściwe rozmieszczenie głośników mogą to zniwelować. Sala pochłaniająca dźwięk? Odpowiednia moc i pozycja głośników dają wystarczające pokrycie nawet bez odbić.
 
 Ta praca techniczna jest niewidoczna dla gości. Ale jej brak jest słyszalny.
 

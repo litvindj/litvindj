@@ -18,7 +18,7 @@ Playlist gra swój plan. Sala żyje swoim.
 
 Profesjonalny DJ to żywy system reagowania. Czyta sygnały fizyczne — ruch na parkiecie, ułożenie ciał, kierunek rozmów. Czyta sygnały dźwiękowe — poziom głosu na sali, rodzaj hałasu, rytm grupowego oddechu. I na tej podstawie podejmuje decyzje w czasie rzeczywistym, utwór po utworze.
 
-Dobra muzyka na złym mommencie jest tak samo bezużyteczna jak zła muzyka. DJ nie ma gotowej odpowiedzi na to, co zagrać o 22:15 — ma umiejętność obserwacji i bank muzyczny, z którego wybiera reagując na to, co widzi.
+Dobra muzyka w złym momencie jest tak samo bezużyteczna jak zła muzyka. DJ nie ma gotowej odpowiedzi na to, co zagrać o 22:15 — ma umiejętność obserwacji i bank muzyczny, z którego wybiera reagując na to, co widzi.
 
 ## Przejścia, które czujesz ale nie słyszysz
 
@@ -30,10 +30,10 @@ Ten ciągły strumień dźwięku ma bezpośredni wpływ na to, jak długo gości
 
 Każdy event ma niespodzianki. Przemówienie trwa dwadzieścia minut zamiast pięciu. Catering się opóźnia. Ktoś ważny przyjeżdża za późno i goście czekają. Plan przestaje być planem.
 
-Playlist nie radzi sobie z niespodziankami. Gra dalej niezależnie od tego, co dzieje się w sali. Profesjonalny DJ adaptuje się w locie — wydłuża spokojny blok podczas czekania, skraca przejście do parkietu kiedy harmonogram jest do nadrobienia, zmienia nastrój natychmiast kiedy zmienia się sytuacja na sali.
+Playlist nie radzi sobie z niespodziankami. Gra dalej niezależnie od tego, co dzieje się w sali. Profesjonalny DJ adaptuje się w locie — wydłuża spokojny blok podczas czekania, skraca przejście do parkietu, kiedy harmonogram jest do nadrobienia, zmienia nastrój natychmiast kiedy zmienia się sytuacja na sali.
 
 ## Dlaczego to ma znaczenie finansowo
 
-Organizatorzy eventów czasem porównują koszt DJ-a z kosztem "dobrej playlisty na Spotify". To jest porównanie jabłek z bombowcem. Playlist nie bierze odpowiedzialności za to, że parkiet będzie pełen. DJ bierze.
+Organizatorzy eventów czasem porównują koszt DJ-a z kosztem "dobrej playlisty na Spotify". To jest porównanie jabłek z gruszkami. Playlist nie bierze odpowiedzialności za to, że parkiet będzie pełen. DJ bierze.
 
 Kiedy na evencie za pięćdziesiąt tysięcy złotych muzyka nie działa, nikt nie mówi "ta playlista była słaba". Mówi się "impreza nie wyszła". Koszt dobrego DJ-a to ubezpieczenie całej inwestycji — i jedyna linia obrony przed wieczorem, który wszyscy zapamiętają z niewłaściwych powodów.

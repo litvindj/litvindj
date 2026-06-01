@@ -12,7 +12,7 @@ The last song of your event is not a formality. It's a conclusion. And like any 
 
 A final track does several things simultaneously. It signals that the evening is ending — which requires enough emotional weight to mark the moment without deflating the room. It gives guests a final collective experience — something to share before they disperse. And it sets the emotional tone that follows people out of the venue and into their journeys home.
 
-A last song that's too abrupt leaves the room feeling cut off. Too slow, and the energy that was built over hours collapses before guests are ready for it to. Too unexpected, and it creates a disconnect that overshadows what came before.
+A last song that's too abrupt leaves the room feeling cut off. Too slow, and the energy that was built over hours collapses before guests are ready for it to end. Too unexpected, and it creates a disconnect that overshadows what came before.
 
 ## The endings that work
 

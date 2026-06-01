@@ -8,7 +8,7 @@ Gość podchodzi do DJ-a z uśmiechem i prośbą. Jeden utwór, konkretna piosen
 
 ## Dlaczego jedna prośba jest problemem strukturalnym
 
-Prośba o konkretny utwór od gościa, który nie widzi całego kontekstu muzycznego wieczoru, to jak prośba o skręt w lewo kiedy droga ma jeden kierunek. Gość chce usłyszeć swoją piosenkę. Nie wie, że parkiet jest właśnie w najdelikatniejszym momencie budowania energii. Nie wie, że cztery osoby przed nim prosiły o coś zupełnie innego. Nie wie, że utwór, który kocha, ma zupełnie inne tempo niż to, co gra teraz, i że zagranie go teraz zerwie energię parkietu na najbliższe dziesięć minut.
+Prośba o konkretny utwór od gościa, który nie widzi całego kontekstu muzycznego wieczoru, to jak prośba o skręt w lewo, kiedy droga ma jeden kierunek. Gość chce usłyszeć swoją piosenkę. Nie wie, że parkiet jest właśnie w najdelikatniejszym momencie budowania energii. Nie wie, że cztery osoby przed nim prosiły o coś zupełnie innego. Nie wie, że utwór, który kocha, ma zupełnie inne tempo niż to, co gra teraz, i że zagranie go teraz zerwie energię parkietu na najbliższe dziesięć minut.
 
 DJ wie to wszystko. I właśnie dlatego zarządzanie prośbami gości jest jedną z najtrudniejszych części pracy DJ-a na eventach.
 
@@ -34,6 +34,6 @@ Na weselach umiarkowana otwartość na prośby ma sens — bo pewne piosenki maj
 
 Są prośby, które warto spełnić natychmiast. Para młoda prosi o piosenkę, która ma dla nich wyjątkowe znaczenie. Klient-organizator podchodzi z konkretną sugestią związaną z ważnym momentem eventu. Mówca prosi o konkretną muzykę do swojego wejścia.
 
-To są prośby, które DJ spełnia — bo rozumie kontekst i wagę. Prośby, które sabotuje set, to nie te. To prośby przypadkowego gościa, który właśnie usłyszał piosenkę w głowie i chce ją usłyszeć teraz, niezależnie od tego, co dzieje się na parkiecie.
+To są prośby, które DJ spełnia — bo rozumie kontekst i wagę. Prośby, które sabotują set, to nie te. To prośby przypadkowego gościa, który właśnie ma jakąś piosenkę w głowie i chce ją usłyszeć teraz, niezależnie od tego, co dzieje się na parkiecie.
 
 Rozróżnienie między jednym a drugim — i umiejętność komunikowania go bez utraty relacji z gościem — to znak dojrzałego profesjonalisty.

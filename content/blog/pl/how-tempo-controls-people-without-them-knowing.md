@@ -44,7 +44,7 @@ To jedna z najbardziej niedocenianych umiejętności w graniu na żywo. Wiedzie�
 
 ## Dlaczego to ma znaczenie dla twojego eventu
 
-Jeśli byłeś kiedyś na evencie, gdzie parkiet wydawał się wymuszony — gdzie ludzie byli wyraźnie oczekiwani do tańca, ale energia po prostu nie istniała — tempo było niemal na pewno częścią problemu. Albo przejście było zbyt nagłe, albo sala nigdy nie została odpowiednio rozgrzana.
+Jeśli byłeś kiedyś na evencie, gdzie parkiet wydawał się wymuszony — gdzie od gości wyraźnie oczekiwano tańca, ale energii po prostu nie było — tempo było niemal na pewno częścią problemu. Albo przejście było zbyt nagłe, albo sala nigdy nie została odpowiednio rozgrzana.
 
 A jeśli byłeś na evencie, gdzie wieczór po prostu płynął — gdzie wszystko wydawało się naturalne, a energia była dokładnie taka, jakiej potrzeba w każdym momencie — tempo działało perfekcyjnie w tle, niewidocznie i celowo.
 

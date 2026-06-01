@@ -4,7 +4,7 @@ date: "2026-05-20"
 description: "Kiedy parkiet świeci pustkami, instynkt podpowiada, żeby winić gości. To prawie nigdy nie jest prawda."
 ---
 
-Każdy organizator eventu ma ten sam strach. Spędziłeś miesiące planując wieczór, wybrałeś venue, zajęłeś się cateringiem, potwierdziłeś listę gości — a potem wyobrażasz sobie parkiet o 22:00 z trzema osobami i wszystkimi pozostałymi siedzącymi przy stołach, wpatrzonymi w telefony.
+Każdy organizator eventu ma ten sam strach. Spędziłeś miesiące, planując wieczór, wybrałeś venue, zajęłeś się cateringiem, potwierdziłeś listę gości — a potem wyobrażasz sobie parkiet o 22:00 z trzema osobami i wszystkimi pozostałymi siedzącymi przy stołach, wpatrzonymi w telefony.
 
 Kiedy tak się dzieje, instynkt podpowiada, żeby winić gości. Nie byli w nastroju. Zbyt korporacyjna publiczność. Nikt nie chciał tańczyć.
 
@@ -30,7 +30,7 @@ Nikt nie chce być pierwszą osobą na parkiecie. Wymaga to odwagi — lub odpow
 
 Chodzi o granie muzyki, którą ludzie czują zanim jeszcze zdecydują się tańczyć. Muzyki, która działa na ciało, zanim głowa zdąży zaprotestować. Kiedy pierwsze trzy osoby wchodzą na parkiet, bariera psychologiczna znika dla wszystkich pozostałych. W ciągu kilku minut jest już pełno.
 
-Ale jeśli DJ źle odczyta salę i zagra zły utwór w złym momencie — za szybki, zbyt niszowy, za wcześnie — te pierwsze osoby się nie pojawiają. A bez nich nikt się nie rusza.
+Ale jeśli DJ źle odczyta salę i zagra zły utwór w złym momencie — za szybki, za niszowy, za wcześnie — te pierwsze osoby się nie pojawiają. A bez nich nikt się nie rusza.
 
 ## Problem głośności
 

@@ -24,16 +24,16 @@ To są możliwości, które dają DJ-owi wyjątkową elastyczność. Ale też sp
 
 ## Jak je łączyć skutecznie
 
-Kiedy event łączy muzykę na żywo z DJ-em, kluczowe jest, żeby każdy element robił to, w czym jest najlepszy. Muzyka na żywo podczas kolacji lub cocktailu — bo tam jej organiczność jest wartością, goście słuchają i doceniają. DJ na parkiecie — bo tam precyzja i elastyczność are key.
+Kiedy event łączy muzykę na żywo z DJ-em, kluczowe jest, żeby każdy element robił to, w czym jest najlepszy. Muzyka na żywo podczas kolacji lub cocktailu — bo tam jej organiczność jest wartością, goście słuchają i doceniają. DJ na parkiecie — bo tam precyzja i elastyczność są kluczowe.
 
 Problemem jest, kiedy ten podział nie jest jasny. Kiedy DJ gra w tle podczas koncertu na żywo — jedno zjada drugie. Kiedy zespół wychodzi na parkiet podczas setu DJ-a bez wcześniejszego uzgodnienia przejścia — sala dostaje dezorientujący sygnał.
 
 ## Hybrydowe formaty, które działają
 
-Saksofonista grający nad setem DJ-a może być wyjątkowym momentem — jeśli jest zaplanowany jako kulminacja, jako surprise element, a nie jako ciągły akompaniament. Perkusista dodający żywy rytm do elektronicznego setu działa, jeśli oboje wiedzą, jak nawzajem reagować.
+Saksofonista grający nad setem DJ-a może być wyjątkowym momentem — jeśli jest zaplanowany jako kulminacja, jako zaskakujący element, a nie jako ciągły akompaniament. Perkusista dodający żywy rytm do elektronicznego setu działa, jeśli oboje wiedzą, jak na siebie nawzajem reagować.
 
-Te formaty wymagają próby lub przynajmniej szczegółowego omówienia. Profesjonalny DJ pracujący z żywymi muzykami wie, jak dać im przestrzeń i jak wejść z powrotem kiedy ich moment się kończy. To jest umiejętność współpracy, nie tylko techniki muzycznej.
+Te formaty wymagają próby lub przynajmniej szczegółowego omówienia. Profesjonalny DJ pracujący z żywymi muzykami wie, jak dać im przestrzeń i jak wejść z powrotem, kiedy ich moment się kończy. To jest umiejętność współpracy, nie tylko techniki muzycznej.
 
 ## Decyzja, którą warto podjąć świadomie
 
-Jeśli planujesz event z muzyką na żywo i DJ-em — zadaj sobie pytanie, co ma robić każdy element i w którym momencie. Kiedy muzyka na żywo serwuje swój cel, a kiedy DJ przejmuje stery? Ta odpowiedź powinna być jasna zanim zaczniesz rozmawiać z wykonawcami — bo tylko wtedy możesz ocenić, czy propozycja, którą dostajesz, ma sens dla twojego eventu.
+Jeśli planujesz event z muzyką na żywo i DJ-em — zadaj sobie pytanie, co ma robić każdy element i w którym momencie. Kiedy muzyka na żywo spełnia swój cel, a kiedy DJ przejmuje stery? Ta odpowiedź powinna być jasna zanim zaczniesz rozmawiać z wykonawcami — bo tylko wtedy możesz ocenić, czy propozycja, którą dostajesz, ma sens dla twojego eventu.

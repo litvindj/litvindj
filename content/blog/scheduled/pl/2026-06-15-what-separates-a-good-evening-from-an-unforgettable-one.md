@@ -24,9 +24,9 @@ Profesjonalny DJ rozumie strukturę dramaturgiczną eventu i wie, kiedy zacząć
 
 ## Spójność narracyjna
 
-Niezapomniany wieczór jest też spójny narracyjnie. Goście czują, nawet jeśli nie analizują, że muzyka przez cały wieczór miała sens — że jeden blok prowadził do kolejnego, że energia rosła i opadała z logicznym powodm, że wieczór miał kierunek.
+Niezapomniany wieczór jest też spójny narracyjnie. Goście czują, nawet jeśli nie analizują, że muzyka przez cały wieczór miała sens — że jeden blok prowadził do kolejnego, że energia rosła i opadała z logicznego powodu, że wieczór miał kierunek.
 
-Ta spójność nie jest możliwa bez kogoś, kto ją świadomie buduje przez cały wieczór. Playlist odtwarza się od początku do końca bez narracji. DJ buduje narrację na żywo, adaptując ją do tego, co widzi i słyszy w sali.
+Ta spójność nie jest możliwa bez kogoś, kto ją świadomie buduje przez cały wieczór. Playlista odtwarza się od początku do końca bez narracji. DJ buduje narrację na żywo, adaptując ją do tego, co widzi i słyszy w sali.
 
 ## Czego naprawdę potrzebuje twój event
 
@@ -36,6 +36,6 @@ Różnica między dobrym a wyjątkowym nie leży w budżecie. Leży w tym, czy o
 
 ## Inwestycja w niezapomniane
 
-Kiedy twoi goście wychodzą z eventu i przez tydzień mówią o tym wieczorze — ta rozmowa ma wartość, której nie zmierzysz w arkuszu. Lepsza reputacja twojej marki, silniejsze więzi w teamie, wyższy NPS z konferencji, wesele, o którym rodzina rozmawia latami.
+Kiedy twoi goście wychodzą z eventu i przez tydzień mówią o tym wieczorze — ta rozmowa ma wartość, której nie zmierzysz w arkuszu. Lepsza reputacja twojej marki, silniejsze więzi w zespole, wyższy NPS z konferencji, wesele, o którym rodzina rozmawia latami.
 
 To jest zwrot z inwestycji w profesjonalne podejście do muzyki eventu. I to jest powód, dla którego organizatorzy, którzy raz postawili na właściwego DJ-a — wracają do niego przy każdym kolejnym evencie.

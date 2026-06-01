@@ -6,7 +6,7 @@ description: "Bezpieczna muzyka nie obraża nikogo. Ale też nikogo nie zachwyca
 
 Istnieje pewna logika za graniem bezpiecznym. Jeśli nie zaryzykujesz, nie możesz się pomylić. Jeśli grasz rzeczy, które wszyscy znają i nikt nie nienawidzi, nikt nie wyjdzie z eventu niezadowolony z muzyki.
 
-To rozumowanie jest błędne. I jest odpowiedzialne za niezliczone eventu, o których nikt nie rozmawia w poniedziałek rano.
+To rozumowanie jest błędne. I jest odpowiedzialne za niezliczone eventy, o których nikt nie rozmawia w poniedziałek rano.
 
 ## Co to jest "bezpieczna muzyka"
 

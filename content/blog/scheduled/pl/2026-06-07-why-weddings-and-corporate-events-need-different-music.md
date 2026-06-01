@@ -4,7 +4,7 @@ date: "2026-06-07"
 description: "Te same umiejętności, zupełnie inne podejście. Muzyka na weselu i na evencie korporacyjnym to dwa różne zawody."
 ---
 
-Profesjonalny DJ, który gra zarówno wesela jak i eventy korporacyjne, nie przenosi tych samych playlists między zleceniami. To byłby błąd fundamentalny. Wesele i event korporacyjny to dwa różne doświadczenia emocjonalne, dwie różne dramaturgiczne struktury, dwie różne relacje DJ-a z publicznością.
+Profesjonalny DJ, który gra zarówno wesela, jak i eventy korporacyjne, nie przenosi tych samych playlist między zleceniami. To byłby błąd fundamentalny. Wesele i event korporacyjny to dwa różne doświadczenia emocjonalne, dwie różne dramaturgiczne struktury, dwie różne relacje DJ-a z publicznością.
 
 ## Cel emocjonalny każdego z eventów
 
@@ -24,7 +24,7 @@ Na evencie korporacyjnym DJ pracuje dla grupy, która ma coś wspólnego: pracuj
 
 Na weselu granica stosowności jest elastyczna. Para może chcieć czegoś odważnego, niekonwencjonalnego, odjechego. Goście mogą ją zaakceptować, bo to prywatna uroczystość i reguły są inne.
 
-Na evencie korporacyjnym granica stosowności jest wyraźna. Teksty piosenek mają znaczenie — bo sala jest mieszana, bo są tam przełożeni i podwładni, bo są goście z zewnątrz. Wybory muzyczne muszą być integrujące, nie polaryzujące. To co działa na weselu w sobotni wieczór, może być kompletnie nie na miejscu na kolacji firmowej z zarządem.
+Na evencie korporacyjnym granica stosowności jest wyraźna. Teksty piosenek mają znaczenie — bo sala jest mieszana, bo są tam przełożeni i podwładni, bo są goście z zewnątrz. Wybory muzyczne muszą być integrujące, nie polaryzujące. To, co działa na weselu w sobotni wieczór, może być kompletnie nie na miejscu na kolacji firmowej z zarządem.
 
 ## Struktura czasowa wieczoru
 

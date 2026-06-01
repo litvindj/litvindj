@@ -34,7 +34,7 @@ Na eventach firmowych stawka jest jeszcze wyższa. W sali są współpracownicy,
 
 Profesjonalny DJ przyjeżdża z profesjonalnym sprzętem — odpowiednio konserwowanym, testowanym przed każdym eventem, z systemami awaryjnymi na miejscu. Budżetowy DJ często przyjeżdża ze sprzętem konsumenckim, bez redundancji i bez planu na wypadek awarii.
 
-Na evencie nie ma przycisku pauzy. Jeśli kabel padnie i nie ma zapasowego, muzyka staje. Jeśli staje podczas przemówienia, podczas pierwszego tańca, podczas reveal momentu brand launchu — szkoda jest natychmiastowa i widoczna dla każdej osoby w sali.
+Na evencie nie ma przycisku pauzy. Jeśli kabel padnie i nie ma zapasowego, muzyka się zatrzymuje. Jeśli staje podczas przemówienia, podczas pierwszego tańca, podczas reveal momentu brand launchu — szkoda jest natychmiastowa i widoczna dla każdej osoby w sali.
 
 Profesjonalny sprzęt jest drogi. Ta cena jest wliczona w koszt profesjonalnego DJ-a. Gdy wybierasz opcję budżetową, często wybierasz kogoś, kto oszczędził na narzędziach, od których zależy sprawność twojego eventu.
 

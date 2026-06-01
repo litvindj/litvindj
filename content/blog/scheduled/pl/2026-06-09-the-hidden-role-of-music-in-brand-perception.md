@@ -14,7 +14,7 @@ Każdy event, który organizujesz pod szyldem marki — launch produktu, konfere
 
 Muzyka jest częścią tego doświadczenia tak samo jak catering, przestrzeń i wrażenie obsługi. I podobnie jak catering — jeśli jest nieodpowiednia do kontekstu marki, zostaje zapamiętana jako dysonans. "Świetne jedzenie, ale muzyka jakaś taka nie na miejscu" — to zdanie, które marka powinna chcieć uniknąć.
 
-## Muzyka komunukuje wartości
+## Muzyka komunikuje wartości
 
 Marki mają wartości. Innowacja, tradycja, elegancja, dostępność, odwaga, profesjonalizm — to nie są tylko słowa na stronie About. To są sygnały, które marka wysyła przez każdy punkt kontaktu z klientem i partnerem.
 
@@ -28,13 +28,13 @@ Eventy launch produktu mają jasną narrację: coś nowego pojawia się na świe
 
 Kiedy muzyka podąża za tym łukiem — napięcie rośnie przed głównym momentem, eksploduje energetycznie w momencie launch, opada w tryb networkingowy kiedy goście zaczynają rozmawiać o produkcie — event działa spójnie. Produkt jest pamiętany w kontekście pozytywnego doświadczenia emocjonalnego.
 
-Kiedy muzyka jest oderwana od tej narracji — gra coś neutralnego przez cały wieczór bez względu na to, co dzieje się na scenie — marka marnuje jeden z najmocniejszych narzędzi emocjonalnego zaangażowania.
+Kiedy muzyka jest oderwana od tej narracji — gra coś neutralnego przez cały wieczór bez względu na to, co dzieje się na scenie — marka marnuje jedno z najmocniejszych narzędzi emocjonalnego zaangażowania.
 
-## Konsystencja z komunikacją marki
+## Spójność z komunikacją marki
 
-Niektóre marki mają mocno rozwinięty głos w komunikacji — wiesz słuchając muzyki na ich reklamach, co to za marka. Ten głos powinien być obecny na evencie.
+Niektóre marki mają mocno rozwinięty głos w komunikacji — wiesz, słuchając muzyki w ich reklamach, co to za marka. Ten głos powinien być obecny na evencie.
 
-Jeśli marka komunikuje się przez dynamiczne, energetyczne reklamy z nowoczesną elektroniką — gala firmowa z tradycyjnym jazzem tworzy dysonans poznawczy u gości, którzy tę markę znają. Spójność to element luksusu i profesjonalizmu, który goście odczuwają nawet jeśli nie potrafią go nazwać.
+Jeśli marka komunikuje się przez dynamiczne, energetyczne reklamy z nowoczesną elektroniką — gala firmowa z tradycyjnym jazzem tworzy dysonans poznawczy u gości, którzy tę markę znają. Spójność to element luksusu i profesjonalizmu, który goście odczuwają, nawet jeśli nie potrafią go nazwać.
 
 ## Muzyka jako inwestycja, nie koszt
 

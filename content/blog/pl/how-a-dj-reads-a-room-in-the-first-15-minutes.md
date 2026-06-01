@@ -10,9 +10,9 @@ Te piętnaście minut to najbardziej intensywny analityczny czas całego eventu 
 
 ## Obserwacja grupy wchodzącej
 
-Kiedy goście wchodzą do sali, mówią o sobie bardzo dużo bez słowa. DJ obserwuje: jak szybko się poruszają, czy od razu szukają towarzystwa czy raczej stoją przy wejściu, jak reagują na muzykę która już gra — czy zerknęli w kierunku głośników, czy pochylili głowę w rytm, czy w ogóle nie zareagowali.
+Kiedy goście wchodzą do sali, mówią o sobie bardzo dużo bez słowa. DJ obserwuje: jak szybko się poruszają, czy od razu szukają towarzystwa czy raczej stoją przy wejściu, jak reagują na muzykę, która już gra — czy zerknęli w kierunku głośników, czy pochylili głowę w rytm, czy w ogóle nie zareagowali.
 
-Wiek i styl ubierania to pierwsze dane. Ale ważniejsze jest zachowanie grupowe: czy to ludzie, którzy się znają i od razu tworzą klastry, czy to mieszanka, która będzie potrzebowała czasu na rozgrzewkę? Wesele z rodziną pary, która nie widziała się od lat, to inne wyzwanie niż konferencja z teamem, który spędził razem pięć dni.
+Wiek i styl ubierania to pierwsze dane. Ale ważniejsze jest zachowanie grupowe: czy to ludzie, którzy się znają i od razu tworzą grupy, czy to mieszanka, która będzie potrzebowała czasu na rozgrzewkę? Wesele z rodziną pary, która nie widziała się od lat, to inne wyzwanie niż konferencja z teamem, który spędził razem pięć dni.
 
 ## Reakcja na pierwsze trzy utwory
 
@@ -26,13 +26,13 @@ Każda z tych reakcji lub ich brak mówi DJ-owi, z jaką grupą ma do czynienia 
 
 Poziom głosu na sali to kluczowy wskaźnik. Kiedy rozmowy robią się głośne — sala jest pobudzona, zaangażowana, gotowa. Kiedy przy stolikach panuje cicha, skupiona atmosfera — to nie jest zły znak, ale mówi DJ-owi, że ta konkretna publiczność potrzebuje dłuższego rozgrzewania.
 
-Profesjonalny DJ regularnie sprawdza, czy muzyka wygrywa z rozmowami. Dobra dynamika to taka, gdzie muzyka i konwersacja współistnieją — muzyka jest słyszalna, ale nie przeszkadza. Kiedy gości nikt nie słyszy przez muzykę — DJ ścisza. Kiedy muzyki nie ma słychać przez rozmowy — DJ buduje.
+Profesjonalny DJ regularnie sprawdza, czy muzyka wypada na tle rozmów. Dobra dynamika to taka, w której muzyka i konwersacja współistnieją — muzyka jest słyszalna, ale nie przeszkadza. Kiedy gości nikt nie słyszy przez muzykę — DJ ścisza. Kiedy muzyki nie ma słychać przez rozmowy — DJ buduje.
 
 ## Pytanie o wyjątki
 
 W ciągu pierwszych piętnastu minut profesjonalny DJ szuka też wyjątków od reguły. Kto tańczy mimo że inni siedzą? Kto jest wyraźnie entuzjastyczny i może stać się naturalnym "płomykiem" — osobą, za którą inni pójdą na parkiet?
 
-Te osoby są ważne. DJ może do nich zagrać — puścić utwór, który mówi bezpośrednio do tej energii — żeby przyciągnąć ich na parkiet wcześniej i użyć ich jako katalizatora.
+Te osoby są ważne. DJ może do nich zagrać — puścić utwór, który mówi bezpośrednio do tej energii — żeby przyciągnąć ich na parkiet wcześniej i użyć ich jako katalizatorów.
 
 ## Korekta vs. potwierdzenie
 

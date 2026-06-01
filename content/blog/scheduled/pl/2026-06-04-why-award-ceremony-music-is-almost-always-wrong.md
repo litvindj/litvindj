@@ -4,7 +4,7 @@ date: "2026-06-04"
 description: "Gale rozdania nagród mają unikalną dramaturgię — i prawie zawsze marnują ją złą muzyką."
 ---
 
-Gala rozdania nagród to jeden z najbardziej dramaturgicznie bogatych eventów korporacyjnych. Masz napięcie przed ogłoszeniem, kulminację, świętowanie. Masz wzruszenie, masz dumy, masz emocje, które rzadko pojawiają się przy innych okazjach.
+Gala rozdania nagród to jeden z najbardziej dramaturgicznie bogatych eventów korporacyjnych. Masz napięcie przed ogłoszeniem, kulminację, świętowanie. Masz wzruszenie, masz dumę, masz emocje, które rzadko pojawiają się przy innych okazjach.
 
 I prawie zawsze ta dramaturgiczna szansa jest zmarnowana przez muzykę, która do niej nie pasuje.
 
@@ -18,7 +18,7 @@ Kiedy muzyka jest statyczna, dramaturgiczne momenty eventu tracą na wadze. Ogł
 
 Każde ogłoszenie nagrody ma naturalną strukturę. Prezenter wychodzi. Mówi kilka słów o kategorii. Następuje pauza przed ogłoszeniem nazwiska. To jest moment teatralny — i muzyka może go zrobić lub zniszczyć.
 
-Profesjonalny DJ zarządzający galą buduje napięcie przed każdym ogłoszeniem. Muzyka delikatnie wzrasta w ostatnich sekundach, zanim prezenter zacznie mówić, i milknie w momencie, gdy pada nazwisko. Ten utwór musi następnie błyskawicznie przejść w coś świętującego — żeby laureata poprowadzić na scenę z odpowiednią energią.
+Profesjonalny DJ zarządzający galą buduje napięcie przed każdym ogłoszeniem. Muzyka delikatnie narasta w ostatnich sekundach, zanim prezenter zacznie mówić, i milknie w momencie, gdy pada nazwisko. Ten utwór musi następnie błyskawicznie przejść w coś świętującego — żeby laureata poprowadzić na scenę z odpowiednią energią.
 
 Ta sekwencja, powtórzona kilkanaście razy przez wieczór, tworzy ceremonię z dramaturgią. Bez niej to tylko lista nazwisk czytana przy jedzeniu.
 

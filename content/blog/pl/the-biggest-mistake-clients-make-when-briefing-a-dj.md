@@ -20,7 +20,7 @@ Wszystkie te powody są zrozumiałe. Ale żaden z nich nie zbliża do dobrego ev
 
 ## Co DJ naprawdę potrzebuje wiedzieć
 
-Profesjonalny DJ potrzebuje z briefingu kilku kluczowych informacji. Kim są goście — wiek, kultura, znajomość między sobą, czy to środowisko profesjonalne czy towarzyskie? Jaki jest kontekst — co świętujecie, co jest celem wieczoru, jak wygląda harmonogram? Czego absolutnie nie ma w grze — religia, polityka, konkretna muzyka związana z negatywnym skojarzeniem?
+Profesjonalny DJ potrzebuje z briefingu kilku kluczowych informacji. Kim są goście — wiek, kultura, znajomość między sobą, czy to środowisko profesjonalne czy towarzyskie? Jaki jest kontekst — co świętujecie, co jest celem wieczoru, jak wygląda harmonogram? Czego absolutnie nie ma w grze — religia, polityka, konkretna muzyka mająca negatywne skojarzenia?
 
 I na końcu: jak chcesz, żeby goście się czuli kiedy wychodzą za drzwi?
 
@@ -34,4 +34,4 @@ Ale lista ogólnych preferencji ("lubię jazz, funk i oldschoolowy hip-hop") to 
 
 ## Najlepszy briefing
 
-Najlepszy briefing to rozmowa, w której klient mówi o swoich gościach, o kontekście wieczoru, o tym, co ważne i co nie do ruszenia — a DJ zadaje pytania, które pomagają mu zbudować pełen obraz. Na końcu takiego briefingu klient czuje, że DJ rozumie nie tylko muzykę, ale cały event. To jest punkt, od którego zaczyna się dobry wieczór.
+Najlepszy briefing to rozmowa, w której klient mówi o swoich gościach, o kontekście wieczoru, o tym, co ważne i co nie do ruszenia — a DJ zadaje pytania, które pomagają mu zbudować pełny obraz. Na końcu takiego briefingu klient czuje, że DJ rozumie nie tylko muzykę, ale cały event. To jest punkt, od którego zaczyna się dobry wieczór.

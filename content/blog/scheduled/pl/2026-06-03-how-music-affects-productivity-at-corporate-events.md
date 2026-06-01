@@ -18,13 +18,13 @@ Dobrze dobrana muzyka w tle podczas networkingu — umiarkowane tempo, żadnych 
 
 Przerwy kawowe są strategicznie ważne. Mózg po intensywnej sesji potrzebuje resetu, żeby wrócić do pracy z pełną wydajnością. Muzyka podczas przerwy może przyspieszyć ten reset — lub go utrudnić.
 
-Zbyt głośna i rytmiczna muzyka podczas przerwy nie daje mózgowi odpoczynku. Zbyt cicha i spokojna zasypia zamiast refreshować. Właściwy wybór to coś energetycznego, ale nienachalnego — coś, co zmienia stan bez wymagania pełnej uwagi.
+Zbyt głośna i rytmiczna muzyka podczas przerwy nie daje mózgowi odpoczynku. Zbyt cicha i spokojna usypia zamiast odświeżać. Właściwy wybór to coś energetycznego, ale nienachalnego — coś, co zmienia stan bez wymagania pełnej uwagi.
 
 Profesjonalny DJ zarządzający eventami korporacyjnymi rozumie te przejścia i dopasowuje muzykę do funkcji każdego momentu programu.
 
 ## Moment przed ważną prezentacją
 
-To jest punkt, w którym muzyka ma nieproporcjonalnie duże znaczenie. Pięć minut przed kluczową prezentacją — nowym produktem, ogłoszeniem wyników, przemową CEO — muzyka powinna budować oczekiwanie. Nie taneczne — to nie jest parkiet. Raczej narracyjne: coś, co rośnie, co wytwarza skupienie, co mówi "zaraz wydarzy się coś ważnego".
+To jest punkt, w którym muzyka ma nieproporcjonalnie duże znaczenie. Pięć minut przed kluczową prezentacją — nowym produktem, ogłoszeniem wyników, przemową CEO — muzyka powinna budować oczekiwanie. Nie taneczna — to nie jest parkiet. Raczej narracyjna: coś, co rośnie, co wytwarza skupienie, co mówi "zaraz wydarzy się coś ważnego".
 
 Kiedy ta muzyka trafia, sala wchodzi w prezentację w skupieniu i gotowości. Kiedy brakuje jej lub jest przypadkowa, goście wchodzą w prezentację w trybie networkingowym — nadal rozmawiają, wyjmują telefony, siadają bez uwagi.
 

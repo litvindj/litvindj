@@ -10,7 +10,7 @@ To nie jest przypadek. To jest projekt.
 
 ## Czym jest luksusowy dźwięk
 
-Luksusowy dźwięk ma kilka cech, które są natychmiast rozpoznawalne, nawet jeśli gość nie potrafi ich nazwać. Pierwsza: czystość. Muzyka brzmi klarownie — bez przesterowania, bez niewyraźnych basów, bez wysokich tonów, które drażnią. Dobrej jakości sprzęt w właściwie przygotowanej akustycznie sali brzmi inaczej niż przeciętny system.
+Luksusowy dźwięk ma kilka cech, które są natychmiast rozpoznawalne, nawet jeśli gość nie potrafi ich nazwać. Pierwsza: czystość. Muzyka brzmi klarownie — bez przesterowania, bez niewyraźnych basów, bez wysokich tonów, które drażnią. Dobrej jakości sprzęt we właściwie przygotowanej akustycznie sali brzmi inaczej niż przeciętny system.
 
 Druga cecha: proporcje. Na ekskluzywnym evencie muzyka jest głośna na tyle, żeby być obecna — ale nie na tyle, żeby zmuszać gości do mówienia z wysiłkiem. Ta równowaga jest precyzyjnie ustawiona i dostosowywana w czasie, kiedy sala się zapełnia.
 
@@ -32,10 +32,10 @@ Luksusowy dźwięk to kwestia doboru i wykonania. Dobry lounge, głęboki house 
 
 Na ekskluzywnych eventach sprzęt DJ-ski nie jest ukryty za czarną zasłoną ani wepchnięty w róg. Jest częścią aranżacji sali — wizualnie spójny z resztą, profesjonalnie zainstalowany, dyskretny ale obecny.
 
-Profesjonalny DJ na tym poziomie eventów rozumie, że jego stanowisko to część scenografii. Przyjezdza z własnymi materiałami wykończeniowymi, dba o estetykę kabli i sprzętu, nie tworzy technicznego bałaganu widocznego dla gości.
+Profesjonalny DJ na tym poziomie eventów rozumie, że jego stanowisko to część scenografii. Przyjeżdża z własnymi materiałami wykończeniowymi, dba o estetykę kabli i sprzętu, nie tworzy technicznego bałaganu widocznego dla gości.
 
 ## Standard, który podnosi wszystko
 
-Kiedy muzyka na ekskluzywnym evencie jest na właściwym poziomie, podnosi wszystko wokół niej. Catering smakuje lepiej, kiedy jedzenie odbywa się przy odpowiednim tle muzycznym. Rozmowy płyną łatwiej, kiedy akustyczny klimat jest właściwy. Momenty ceremonii mają większą wagę, kiedy muzyczna dramaturgię je wspiera.
+Kiedy muzyka na ekskluzywnym evencie jest na właściwym poziomie, podnosi wszystko wokół niej. Catering smakuje lepiej, kiedy jedzenie odbywa się przy odpowiednim tle muzycznym. Rozmowy płyną łatwiej, kiedy akustyczny klimat jest właściwy. Momenty ceremonii mają większą wagę, kiedy muzyczna dramaturgia je wspiera.
 
-To jest dlaczego organizatorzy ekskluzywnych eventów traktują DJ-a jako element tak samo ważny jak szef kuchni. Bo jak szef kuchni — dostarcza doświadczenie zmysłowe, które gości zapamiętują jako jedno z wyznaczników wieczoru.
+Dlatego organizatorzy ekskluzywnych eventów traktują DJ-a jako element tak samo ważny jak szefa kuchni. Bo jak szef kuchni — dostarcza doświadczenie zmysłowe, które gości zapamiętują jako jedno z wyznaczników wieczoru.
