@@ -22,7 +22,7 @@ Na evencie korporacyjnym DJ pracuje dla grupy, która ma coś wspólnego: pracuj
 
 ## Granica stosowności
 
-Na weselu granica stosowności jest elastyczna. Para może chcieć czegoś odważnego, niekonwencjonalnego, odjechego. Goście mogą ją zaakceptować, bo to prywatna uroczystość i reguły są inne.
+Na weselu granica stosowności jest elastyczna. Para może chcieć czegoś odważnego, niekonwencjonalnego, odjechanego. Goście mogą ją zaakceptować, bo to prywatna uroczystość i reguły są inne.
 
 Na evencie korporacyjnym granica stosowności jest wyraźna. Teksty piosenek mają znaczenie — bo sala jest mieszana, bo są tam przełożeni i podwładni, bo są goście z zewnątrz. Wybory muzyczne muszą być integrujące, nie polaryzujące. To, co działa na weselu w sobotni wieczór, może być kompletnie nie na miejscu na kolacji firmowej z zarządem.
 

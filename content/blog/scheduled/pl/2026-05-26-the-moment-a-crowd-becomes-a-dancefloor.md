@@ -10,7 +10,7 @@ Ten moment nie jest przypadkowy. Jest wynikiem precyzyjnej pracy DJ-a — niekie
 
 ## Warunek konieczny: gotowość sali
 
-Tłum nie staje się parkietem, dopóki sala nie jest gotowa. Gotowość to konkretny stan — goście są rozluźnieni, rozmowy toczą się swobodnie, alkohol zrobił swoje, a formalności wieczoru są za nimi. Żadna ilość dobrej muzyki nie zmusi sali do tańca, jeśli ludzie siedzą przy stołach z serwetem na kolanach i czekają na deser.
+Tłum nie staje się parkietem, dopóki sala nie jest gotowa. Gotowość to konkretny stan — goście są rozluźnieni, rozmowy toczą się swobodnie, alkohol zrobił swoje, a formalności wieczoru są za nimi. Żadna ilość dobrej muzyki nie zmusi sali do tańca, jeśli ludzie siedzą przy stołach z serwetką na kolanach i czekają na deser.
 
 Dlatego DJ nie może być oderwany od harmonogramu eventu. Musi wiedzieć, kiedy kończy się kolacja, kiedy są przemówienia, kiedy goście mają moment na oddech. Parkiet otwiera się w odpowiednim oknie czasowym — nie wcześniej, bo to się nie uda, i nie za późno, bo energia zacznie opadać.
 

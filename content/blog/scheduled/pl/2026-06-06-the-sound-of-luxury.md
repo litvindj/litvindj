@@ -14,7 +14,7 @@ Luksusowy dźwięk ma kilka cech, które są natychmiast rozpoznawalne, nawet je
 
 Druga cecha: proporcje. Na ekskluzywnym evencie muzyka jest głośna na tyle, żeby być obecna — ale nie na tyle, żeby zmuszać gości do mówienia z wysiłkiem. Ta równowaga jest precyzyjnie ustawiona i dostosowywana w czasie, kiedy sala się zapełnia.
 
-Trzecia: wybory muzyczne, które mają charakter. Nie banalny, nie przypadkowy, nie "ten typ muzyki co zawsze na eventach korporacyjnych". Coś, co brzmi jak decyzja, a nie jak domyślna opcja.
+Trzecia cecha: wybory muzyczne, które mają charakter. Nie banalny, nie przypadkowy, nie "ten typ muzyki co zawsze na eventach korporacyjnych". Coś, co brzmi jak decyzja, a nie jak domyślna opcja.
 
 ## Muzyka, która nie jest słyszana, ale czuta
 
