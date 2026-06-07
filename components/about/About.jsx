@@ -63,9 +63,9 @@ const About = () => {
   return (
     <section className="w-full flex flex-col lg:flex-row bg-dark relative lg:min-h-screen">
 
-      <div className="w-full h-full grid grid-cols-1 lg:grid-cols-2">
+      <div className="w-full lg:min-h-screen grid grid-cols-1 lg:grid-cols-2 lg:items-stretch">
 
-        <div className="relative h-[50vh] sm:h-[60vh] lg:h-auto w-full group overflow-hidden border-b lg:border-b-0 lg:border-r border-white/10">
+        <div className="relative h-[50vh] sm:h-[60vh] lg:h-auto lg:min-h-screen w-full group overflow-hidden border-b lg:border-b-0 lg:border-r border-white/10">
           <div className="absolute inset-0 bg-beige/5 mix-blend-overlay z-10 pointer-events-none"></div>
           <Image
             src="/images/about.JPG"
@@ -78,18 +78,8 @@ const About = () => {
 
         <div className="w-full flex flex-col justify-center px-6 py-16 md:px-16 lg:px-24 relative z-10 bg-dark">
 
-          <div className="flex items-center gap-4 mb-6 md:mb-8">
-            <div className="w-12 md:w-16 h-0.5 bg-beige"></div>
-            <span className={`text-beige text-xs font-bold uppercase ${language === 'ru' ? 'tracking-widest' : 'tracking-[0.4em]'}`}>
-              {t('about.label')}
-            </span>
-          </div>
-
           <h2 className={`font-header text-white uppercase leading-[0.9] mb-8 ${language === 'ru' ? 'text-4xl sm:text-5xl md:text-6xl tracking-normal' : 'text-4xl sm:text-5xl md:text-7xl lg:text-[4vw]'}`}>
-            {t('about.title1')} <br />
-            <span className="text-transparent" style={{ WebkitTextStroke: '1px #fff' }}>
-              {t('about.title2')}
-            </span>
+            {t('about.title1')}
           </h2>
 
           <div className="space-y-4 mb-6 text-grey text-sm md:text-base font-light leading-relaxed max-w-lg">

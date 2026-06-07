@@ -17,15 +17,12 @@ const Navbar = () => {
   }, [isOpen]);
 
   const links = [
-    { name: t('navbar.Home'),     targetId: 'root',             isProfile: false, originalName: 'Home' },
-    { name: t('navbar.Profile'),  targetId: 'about-section',    isProfile: true,  originalName: 'Profile' },
-    { name: t('navbar.Events'),   targetId: 'events-section',   isProfile: false, originalName: 'Events' },
-    { name: t('navbar.Services'), targetId: 'services-section', isProfile: false, originalName: 'Services' },
-    { name: t('navbar.Rider'),    targetId: 'rider-section',    isProfile: false, originalName: 'Rider' },
-    { name: t('navbar.Music'),    targetId: 'music-section',    isProfile: false, originalName: 'Music' },
-    { name: t('navbar.Gallery'),  targetId: 'gallery-section',  isProfile: false, originalName: 'Gallery' },
-    { name: t('navbar.Blog'),     targetId: 'articles-section', isProfile: false, originalName: 'Blog' },
-    { name: t('navbar.Contact'),  targetId: 'footer-section',   isProfile: false, originalName: 'Contact' },
+    { name: t('navbar.Home'),    targetId: 'root',            isProfile: false, originalName: 'Home' },
+    { name: t('navbar.About'),   targetId: 'about-section',   isProfile: true,  originalName: 'About' },
+    { name: t('navbar.Music'),   targetId: 'music-section',   isProfile: false, originalName: 'Music' },
+    { name: t('navbar.Gallery'), targetId: 'gallery-section', isProfile: false, originalName: 'Gallery' },
+    { name: t('navbar.Contact'), targetId: 'footer-section',  isProfile: false, originalName: 'Contact' },
+    { name: t('navbar.Blog'),    href: `/${language}/blog`,                     originalName: 'Blog' },
   ];
 
   useEffect(() => {
@@ -132,7 +129,6 @@ const Navbar = () => {
 
         {/* Mobile */}
         <div className="md:hidden z-[60] flex items-center gap-4 pointer-events-auto">
-          <LangSwitcher />
           <button onClick={() => setIsOpen(!isOpen)}
             className="focus:outline-none p-3 rounded-full bg-black/30 backdrop-blur-md border border-white/10 flex items-center justify-center w-12 h-12 transition-all duration-300 hover:border-beige/50"
             aria-label="Toggle Menu">
@@ -168,6 +164,21 @@ const Navbar = () => {
               )
             ))}
           </nav>
+          <div className="mt-10 flex items-center gap-4">
+            {langs.map((lang) => (
+              <button
+                key={lang.code}
+                onClick={() => setLanguage(lang.code)}
+                className={`relative font-header text-lg tracking-widest uppercase px-5 py-3 border transition-colors duration-200 ${
+                  language === lang.code
+                    ? 'text-beige border-beige'
+                    : 'text-white/40 border-white/10 hover:text-white hover:border-white/40'
+                }`}
+              >
+                {lang.label}
+              </button>
+            ))}
+          </div>
         </div>
       </nav>
     </>

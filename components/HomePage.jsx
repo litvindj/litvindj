@@ -3,16 +3,12 @@ import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import Navbar from './layout/Navbar';
 import Hero from './hero/Hero';
 import About from './about/About';
-import Services from './offer/Services';
-import Events from './offer/Events';
-import TechnicalRider from './offer/TechnicalRider';
 import Music from './music/Music';
 import VideoGallery from './gallery/VideoGallery';
 import BrandsMarquee from './layout/BrandsMarquee';
-import LatestArticles from './blog/LatestArticles';
 import Footer from './layout/Footer';
 
-export default function HomePage({ allLatestPosts = {} }) {
+export default function HomePage() {
   const heroWrapperRef = useRef(null);
   const aboutWrapperRef = useRef(null);
   const [isMobile, setIsMobile] = useState(false);
@@ -89,14 +85,10 @@ export default function HomePage({ allLatestPosts = {} }) {
             </div>
           </div>
 
-          <div id="events-section"   className="relative z-30 bg-dark"><Events /></div>
-          <div id="services-section" className="relative z-30 bg-dark shadow-2xl"><Services /></div>
-          <div id="rider-section"    className="relative z-30 bg-dark"><TechnicalRider /></div>
-          <div id="music-section"    className="relative z-30 bg-dark"><Music /></div>
-          <div id="gallery-section"  className="relative z-30 bg-dark"><VideoGallery /></div>
-          <div                       className="relative z-30 bg-dark"><BrandsMarquee /></div>
-          <div id="articles-section" className="relative z-30 bg-dark"><LatestArticles allPosts={allLatestPosts} /></div>
-          <div id="footer-section"   className="relative z-30"><Footer /></div>
+          <div id="music-section"   className="relative z-30 bg-dark"><Music /></div>
+          <div id="gallery-section" className="relative z-30 bg-dark"><VideoGallery /></div>
+          <div                      className="relative z-30 bg-dark"><BrandsMarquee /></div>
+          <div id="footer-section"  className="relative z-30"><Footer /></div>
         </main>
       </div>
     </div>

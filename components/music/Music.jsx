@@ -32,15 +32,6 @@ const Music = () => {
 
       <Container className="relative z-20">
         <div className="flex flex-col items-center text-center mb-16 relative z-10">
-          <div className="flex items-center gap-4 mb-4">
-            <span className="h-px w-8 bg-beige"></span>
-            <span className={`text-beige text-xs font-bold uppercase 
-              ${language === 'ru' ? 'tracking-widest' : 'tracking-[0.4em]'}`}>
-              {content.label}
-            </span>
-            <span className="h-px w-8 bg-beige"></span>
-          </div>
-
           <h2 className={`font-header uppercase leading-none text-white mb-6
             ${language === 'ru' 
               ? 'text-5xl md:text-7xl tracking-normal'
@@ -56,19 +47,24 @@ const Music = () => {
           </p>
         </div>
 
-        <div className="relative z-10 w-full max-w-3xl mx-auto">
-          <div className="group relative bg-charcoal/60 p-1 md:p-2 border border-white/10 hover:border-beige/40 transition-all duration-500 shadow-2xl">
-            <iframe 
-              src="https://open.spotify.com/embed/playlist/2yhvcmtTMF4D86l7XIkDoR?utm_source=generator" 
-              width="100%" 
-              height="450" 
-              allowFullScreen 
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-              loading="lazy"
-              style={{ borderRadius: '0px' }}
-              className="relative z-10 opacity-90 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0"
-            ></iframe>
-          </div>
+        <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+          {[
+            '2yhvcmtTMF4D86l7XIkDoR',
+            '4Wx0WyDpZkwYztO7wyk23M',
+          ].map((id) => (
+            <div key={id} className="group relative bg-charcoal/60 p-1 md:p-2 border border-white/10 hover:border-beige/40 transition-all duration-500 shadow-2xl">
+              <iframe
+                src={`https://open.spotify.com/embed/playlist/${id}?utm_source=generator`}
+                width="100%"
+                height="450"
+                allowFullScreen
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+                style={{ borderRadius: '0px' }}
+                className="relative z-10 opacity-90 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0"
+              />
+            </div>
+          ))}
         </div>
       </Container>
     </section>

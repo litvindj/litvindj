@@ -2,29 +2,26 @@ export const translations = {
   en: {
     navbar: {
       Home: "Home",
-      Profile: "Profile",
-      Services: "Services",
-      Events: "Events",
-      Rider: "Rider",
+      About: "About",
       Music: "Music",
-      Blog: "Blog",
       Gallery: "Gallery",
       Contact: "Contact",
+      Blog: "Blog",
     },
     about: {
       label: "Biography",
-      title1: "Sound",
-      title2: "Architect",
+      title1: "Biography",
+      title2: "",
       desc1:
-        "I’m a DJ specializing in corporate events, weddings, and private celebrations — from intimate gatherings to large-scale brand experiences. With over 6 years behind the decks and 500+ events played, I focus on music that enhances the atmosphere of the venue, reflects the brand or occasion, and follows the natural flow of the event.",
+        "I am a DJ based in Warsaw with over 6 years of experience performing at weddings, corporate events, and private celebrations.",
       desc2:
-        "From subtle background music during dinner to a full dancefloor at night, every set is carefully adapted to your guests, schedule, and event format. Based in Warsaw, available for events worldwide.",
+        "With more than 500 events behind me — from intimate dinners to large international projects — I tailor the music to the audience, atmosphere, and format of each event rather than relying on a standard playlist.",
       languagesLabel: "Languages",
       languagesList: "English, Polish, Russian",
       resident: "Resident At (Warsaw)",
       trusted: "Trusted By",
       trustedDesc:
-        "Disney, Coca-Cola, Philips, Drift Masters, Deloitte, Santander Bank, Ernst & Young, Volkswagen, BetterMe, Doubletop, LUXMED and others.",
+        "Disney, Coca-Cola, Deloitte, Santander Bank, Volkswagen, Philips, BetterMe and others. I perform across Europe and internationally.",
     },
     services: {
       label: "Process",
@@ -127,8 +124,8 @@ export const translations = {
     },
     music: {
       label: "On Air",
-      title: "Sonic",
-      titleStroke: "Selection",
+      title: "Party",
+      titleStroke: "Playlists",
       desc: "A curated collection of tracks that define my current sound.",
     },
     gallery: {
@@ -151,29 +148,26 @@ export const translations = {
   ru: {
     navbar: {
       Home: "Главная",
-      Profile: "Профиль",
-      Services: "Услуги",
-      Events: "Ивенты",
-      Rider: "Райдер",
+      About: "Обо мне",
       Music: "Музыка",
-      Blog: "Блог",
       Gallery: "Галерея",
       Contact: "Контакты",
+      Blog: "Блог",
     },
     about: {
-      label: "Биография",
-      title1: "Архитектор",
-      title2: "Звука",
+      label: "Обо мне",
+      title1: "Биография",
+      title2: "",
       desc1:
-        "Я диджей, специализирующийся на корпоративных мероприятиях, свадьбах и частных праздниках — от камерных встреч до масштабных брендовых событий. За более чем 6 лет и 500+ ивентов я сфокусировался на музыке, которая подчеркивает атмосферу, отражает суть бренда и следует естественному ритму мероприятия.",
+        "Я диджей из Варшавы с более чем 6-летним опытом работы на свадьбах, корпоративных и частных мероприятиях.",
       desc2:
-        "От фоновой музыки за ужином до полного танцпола ночью — каждый сет тщательно адаптируется под гостей, расписание и формат. Базируюсь в Варшаве, работаю по всему миру.",
+        "За моей спиной более 500 событий — от камерных ужинов до масштабных международных проектов. Я подбираю музыку не по шаблону, а под конкретную аудиторию, атмосферу и формат мероприятия.",
       languagesLabel: "Языки",
       languagesList: "Английский, Польский, Русский",
       resident: "Резидент (Варшава)",
-      trusted: "Мне доверяют",
+      trusted: "Среди клиентов",
       trustedDesc:
-        "Disney, Coca-Cola, Philips, Drift Masters, Deloitte, Santander Bank, Ernst & Young, Volkswagen, BetterMe, Doubletop, LUXMED и другие.",
+        "Disney, Coca-Cola, Deloitte, Santander Bank, Volkswagen, Philips, BetterMe и другие. Работаю по всей Европе и за её пределами.",
     },
     services: {
       label: "Процесс",
@@ -244,8 +238,8 @@ export const translations = {
     },
     music: {
       label: "В эфире",
-      title: "Звуковая",
-      titleStroke: "Подборка",
+      title: "Party",
+      titleStroke: "Playlists",
       desc: "Кюрированная подборка треков, определяющая моё текущее звучание.",
     },
     gallery: {
@@ -269,26 +263,23 @@ export const translations = {
   pl: {
     navbar: {
       Home: "Główna",
-      Profile: "Profil",
-      Services: "Usługi",
-      Events: "Eventy",
-      Rider: "Rider",
+      About: "O mnie",
       Music: "Muzyka",
-      Blog: "Blog",
       Gallery: "Galeria",
       Contact: "Kontakt",
+      Blog: "Blog",
     },
     about: {
-      label: "Biografia",
-      title1: "Architekt",
-      title2: "Dźwięku",
-      desc1: "Jestem DJ-em specjalizującym się w eventach korporacyjnych, weselach i prywatnych uroczystościach — od kameralnych spotkań po duże doświadczenia brandowe. Przez ponad 6 lat i 500+ eventów skupiam się na muzyce, która wzmacnia atmosferę miejsca, odzwierciedla markę lub okazję i podąża za naturalnym rytmem imprezy.",
-      desc2: "Od subtelnej muzyki w tle podczas kolacji po pełny parkiet w nocy — każdy set jest starannie dopasowany do gości, harmonogramu i formatu eventu. Działam z Warszawy, dostępny dla eventów na całym świecie.",
+      label: "O mnie",
+      title1: "Biografia",
+      title2: "",
+      desc1: "Jestem DJ-em z Warszawy z ponad 6-letnim doświadczeniem w obsłudze wesel, wydarzeń firmowych i imprez prywatnych.",
+      desc2: "Mam na koncie ponad 500 realizacji — od kameralnych kolacji po duże międzynarodowe projekty. Muzykę dobieram nie według szablonu, lecz do konkretnej publiczności, atmosfery i charakteru wydarzenia.",
       languagesLabel: "Języki",
       languagesList: "Angielski, Polski, Rosyjski",
       resident: "Rezydent (Warszawa)",
-      trusted: "Zaufali Mi",
-      trustedDesc: "Disney, Coca-Cola, Philips, Drift Masters, Deloitte, Santander Bank, Ernst & Young, Volkswagen, BetterMe, Doubletop, LUXMED i inni.",
+      trusted: "Klienci",
+      trustedDesc: "Disney, Coca-Cola, Deloitte, Santander Bank, Volkswagen, Philips, BetterMe i inni. Występuję w całej Europie i poza jej granicami.",
     },
     services: {
       label: "Proces",
@@ -338,8 +329,8 @@ export const translations = {
     },
     music: {
       label: "Na Antenie",
-      title: "Muzyczna",
-      titleStroke: "Selekcja",
+      title: "Party",
+      titleStroke: "Playlists",
       desc: "Starannie dobrana kolekcja utworów definiujących moje obecne brzmienie.",
     },
     gallery: {
