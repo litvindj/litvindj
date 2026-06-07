@@ -141,24 +141,35 @@ const Navbar = () => {
         </div>
 
         {/* Mobile menu */}
-        <div className={`fixed inset-0 bg-dark z-[50] flex flex-col items-center justify-center transition-all duration-500 pointer-events-auto ${isOpen ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none'}`}>
+        <div
+          className={`fixed inset-0 bg-dark z-[50] flex flex-col items-center justify-center pointer-events-auto ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+          style={{ transition: 'opacity 400ms cubic-bezier(0.4, 0, 0.2, 1)' }}
+        >
           <nav className="flex flex-col gap-6 text-center w-full px-6 overflow-y-auto mt-20 items-center justify-center">
             {links.map((link, i) => (
               link.href ? (
                 <Link key={link.originalName} href={link.href} onClick={() => setIsOpen(false)}
-                  className={`font-header uppercase transition-all duration-300 cursor-pointer border-b border-white/5 last:border-none w-full text-center block pb-4
+                  className={`font-header uppercase cursor-pointer border-b border-white/5 last:border-none w-full text-center block pb-4
                     ${language === 'ru' ? 'text-3xl tracking-normal font-medium' : 'text-4xl tracking-widest'}
                     ${activeSection === link.originalName || isBlogPage ? 'text-beige' : 'text-white hover:text-beige'}`}
-                  style={{ opacity: isOpen ? 1 : 0, transform: isOpen ? 'translateY(0)' : 'translateY(20px)', transitionDelay: `${isOpen ? 100 + i * 50 : 0}ms` }}>
+                  style={{
+                    opacity: isOpen ? 1 : 0,
+                    transition: 'opacity 400ms ease',
+                    transitionDelay: isOpen ? `${i * 80}ms` : '0ms',
+                  }}>
                   {link.name}
                 </Link>
               ) : (
                 <a key={link.originalName} href={`#${link.targetId}`}
                   onClick={(e) => handleScroll(e, link.targetId, link.isProfile, link.originalName)}
-                  className={`font-header uppercase transition-all duration-300 cursor-pointer border-b border-white/5 last:border-none w-full text-center block pb-4
+                  className={`font-header uppercase cursor-pointer border-b border-white/5 last:border-none w-full text-center block pb-4
                     ${language === 'ru' ? 'text-3xl tracking-normal font-medium' : 'text-4xl tracking-widest'}
                     ${activeSection === link.originalName ? 'text-beige' : 'text-white hover:text-beige'}`}
-                  style={{ opacity: isOpen ? 1 : 0, transform: isOpen ? 'translateY(0)' : 'translateY(20px)', transitionDelay: `${isOpen ? 100 + i * 50 : 0}ms` }}>
+                  style={{
+                    opacity: isOpen ? 1 : 0,
+                    transition: 'opacity 400ms ease',
+                    transitionDelay: isOpen ? `${i * 80}ms` : '0ms',
+                  }}>
                   {link.name}
                 </a>
               )
@@ -169,7 +180,7 @@ const Navbar = () => {
               <button
                 key={lang.code}
                 onClick={() => setLanguage(lang.code)}
-                className={`relative font-header text-lg tracking-widest uppercase px-5 py-3 border transition-colors duration-200 ${
+                className={`relative font-header text-lg tracking-widest uppercase px-5 py-3 border transition-colors duration-300 ${
                   language === lang.code
                     ? 'text-beige border-beige'
                     : 'text-white/40 border-white/10 hover:text-white hover:border-white/40'
