@@ -15,6 +15,7 @@ const Hero = () => {
     <section className="relative w-full h-svh flex flex-col items-center justify-center overflow-hidden bg-black">
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute inset-0 bg-dark/10 z-10" />
+        <div className="absolute top-0 left-0 right-0 z-20 pointer-events-none" style={{ height: 'calc(env(safe-area-inset-top, 50px) + 60px)', background: 'linear-gradient(to bottom, #000000 0%, transparent 100%)' }} />
         <Image
           src="/images/hero.png"
           alt="Gennady Litvin DJ"
