@@ -65,7 +65,14 @@ const Footer = () => {
               </p>
             </div>
             <form onSubmit={handleSubmit}
-              className="w-full flex flex-col gap-5 text-left bg-charcoal/30 p-8 md:p-10 border border-white/5 shadow-2xl">
+              className="w-full flex flex-col gap-5 text-left p-8 md:p-10 rounded-2xl"
+              style={{
+                backdropFilter: 'blur(72px) saturate(210%) brightness(1.08)',
+                WebkitBackdropFilter: 'blur(72px) saturate(210%) brightness(1.08)',
+                background: 'linear-gradient(135deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.015) 50%, rgba(255,255,255,0.04) 100%)',
+                border: '1px solid rgba(255,255,255,0.18)',
+                boxShadow: 'inset 0 1.5px 0 rgba(255,255,255,0.5), inset 0 -1px 0 rgba(0,0,0,0.1), 0 16px 56px rgba(0,0,0,0.4)',
+              }}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <input type="text" name="name" placeholder={content.formName} required className={inputStyles} />
                 <input type="email" name="email" placeholder={content.formEmail} required className={inputStyles} />
@@ -98,7 +105,15 @@ const Footer = () => {
           <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-4 mb-24 relative z-10 px-4 md:px-0">
             {socialLinks.map((link) => (
               <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer"
-                className="group relative border border-white/10 py-8 md:py-10 flex flex-col items-center justify-center overflow-hidden transition-all duration-500 hover:border-beige/50 hover:-translate-y-1">
+                className="group relative py-8 md:py-10 flex flex-col items-center justify-center overflow-hidden transition-all duration-500 hover:-translate-y-1 rounded-xl"
+                style={{
+                  backdropFilter: 'blur(48px) saturate(200%) brightness(1.06)',
+                  WebkitBackdropFilter: 'blur(48px) saturate(200%) brightness(1.06)',
+                  background: 'linear-gradient(160deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.01) 60%, rgba(255,255,255,0.04) 100%)',
+                  border: '1px solid rgba(255,255,255,0.16)',
+                  boxShadow: 'inset 0 1.5px 0 rgba(255,255,255,0.45), inset 0 -1px 0 rgba(0,0,0,0.08), 0 8px 32px rgba(0,0,0,0.3)',
+                  transition: 'all 0.5s ease',
+                }}>
                 <div className="absolute inset-0 bg-white/3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 <span className="relative z-10 text-grey group-hover:text-beige text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] mb-4 transition-colors">{link.action}</span>
                 <span className="relative z-10 text-white group-hover:scale-110 transition-transform duration-500">{link.icon}</span>

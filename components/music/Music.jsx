@@ -48,7 +48,14 @@ const Music = () => {
             '2yhvcmtTMF4D86l7XIkDoR',
             '4Wx0WyDpZkwYztO7wyk23M',
           ].map((id) => (
-            <div key={id} className="group relative bg-charcoal/60 p-1 md:p-2 border border-white/10 hover:border-beige/40 transition-all duration-500 shadow-2xl">
+            <div key={id} className="group relative p-1 md:p-2 transition-all duration-500 rounded-2xl overflow-hidden"
+              style={{
+                backdropFilter: 'blur(72px) saturate(210%) brightness(1.08)',
+                WebkitBackdropFilter: 'blur(72px) saturate(210%) brightness(1.08)',
+                background: 'linear-gradient(135deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.015) 50%, rgba(255,255,255,0.04) 100%)',
+                border: '1px solid rgba(255,255,255,0.18)',
+                boxShadow: 'inset 0 1.5px 0 rgba(255,255,255,0.5), inset 0 -1px 0 rgba(0,0,0,0.1), 0 16px 56px rgba(0,0,0,0.45)',
+              }}>
               <iframe
                 src={`https://open.spotify.com/embed/playlist/${id}?utm_source=generator`}
                 width="100%"

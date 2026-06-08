@@ -4,6 +4,14 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useLanguage } from '../../context/LanguageContext';
 
+const glassStyle = {
+  backdropFilter: 'blur(72px) saturate(210%) brightness(1.08)',
+  WebkitBackdropFilter: 'blur(72px) saturate(210%) brightness(1.08)',
+  background: 'linear-gradient(135deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.02) 50%, rgba(255,255,255,0.05) 100%)',
+  border: '1px solid rgba(255,255,255,0.2)',
+  boxShadow: 'inset 0 1.5px 0 rgba(255,255,255,0.55), inset 0 -1px 0 rgba(0,0,0,0.08), 0 12px 48px rgba(0,0,0,0.4)',
+};
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('Home');
@@ -73,7 +81,7 @@ const Navbar = () => {
   ];
 
   const LangSwitcher = () => (
-    <div className="flex items-center gap-3">
+    <div className="flex items-center gap-3 pl-4 border-l border-white/20">
       {langs.map((lang) => (
         <button
           key={lang.code}
@@ -93,57 +101,66 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-50 px-6 md:px-12 py-6 flex justify-between items-center transition-all duration-300 pointer-events-none">
+      <nav className="fixed top-0 left-0 w-full z-50 px-4 md:px-8 py-4 flex justify-between items-center pointer-events-none">
 
+        {/* Logo pill */}
         <a href="#" onClick={(e) => handleScroll(e, 'root', false, 'Home')}
-          className="font-header text-lg text-white mix-blend-difference hover:text-beige transition-colors tracking-tighter z-[60] relative select-none pointer-events-auto" style={{ transform: 'scaleY(0.78)' }}>
-          LITVIN
+          className="font-header text-white hover:text-beige transition-colors z-[60] relative select-none pointer-events-auto flex items-center justify-center px-5 py-2.5 rounded-full"
+          style={glassStyle}>
+          <span style={{ transform: 'scaleY(0.78)', display: 'inline-block', fontSize: '1.1rem', letterSpacing: '-0.05em' }}>
+            LITVIN
+          </span>
         </a>
 
-        {/* Desktop */}
-        <div className="hidden md:flex items-center gap-6 lg:gap-10 xl:gap-12 text-white pointer-events-auto">
+        {/* Desktop nav pill */}
+        <div className="hidden md:flex items-center gap-5 lg:gap-7 text-white pointer-events-auto px-6 lg:px-8 py-3 rounded-full"
+          style={glassStyle}>
           {links.map((link) => (
             link.href ? (
               <Link key={link.originalName} href={link.href}
                 className={`group relative font-header uppercase transition-colors cursor-pointer text-center
-                  ${language === 'ru' ? 'text-xs lg:text-sm tracking-normal font-medium' : 'text-xs lg:text-sm tracking-[0.2em]'}
-                  ${activeSection === link.originalName || isBlogPage ? 'text-white' : 'text-white/60 hover:text-white'}`}>
+                  ${language === 'ru' ? 'text-xs tracking-normal font-medium' : 'text-xs tracking-[0.18em]'}
+                  ${activeSection === link.originalName || isBlogPage ? 'text-white' : 'text-white/55 hover:text-white'}`}>
                 {link.name}
-                <span className={`absolute -bottom-2 left-0 h-0.5 bg-beige transition-all duration-300 ${activeSection === link.originalName || isBlogPage ? 'w-full' : 'w-0 group-hover:w-full'}`} />
+                <span className={`absolute -bottom-1.5 left-0 h-0.5 bg-beige transition-all duration-300 ${activeSection === link.originalName || isBlogPage ? 'w-full opacity-100' : 'w-0 opacity-0 group-hover:w-full group-hover:opacity-100'}`} />
               </Link>
             ) : (
               <a key={link.originalName} href={`#${link.targetId}`}
                 onClick={(e) => handleScroll(e, link.targetId, link.isProfile, link.originalName)}
                 className={`group relative font-header uppercase transition-colors cursor-pointer text-center
-                  ${language === 'ru' ? 'text-xs lg:text-sm tracking-normal font-medium' : 'text-xs lg:text-sm tracking-[0.2em]'}
-                  ${activeSection === link.originalName ? 'text-white' : 'text-white/60 hover:text-white'}`}>
+                  ${language === 'ru' ? 'text-xs tracking-normal font-medium' : 'text-xs tracking-[0.18em]'}
+                  ${activeSection === link.originalName ? 'text-white' : 'text-white/55 hover:text-white'}`}>
                 {link.name}
-                <span className={`absolute -bottom-2 left-0 h-0.5 bg-beige transition-all duration-300 ${activeSection === link.originalName ? 'w-full' : 'w-0 group-hover:w-full'}`} />
+                <span className={`absolute -bottom-1.5 left-0 h-0.5 bg-beige transition-all duration-300 ${activeSection === link.originalName ? 'w-full opacity-100' : 'w-0 opacity-0 group-hover:w-full group-hover:opacity-100'}`} />
               </a>
             )
           ))}
-          <div className="pointer-events-auto ml-4">
-            <LangSwitcher />
-          </div>
+          <LangSwitcher />
         </div>
 
-        {/* Mobile */}
-        <div className="md:hidden z-[60] flex items-center gap-4 pointer-events-auto">
+        {/* Mobile hamburger pill */}
+        <div className="md:hidden z-[60] flex items-center pointer-events-auto">
           <button onClick={() => setIsOpen(!isOpen)}
-            className="focus:outline-none p-3 rounded-full bg-black/30 backdrop-blur-md border border-white/10 flex items-center justify-center w-12 h-12 transition-all duration-300 hover:border-beige/50"
+            className="focus:outline-none flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300"
+            style={glassStyle}
             aria-label="Toggle Menu">
-            <div className="relative w-6 h-5 flex flex-col justify-between items-center">
-              <span className={`block w-6 h-0.5 bg-white transition-all duration-300 ${isOpen ? 'translate-y-[9px] rotate-45' : ''}`} />
-              <span className={`block w-6 h-0.5 bg-white transition-all duration-200 ${isOpen ? 'opacity-0 scale-x-0' : ''}`} />
-              <span className={`block w-6 h-0.5 bg-white transition-all duration-300 ${isOpen ? '-translate-y-[9px] -rotate-45' : ''}`} />
+            <div className="relative w-5 h-4 flex flex-col justify-between items-center">
+              <span className={`block w-5 h-0.5 bg-white transition-all duration-300 ${isOpen ? 'translate-y-[7px] rotate-45' : ''}`} />
+              <span className={`block w-5 h-0.5 bg-white transition-all duration-200 ${isOpen ? 'opacity-0 scale-x-0' : ''}`} />
+              <span className={`block w-5 h-0.5 bg-white transition-all duration-300 ${isOpen ? '-translate-y-[7px] -rotate-45' : ''}`} />
             </div>
           </button>
         </div>
 
         {/* Mobile menu */}
         <div
-          className={`fixed inset-0 bg-dark z-[50] flex flex-col items-center justify-center ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
-          style={{ transition: 'opacity 400ms cubic-bezier(0.4, 0, 0.2, 1)' }}
+          className={`fixed inset-0 z-[50] flex flex-col items-center justify-center ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+          style={{
+            transition: 'opacity 400ms cubic-bezier(0.4, 0, 0.2, 1)',
+            backdropFilter: 'blur(60px) saturate(160%)',
+            WebkitBackdropFilter: 'blur(60px) saturate(160%)',
+            background: 'rgba(10,10,10,0.55)',
+          }}
         >
           <nav className="flex flex-col gap-6 text-center w-full px-6 overflow-y-auto mt-20 items-center justify-center">
             {links.map((link, i) => (
@@ -180,11 +197,17 @@ const Navbar = () => {
               <button
                 key={lang.code}
                 onClick={() => setLanguage(lang.code)}
-                className={`relative font-header text-lg tracking-widest uppercase px-5 py-3 border transition-colors duration-300 ${
+                className={`font-header text-base tracking-widest uppercase w-20 h-20 rounded-full flex items-center justify-center transition-all duration-300 ${
                   language === lang.code
-                    ? 'text-beige border-beige'
-                    : 'text-white/40 border-white/10 hover:text-white hover:border-white/40'
+                    ? 'text-beige'
+                    : 'text-white/40 hover:text-white'
                 }`}
+                style={language === lang.code ? glassStyle : {
+                  backdropFilter: 'blur(40px)',
+                  WebkitBackdropFilter: 'blur(40px)',
+                  background: 'rgba(255,255,255,0.03)',
+                  border: '1px solid rgba(255,255,255,0.1)',
+                }}
               >
                 {lang.label}
               </button>
