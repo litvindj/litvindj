@@ -12,7 +12,14 @@ const letterStyle = (delay) => ({
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-svh flex flex-col items-center justify-center overflow-hidden bg-dark">
+    <section
+      className="relative w-full flex flex-col items-center justify-center overflow-hidden bg-dark"
+      style={{
+        height: 'calc(100svh + env(safe-area-inset-top, 0px))',
+        marginTop: 'calc(-1 * env(safe-area-inset-top, 0px))',
+        paddingTop: 'env(safe-area-inset-top, 0px)',
+      }}
+    >
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute inset-0 bg-dark/10 z-10" />
         <Image
