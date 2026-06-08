@@ -51,7 +51,7 @@ const Footer = () => {
   const inputStyles = 'w-full bg-black/20 border border-white/10 text-white placeholder-white/30 px-6 py-4 focus:outline-none focus:border-beige/50 focus:bg-black/30 transition-all duration-300 text-base rounded-2xl';
 
   return (
-    <footer className="relative z-30 bg-dark pt-24 md:pt-32 pb-8 border-t border-white/5 overflow-hidden">
+    <footer className="relative z-30 bg-dark pt-24 md:pt-32 border-t border-white/5 overflow-hidden" style={{ paddingBottom: 'calc(2rem + env(safe-area-inset-bottom, 0px))' }}>
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[90%] h-80 pointer-events-none rounded-full" style={{ background: 'radial-gradient(ellipse, rgba(216, 195, 165, 0.06) 0%, transparent 70%)' }} />
       <Container>
         <div className="relative z-10">
