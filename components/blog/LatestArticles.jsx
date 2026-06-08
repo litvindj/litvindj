@@ -31,7 +31,7 @@ export default function LatestArticles({ allPosts }) {
             </div>
 
             <div className="mb-8">
-              <h2 className={`font-header uppercase text-white leading-none ${lang === 'ru' ? 'text-4xl md:text-5xl' : 'text-5xl md:text-7xl'}`}>
+              <h2 className={`font-header uppercase text-white leading-none text-5xl md:text-7xl`}>
                 {t.title1} <br />
                 <span className="text-transparent" style={{ WebkitTextStroke: '1px #D8C3A5' }}>
                   {t.title2}
@@ -66,7 +66,7 @@ export default function LatestArticles({ allPosts }) {
                           { year: 'numeric', month: 'long', day: 'numeric' }
                         )}
                       </span>
-                      <h3 className={`font-header uppercase text-white leading-tight mb-3 transition-colors duration-300 group-hover/item:text-beige ${lang === 'ru' ? 'text-xl md:text-2xl' : 'text-2xl md:text-3xl'}`}>
+                      <h3 className={`font-header uppercase text-white leading-tight mb-3 transition-colors duration-300 group-hover/item:text-beige text-2xl md:text-3xl`}>
                         {post.title}
                       </h3>
                       <p className="text-grey text-sm leading-relaxed max-w-xl group-hover/item:text-white/80 transition-colors duration-300">

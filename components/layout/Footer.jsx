@@ -57,10 +57,10 @@ const Footer = () => {
         <div className="relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 mb-24 md:mb-32 items-start">
             <div className="flex flex-col text-center lg:text-left items-center lg:items-start max-w-2xl mx-auto lg:mx-0">
-              <h2 className={`font-header text-white uppercase leading-tight mb-6 w-full ${language === 'ru' ? 'text-3xl md:text-5xl tracking-normal' : 'text-4xl md:text-6xl tracking-tight'}`}>
+              <h2 className={`font-header text-white uppercase leading-tight mb-6 w-full text-4xl md:text-6xl tracking-tight`}>
                 {content.title}
               </h2>
-              <p className={`font-header text-beige uppercase w-full ${language === 'ru' ? 'text-xl md:text-2xl tracking-wide' : 'text-2xl md:text-3xl tracking-widest'}`}>
+              <p className={`font-header text-beige uppercase w-full text-2xl md:text-3xl tracking-widest`}>
                 {content.subtitle}
               </p>
             </div>

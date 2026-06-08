@@ -350,7 +350,7 @@ export const translations = {
       titleStroke: "Galeria",
     },
     footer: {
-      title: "Dostępny dla klubów, imprez prywatnych i eventów korporacyjnych na całym świecie.",
+      title: "Dostępny dla klubów, imprez prywatnych i eventów firmowych na całym świecie.",
       subtitle: "Porozmawiajmy o terminach i szczegółach.",
       rights: "Wszelkie prawa zastrzeżone.",
       privacyPolicy: "Polityka prywatności",

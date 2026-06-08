@@ -21,7 +21,7 @@ const TechnicalRider = () => {
                   {content.label}
                 </span>
               </div>
-              <h2 className={`font-header uppercase text-white leading-none mb-6 ${language === 'ru' ? 'text-4xl md:text-6xl tracking-normal' : 'text-5xl md:text-7xl'}`}>
+              <h2 className={`font-header uppercase text-white leading-none mb-6 text-5xl md:text-7xl`}>
                 {content.titlePart1} <br />
                 <span className="text-transparent" style={{ WebkitTextStroke: '1px #D8C3A5' }}>{content.titlePart2}</span>
               </h2>
@@ -36,7 +36,7 @@ const TechnicalRider = () => {
               {gearList.map((item, index) => (
                 <li key={index} className="group relative flex items-center py-4 border-b border-white/10 hover:border-beige transition-colors duration-300 cursor-default">
                   <span className="w-1.5 h-1.5 bg-beige rounded-full mr-4 opacity-50 group-hover:opacity-100 group-hover:scale-150 transition-all duration-300"></span>
-                  <span className={`font-header text-white/60 uppercase group-hover:text-white group-hover:translate-x-2 transition-all duration-300 ${language === 'ru' ? 'text-lg md:text-xl tracking-wide' : 'text-xl md:text-2xl'}`}>
+                  <span className={`font-header text-white/60 uppercase group-hover:text-white group-hover:translate-x-2 transition-all duration-300 text-xl md:text-2xl`}>
                     {item}
                   </span>
                 </li>

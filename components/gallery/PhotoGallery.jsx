@@ -30,11 +30,7 @@ const PhotoGallery = () => {
     <section className="py-24 md:py-32 bg-dark border-t border-white/5 overflow-hidden">
       <Container>
         <div className="flex flex-col items-center text-center mb-12">
-          <h2 className={`font-header uppercase leading-none text-white
-            ${language === 'ru'
-              ? 'text-5xl md:text-7xl tracking-normal'
-              : 'text-6xl md:text-8xl'}`}
-          >
+          <h2 className="font-header uppercase leading-none text-white text-6xl md:text-8xl">
             <span className="text-transparent" style={{ WebkitTextStroke: '1px #D8C3A5' }}>
               {content.titleStroke}
             </span>
@@ -85,13 +81,14 @@ const PhotoGallery = () => {
           >
             ‹
           </button>
-          <div className="relative max-w-5xl max-h-[90vh] w-full px-16" onClick={(e) => e.stopPropagation()}>
+          <div className="relative w-full h-full flex items-center justify-center" onClick={(e) => e.stopPropagation()}>
             <Image
               src={`/images/${PHOTOS[lightbox]}`}
               alt={`Photo ${lightbox + 1}`}
-              width={1600}
-              height={1200}
-              className="w-full h-auto max-h-[90vh] object-contain rounded-xl"
+              width={1200}
+              height={900}
+              className="max-w-full max-h-screen object-contain"
+              style={{ width: '100vw', height: '100vh', objectFit: 'contain' }}
             />
           </div>
           <button

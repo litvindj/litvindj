@@ -24,7 +24,7 @@ const Events = () => {
               </div>
               
               <h2 className={`font-header uppercase text-white leading-none mb-6
-                 ${language === 'ru' ? 'text-4xl md:text-6xl' : 'text-5xl md:text-7xl'}`}>
+                 text-5xl md:text-7xl`}>
                 {content.titlePart1} <br />
                 <span className="text-transparent" style={{ WebkitTextStroke: '1px #D8C3A5' }}>
                   {content.titlePart2}
@@ -52,7 +52,7 @@ const Events = () => {
                             {item.id}
                         </span>
                         <h3 className={`font-header uppercase tracking-wide transition-colors duration-300 text-white group-hover/item:text-beige
-                           ${language === 'ru' ? 'text-2xl md:text-4xl' : 'text-3xl md:text-5xl'}`}>
+                           text-3xl md:text-5xl`}>
                           {item.title}
                         </h3>
                       </div>

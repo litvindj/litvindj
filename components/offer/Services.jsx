@@ -81,7 +81,7 @@ const Services = () => {
             className="bg-beige flex flex-col justify-center items-center text-center p-8 cursor-pointer hover:bg-white transition-colors duration-300 group"
           >
             <h3 className={`font-header text-dark uppercase mb-2
-              ${language === 'ru' ? 'text-2xl tracking-normal' : 'text-3xl'}`}>
+              text-3xl`}>
               {content.bookBtn}
             </h3>
             <p className="text-dark/70 text-sm mb-6">

@@ -32,11 +32,7 @@ const Music = () => {
 
       <Container className="relative z-20">
         <div className="flex flex-col items-center text-center mb-12 relative z-10">
-          <h2 className={`font-header uppercase leading-none text-white
-            ${language === 'ru'
-              ? 'text-5xl md:text-7xl tracking-normal'
-              : 'text-6xl md:text-8xl'}`}
-          >
+          <h2 className="font-header uppercase leading-none text-white text-6xl md:text-8xl">
             {content.title} <span className="text-transparent" style={{ WebkitTextStroke: '1px #D8C3A5' }}>
               {content.titleStroke}
             </span>

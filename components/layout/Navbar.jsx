@@ -169,7 +169,7 @@ const Navbar = () => {
               link.href ? (
                 <Link key={link.originalName} href={link.href} onClick={() => setIsOpen(false)}
                   className={`font-header uppercase cursor-pointer border-b border-white/5 last:border-none w-full text-center block pb-4
-                    ${language === 'ru' ? 'text-3xl tracking-normal font-medium' : 'text-4xl tracking-widest'}
+                    text-4xl tracking-widest
                     ${activeSection === link.originalName || isBlogPage ? 'text-beige' : 'text-white hover:text-beige'}`}
                   style={{
                     opacity: isOpen ? 1 : 0,
@@ -182,7 +182,7 @@ const Navbar = () => {
                 <a key={link.originalName} href={`#${link.targetId}`}
                   onClick={(e) => handleScroll(e, link.targetId, link.isProfile, link.originalName)}
                   className={`font-header uppercase cursor-pointer border-b border-white/5 last:border-none w-full text-center block pb-4
-                    ${language === 'ru' ? 'text-3xl tracking-normal font-medium' : 'text-4xl tracking-widest'}
+                    text-4xl tracking-widest
                     ${activeSection === link.originalName ? 'text-beige' : 'text-white hover:text-beige'}`}
                   style={{
                     opacity: isOpen ? 1 : 0,

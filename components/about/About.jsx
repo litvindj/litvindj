@@ -78,7 +78,7 @@ const About = () => {
 
         <div className="w-full flex flex-col justify-center px-6 py-16 md:px-16 lg:px-24 relative z-10 bg-dark">
 
-          <h2 className={`font-header text-white uppercase leading-[0.9] mb-8 ${language === 'ru' ? 'text-4xl sm:text-5xl md:text-6xl tracking-normal' : 'text-4xl sm:text-5xl md:text-7xl lg:text-[4vw]'}`}>
+          <h2 className={`font-header text-white uppercase leading-[0.9] mb-8 text-4xl sm:text-5xl md:text-7xl lg:text-[4vw]`}>
             {t('about.title1')}
           </h2>
 
