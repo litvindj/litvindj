@@ -159,7 +159,7 @@ const Navbar = () => {
             transition: 'opacity 400ms cubic-bezier(0.4, 0, 0.2, 1)',
             backdropFilter: 'blur(60px) saturate(160%)',
             WebkitBackdropFilter: 'blur(60px) saturate(160%)',
-            background: 'rgba(10,10,10,0.55)',
+            background: 'rgba(10,10,10,0.06)',
           }}
         >
           <nav className="flex flex-col gap-6 text-center w-full px-6 overflow-y-auto mt-20 items-center justify-center">
