@@ -51,6 +51,8 @@ export default function RootLayout({ children }) {
   return (
     <html suppressHydrationWarning className={`${oswald.variable} ${manrope.variable}`}>
       <head>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <script dangerouslySetInnerHTML={{ __html: `history.scrollRestoration="manual";` }} />
       </head>
       <body className="bg-dark text-white min-h-screen">
