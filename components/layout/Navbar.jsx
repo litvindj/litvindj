@@ -159,7 +159,7 @@ const Navbar = () => {
             transition: 'opacity 400ms cubic-bezier(0.4, 0, 0.2, 1)',
             backdropFilter: 'blur(60px) saturate(160%)',
             WebkitBackdropFilter: 'blur(60px) saturate(160%)',
-            background: 'rgba(10,10,10,0.06)',
+            background: 'rgba(10,10,10,0.75)',
           }}
         >
           <nav className="flex flex-col gap-6 text-center w-full px-6 overflow-y-auto mt-20 items-center justify-center">
@@ -197,7 +197,7 @@ const Navbar = () => {
               <button
                 key={lang.code}
                 onClick={() => setLanguage(lang.code)}
-                className={`font-header text-base tracking-widest uppercase w-20 h-20 rounded-full flex items-center justify-center transition-all duration-300 ${
+                className={`font-header text-sm tracking-widest uppercase px-8 py-3 rounded-full transition-all duration-300 ${
                   language === lang.code
                     ? 'text-beige'
                     : 'text-white/40 hover:text-white'
