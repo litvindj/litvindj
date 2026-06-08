@@ -14,16 +14,18 @@ const Hero = () => {
   return (
     <section
       className="relative w-full flex flex-col items-center justify-center overflow-hidden bg-dark"
-      style={{ minHeight: '100svh' }}
+      style={{
+        minHeight: 'calc(100svh + env(safe-area-inset-top, 54px))',
+        marginTop: 'calc(-1 * env(safe-area-inset-top, 54px))',
+      }}
     >
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="absolute inset-0 bg-dark/10 z-10" />
         <Image
           src="/images/hero.png"
           alt="Gennady Litvin DJ"
           fill
           priority
-          className="object-cover opacity-60 grayscale"
+          className="object-cover opacity-75 grayscale"
           style={{ backfaceVisibility: 'hidden' }}
         />
       </div>
