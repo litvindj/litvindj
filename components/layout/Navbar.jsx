@@ -5,11 +5,11 @@ import { usePathname } from 'next/navigation';
 import { useLanguage } from '../../context/LanguageContext';
 
 const glassStyle = {
-  backdropFilter: 'blur(72px) saturate(210%) brightness(1.08)',
-  WebkitBackdropFilter: 'blur(72px) saturate(210%) brightness(1.08)',
-  background: 'linear-gradient(135deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.02) 50%, rgba(255,255,255,0.05) 100%)',
-  border: '1px solid rgba(255,255,255,0.2)',
-  boxShadow: 'inset 0 1.5px 0 rgba(255,255,255,0.55), inset 0 -1px 0 rgba(0,0,0,0.08), 0 12px 48px rgba(0,0,0,0.4)',
+  backdropFilter: 'blur(8px)',
+  WebkitBackdropFilter: 'blur(8px)',
+  background: 'rgba(255,255,255,0.06)',
+  border: '1px solid rgba(255,255,255,0.18)',
+  boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.3), 0 8px 32px rgba(0,0,0,0.25)',
 };
 
 const Navbar = () => {
