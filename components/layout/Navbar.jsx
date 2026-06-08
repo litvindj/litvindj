@@ -142,7 +142,7 @@ const Navbar = () => {
 
         {/* Mobile menu */}
         <div
-          className={`fixed inset-0 bg-dark z-[50] flex flex-col items-center justify-center pointer-events-auto ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+          className={`fixed inset-0 bg-dark z-[50] flex flex-col items-center justify-center ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
           style={{ transition: 'opacity 400ms cubic-bezier(0.4, 0, 0.2, 1)' }}
         >
           <nav className="flex flex-col gap-6 text-center w-full px-6 overflow-y-auto mt-20 items-center justify-center">
