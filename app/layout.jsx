@@ -6,6 +6,12 @@ import { LanguageProvider } from '../context/LanguageContext';
 const oswald = Oswald({ subsets: ['latin', 'cyrillic'], weight: ['400', '500', '700'], variable: '--font-oswald', display: 'swap' });
 const manrope = Manrope({ subsets: ['latin', 'cyrillic'], weight: ['300', '400', '500', '600'], variable: '--font-manrope', display: 'swap' });
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
+};
+
 export const metadata = {
   title: 'DJ Litvin — Professional DJ for Corporate Events & Weddings | Warsaw',
   description: 'DJ Litvin — professional DJ for corporate events, weddings, brand launches and private parties. 6+ years, 500+ events. Warsaw, available worldwide. Trusted by Disney, Coca-Cola, Volkswagen.',

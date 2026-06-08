@@ -101,7 +101,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-50 px-4 md:px-8 py-4 flex justify-between items-center pointer-events-none">
+      <nav className="fixed top-0 left-0 w-full z-50 px-4 md:px-8 py-4 flex justify-between items-center pointer-events-none" style={{ paddingTop: 'max(1rem, env(safe-area-inset-top))' }}>
 
         {/* Logo pill */}
         <a href="#" onClick={(e) => handleScroll(e, 'root', false, 'Home')}
@@ -160,6 +160,8 @@ const Navbar = () => {
             backdropFilter: 'blur(60px) saturate(160%)',
             WebkitBackdropFilter: 'blur(60px) saturate(160%)',
             background: 'rgba(10,10,10,0.75)',
+            paddingTop: 'env(safe-area-inset-top)',
+            paddingBottom: 'env(safe-area-inset-bottom)',
           }}
         >
           <nav className="flex flex-col gap-6 text-center w-full px-6 overflow-y-auto mt-20 items-center justify-center">
