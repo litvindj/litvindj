@@ -132,6 +132,10 @@ export const translations = {
       title: "Full Sets",
       titleStroke: "On YouTube",
     },
+    photos: {
+      title: "",
+      titleStroke: "Gallery",
+    },
     footer: {
       title: "Available for clubs, private, and corporate events worldwide.",
       subtitle: "Let’s talk dates and details.",
@@ -246,6 +250,10 @@ export const translations = {
       title: "Полные сеты",
       titleStroke: "На YouTube",
     },
+    photos: {
+      title: "",
+      titleStroke: "Галерея",
+    },
     footer: {
       title:
         "Доступен для клубов, частных и корпоративных ивентов по всему миру.",
@@ -336,6 +344,10 @@ export const translations = {
     gallery: {
       title: "Pełne Sety",
       titleStroke: "Na YouTube",
+    },
+    photos: {
+      title: "",
+      titleStroke: "Galeria",
     },
     footer: {
       title: "Dostępny dla klubów, imprez prywatnych i eventów korporacyjnych na całym świecie.",

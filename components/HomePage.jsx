@@ -5,6 +5,7 @@ import Hero from './hero/Hero';
 import About from './about/About';
 import Music from './music/Music';
 import VideoGallery from './gallery/VideoGallery';
+import PhotoGallery from './gallery/PhotoGallery';
 import BrandsMarquee from './layout/BrandsMarquee';
 import Footer from './layout/Footer';
 
@@ -85,8 +86,9 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div id="music-section"   className="relative z-30 bg-dark"><Music /></div>
-          <div id="gallery-section" className="relative z-30 bg-dark"><VideoGallery /></div>
+          <div id="music-section"    className="relative z-30 bg-dark"><Music /></div>
+          <div id="gallery-section" className="relative z-30 bg-dark"><PhotoGallery /></div>
+          <div                      className="relative z-30 bg-dark"><VideoGallery /></div>
           <div                      className="relative z-30 bg-dark"><BrandsMarquee /></div>
           <div id="footer-section"  className="relative z-30"><Footer /></div>
         </main>
