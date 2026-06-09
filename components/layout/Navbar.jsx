@@ -34,12 +34,12 @@ const Navbar = () => {
   ];
 
   useEffect(() => {
+    const windowHeight = window.innerHeight;
     const handleScrollSpy = () => {
       if (isManualScroll.current) return;
       const scrollY = window.scrollY;
-      const windowHeight = window.innerHeight;
       if (scrollY < windowHeight * 0.3) { setActiveSection('Home'); return; }
-      if ((window.innerHeight + scrollY) >= document.body.offsetHeight - 50) { setActiveSection('Contact'); return; }
+      if ((windowHeight + scrollY) >= document.body.offsetHeight - 50) { setActiveSection('Contact'); return; }
       for (const link of links) {
         const element = document.getElementById(link.targetId);
         if (element) {
