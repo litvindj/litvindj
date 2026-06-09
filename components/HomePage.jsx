@@ -76,7 +76,8 @@ export default function HomePage() {
           <div id="about-section" className="relative w-full lg:h-[170vh]">
             <div className="relative w-full lg:sticky lg:top-0 lg:h-screen lg:overflow-hidden">
               <div id="hero-image-layer" ref={heroWrapperRef}
-                className="w-full h-[100svh] z-10 lg:absolute lg:inset-0 lg:h-full will-change-transform origin-center">
+                className="w-full z-10 lg:absolute lg:inset-0 lg:h-full will-change-transform origin-center"
+                style={{ height: 'var(--app-height, 100svh)' }}>
                 <Hero />
               </div>
               <div ref={aboutWrapperRef}

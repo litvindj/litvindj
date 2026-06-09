@@ -28,7 +28,7 @@ const VideoGallery = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative w-full overflow-hidden border-t border-white/5 bg-dark" style={{ height: '100vh' }}>
+    <section ref={sectionRef} className="relative w-full overflow-hidden border-t border-white/5 bg-dark" style={{ height: 'var(--app-height, 100svh)' }}>
       <div className="absolute inset-0 z-0 bg-black">
         <video ref={videoRef} loop muted playsInline preload="none"
           className="w-full h-full object-cover grayscale">
