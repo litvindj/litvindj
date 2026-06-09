@@ -35,22 +35,28 @@ const Navbar = () => {
 
   useEffect(() => {
     const windowHeight = window.innerHeight;
+    const bodyHeight = document.body.offsetHeight;
+    const sectionCache = {};
+    for (const link of links) {
+      if (!link.targetId) continue;
+      const el = document.getElementById(link.targetId);
+      if (el) sectionCache[link.targetId] = { top: el.offsetTop, height: el.offsetHeight };
+    }
+
     const handleScrollSpy = () => {
       if (isManualScroll.current) return;
       const scrollY = window.scrollY;
       if (scrollY < windowHeight * 0.3) { setActiveSection('Home'); return; }
-      if ((windowHeight + scrollY) >= document.body.offsetHeight - 50) { setActiveSection('Contact'); return; }
+      if (windowHeight + scrollY >= bodyHeight - 50) { setActiveSection('Contact'); return; }
       for (const link of links) {
-        const element = document.getElementById(link.targetId);
-        if (element) {
-          const { offsetTop, offsetHeight } = element;
-          if (scrollY >= (offsetTop - windowHeight * 0.4) && scrollY < (offsetTop + offsetHeight - windowHeight * 0.4)) {
-            setActiveSection(link.originalName);
-          }
+        const s = sectionCache[link.targetId];
+        if (!s) continue;
+        if (scrollY >= s.top - windowHeight * 0.4 && scrollY < s.top + s.height - windowHeight * 0.4) {
+          setActiveSection(link.originalName);
         }
       }
     };
-    window.addEventListener('scroll', handleScrollSpy);
+    window.addEventListener('scroll', handleScrollSpy, { passive: true });
     handleScrollSpy();
     return () => window.removeEventListener('scroll', handleScrollSpy);
   }, []);
