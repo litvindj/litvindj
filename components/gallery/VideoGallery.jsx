@@ -34,7 +34,7 @@ const VideoGallery = () => {
           className="w-full h-full object-cover grayscale">
         </video>
         <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
-        <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-dark to-transparent z-20 opacity-90 pointer-events-none" />
+        <div className="absolute top-0 left-0 w-full z-20 pointer-events-none" style={{ height: '80px', background: 'linear-gradient(to bottom, #0a0a0a 0%, rgba(10,10,10,0.7) 30%, rgba(10,10,10,0.3) 60%, rgba(10,10,10,0.05) 85%, transparent 100%)' }} />
       </div>
       <Container className="relative z-30 h-full flex flex-col items-center justify-center text-center">
         <h2 className="font-header text-5xl md:text-8xl uppercase text-white mb-12">
