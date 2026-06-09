@@ -25,7 +25,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="relative z-20 text-center flex flex-col items-center select-none px-4 mt-[32vh]">
+      <div className="relative z-20 text-center flex flex-col items-center select-none px-4" style={{ marginTop: 'calc(var(--app-height, 100svh) * 0.32)' }}>
         <h2
           className="font-header text-5xl md:text-7xl lg:text-8xl text-transparent uppercase tracking-widest mb-2 md:mb-4"
           style={{ WebkitTextStroke: '1px #D8C3A5' }}

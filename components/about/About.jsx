@@ -10,8 +10,8 @@ const Stats = ({ language }) => {
   const [brands, setBrands] = useState(0);
 
   useEffect(() => {
+    const vh = window.innerHeight;
     const onScroll = () => {
-      const vh = window.innerHeight;
       let progress;
 
       if (window.innerWidth >= 1024) {
