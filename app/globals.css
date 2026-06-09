@@ -43,6 +43,7 @@ body {
   font-weight: 500;
   overflow-x: hidden;
   overscroll-behavior: none;
+  overflow-anchor: none;
 }
 
 /* Oswald для всех заголовков */
