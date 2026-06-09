@@ -50,7 +50,6 @@ export default function RootLayout({ children }) {
   return (
     <html suppressHydrationWarning className={`${oswald.variable} ${manrope.variable}`}>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: `history.scrollRestoration="manual";` }} />
       </head>
       <body className="bg-dark text-white min-h-screen">
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGFZW2NR" height="0" width="0" style={{display:'none',visibility:'hidden'}} /></noscript>
