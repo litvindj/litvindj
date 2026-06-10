@@ -42,7 +42,7 @@ const CONTENT = {
       { q: 'Czy możesz dostosować muzykę do brief\'u klienta lub agencji?', a: 'Tak. Pracuję z briefami od agencji eventowych i bezpośrednio od klientów. Dobór muzyki uwzględnia tone of voice marki i format eventu.' },
       { q: 'Czy współpracujesz z agencjami eventowymi?', a: 'Tak, chętnie. Mam doświadczenie w pracy jako podwykonawca dla agencji — terminowość, komunikacja i profesjonalizm to moje standardy.' },
       { q: 'Czy przywozisz własny sprzęt?', a: 'Tak. Pioneer DJ CDJ-3000 + DJM-A9. Mogę też pracować z instalacją AV na miejscu — wystarczy wcześniej ustalić specyfikację techniczną.' },
-      { q: 'Czy gram po całej Polsce i za granicą?', a: 'Tak. Baza to Warszawa, ale eventy firmowe prowadzę na terenie całej Polski i w Europie. Logistykę ustalamy indywidualnie.' },
+      { q: 'Czy gram po całej Polsce i za granicą?', a: 'Tak. Gram w Warszawie, ale obsługuję całą Polskę i wyjeżdżam za granicę. Logistykę ustalamy indywidualnie.' },
     ],
     ctaTitle: 'Wyślij zapytanie',
     ctaDesc: 'Napisz o swoim evencie — data, typ, przybliżona liczba gości. Odpowiem w ciągu 24 godzin.',
