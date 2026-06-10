@@ -143,18 +143,18 @@ export async function generateMetadata({ params }) {
     title: c.meta.title,
     description: c.meta.description,
     alternates: {
-      canonical: `${base}/${lang}/dj-korporacyjny-warszawa`,
+      canonical: `${base}/${lang}/dj-na-event-firmowy-warszawa`,
       languages: {
-        'pl': `${base}/pl/dj-korporacyjny-warszawa`,
-        'en': `${base}/en/dj-korporacyjny-warszawa`,
-        'ru': `${base}/ru/dj-korporacyjny-warszawa`,
-        'x-default': `${base}/pl/dj-korporacyjny-warszawa`,
+        'pl': `${base}/pl/dj-na-event-firmowy-warszawa`,
+        'en': `${base}/en/dj-na-event-firmowy-warszawa`,
+        'ru': `${base}/ru/dj-na-event-firmowy-warszawa`,
+        'x-default': `${base}/pl/dj-na-event-firmowy-warszawa`,
       },
     },
     openGraph: {
       title: c.meta.title,
       description: c.meta.description,
-      url: `${base}/${lang}/dj-korporacyjny-warszawa`,
+      url: `${base}/${lang}/dj-na-event-firmowy-warszawa`,
       images: [{ url: `${base}/og-image.jpg`, width: 1200, height: 630 }],
     },
   };
@@ -176,7 +176,7 @@ export default async function CorporateDJPage({ params }) {
       { '@type': 'Country', name: 'Poland' },
       { '@type': 'AdministrativeArea', name: 'Europe' },
     ],
-    url: `https://litvindj.com/${lang}/dj-korporacyjny-warszawa`,
+    url: `https://litvindj.com/${lang}/dj-na-event-firmowy-warszawa`,
   };
 
   return (

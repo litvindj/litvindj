@@ -38,4 +38,4 @@ That's what makes a great DJ set at a brand launch.
 
 ---
 
-*Looking to hire a professional DJ for a brand launch or corporate event in Warsaw? [See how I work with corporate clients →](/en/dj-korporacyjny-warszawa)*
+*Looking to hire a professional DJ for a brand launch or corporate event in Warsaw? [See how I work with corporate clients →](/en/dj-na-event-firmowy-warszawa)*

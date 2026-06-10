@@ -23,7 +23,7 @@ export default function sitemap() {
 
   const landingPages = langs.flatMap((lang) => [
     { url: `https://litvindj.com/${lang}/dj-na-wesele-warszawa`,    lastModified: today, changeFrequency: 'monthly', priority: 0.95 },
-    { url: `https://litvindj.com/${lang}/dj-korporacyjny-warszawa`, lastModified: today, changeFrequency: 'monthly', priority: 0.95 },
+    { url: `https://litvindj.com/${lang}/dj-na-event-firmowy-warszawa`, lastModified: today, changeFrequency: 'monthly', priority: 0.95 },
   ]);
 
   return [

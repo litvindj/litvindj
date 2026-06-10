@@ -1,0 +1,17 @@
+[[redirects]]
+  from = "/en/dj-korporacyjny-warszawa"
+  to = "/en/dj-na-event-firmowy-warszawa"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pl/dj-korporacyjny-warszawa"
+  to = "/pl/dj-na-event-firmowy-warszawa"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ru/dj-korporacyjny-warszawa"
+  to = "/ru/dj-na-event-firmowy-warszawa"
+  status = 301
+  force = true

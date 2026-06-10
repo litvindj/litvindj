@@ -38,4 +38,4 @@ To właśnie sprawia, że DJ set na brand launchu jest wyjątkowy.
 
 ---
 
-*Szukasz DJ-a na event korporacyjny lub brand launch w Warszawie? [Zobacz, jak pracuję z klientami firmowymi →](/pl/dj-korporacyjny-warszawa)*
+*Szukasz DJ-a na event korporacyjny lub brand launch w Warszawie? [Zobacz, jak pracuję z klientami firmowymi →](/pl/dj-na-event-firmowy-warszawa)*
