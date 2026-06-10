@@ -16,10 +16,10 @@ const SEO = {
     locale: 'ru_RU',
   },
   pl: {
-    title: 'DJ Litvin — Profesjonalny DJ na wesela i eventy korporacyjne | Warszawa',
-    description: 'DJ Litvin — profesjonalny DJ na eventy korporacyjne, wesela, launche marek i imprezy prywatne. 6+ lat, 500+ eventów. Warszawa, dostępny na całym świecie. Zaufały mu Disney, Coca-Cola, Volkswagen.',
+    title: 'DJ Litvin — Profesjonalny DJ na wesela i eventy firmowe | Warszawa',
+    description: 'DJ Litvin — profesjonalny DJ na eventy firmowe, wesela, launche marek i imprezy prywatne. 6+ lat, 500+ eventów. Warszawa, dostępny na całym świecie. Zaufały mu Disney, Coca-Cola, Volkswagen.',
     og_title: 'DJ Litvin — Architekt Dźwięku | Warszawa',
-    og_desc: 'Profesjonalny DJ na eventy korporacyjne, wesela i imprezy prywatne. Warszawa. Zaufały mu Disney, Coca-Cola, Volkswagen i inne.',
+    og_desc: 'Profesjonalny DJ na eventy firmowe, wesela i imprezy prywatne. Warszawa. Zaufały mu Disney, Coca-Cola, Volkswagen i inne.',
     locale: 'pl_PL',
   },
 };
@@ -75,7 +75,7 @@ const SOCIAL_LINKS = [
 const BUSINESS_DESCRIPTIONS = {
   en: 'Professional DJ for corporate events, weddings, brand launches and private parties. 6+ years of experience, 500+ events performed. Warsaw-based, available across Europe.',
   ru: 'Профессиональный диджей для корпоративных мероприятий, свадеб, запусков брендов и частных вечеринок. Опыт 6+ лет, 500+ мероприятий. Варшава, выезды по всей Европе.',
-  pl: 'Profesjonalny DJ na eventy korporacyjne, wesela, launche marek i imprezy prywatne. 6+ lat doświadczenia, 500+ eventów. Warszawa i cała Europa.',
+  pl: 'Profesjonalny DJ na eventy firmowe, wesela, launche marek i imprezy prywatne. 6+ lat doświadczenia, 500+ eventów. Warszawa i cała Europa.',
 };
 
 const OFFER_CATALOGS = {
@@ -103,7 +103,7 @@ const OFFER_CATALOGS = {
     name: 'Usługi DJ-a',
     itemListElement: [
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'DJ na wesele Warszawa', description: 'Profesjonalny DJ na wesele w Warszawie i całej Polsce' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'DJ na event korporacyjny Warszawa', description: 'DJ na eventy korporacyjne, gale i konferencje' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'DJ na event firmowy Warszawa', description: 'DJ na eventy firmowe, gale i konferencje' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'DJ na launch marki', description: 'DJ na launche marek, otwarcia sklepów i eventy promocyjne' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'DJ na pokaz mody', description: 'DJ na pokazy mody i prezentacje fashion' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'DJ na imprezę prywatną Warszawa', description: 'DJ na imprezy prywatne i VIP' } },

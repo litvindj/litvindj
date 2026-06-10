@@ -296,7 +296,7 @@ export const translations = {
       subtitleMain: "Podnoszę poziom eventów poprzez dźwięk z precyzją, energią i profesjonalizmem — ",
       subtitleHighlight: "zaufany przez marki, firmy i klientów prywatnych.",
       items: [
-        { id: '01', title: 'Indywidualna Selekcja', description: "Muzyka starannie dobrana do koncepcji, formatu i publiczności eventu. Dźwięk, głośność i poziom energii dostosowują się zarówno do formalnych eventów korporacyjnych, jak i relaksowanych prywatnych uroczystości." },
+        { id: '01', title: 'Indywidualna Selekcja', description: "Muzyka starannie dobrana do koncepcji, formatu i publiczności eventu. Dźwięk, głośność i poziom energii dostosowują się zarówno do formalnych eventów firmowych, jak i relaksowanych prywatnych uroczystości." },
         { id: '02', title: 'Płynny Przebieg', description: "Płynne przejścia i pełna kontrola atmosfery przez cały czas trwania eventu. Muzyka jest zsynchronizowana z harmonogramem, kluczowymi momentami i programem." },
         { id: '03', title: 'Synergia z Teamem', description: "Jasna i ustrukturyzowana komunikacja z organizatorami, prowadzącymi i ekipą techniczną. Dźwięk idealnie uzupełnia każde przemówienie i moment show." },
         { id: '04', title: 'Adaptacyjny Nastrój', description: "Elastyczność w czasie rzeczywistym, oparta na dynamice publiczności. Od subtelnych wibracji w tle podczas kolacji po energiczne momenty taneczne — natychmiast i naturalnie." },
@@ -311,7 +311,7 @@ export const translations = {
       titlePart2: "Oferuję",
       description: "Profesjonalny dźwięk dopasowany do unikalnej kultury i formatu Twojego eventu.",
       items: [
-        { id: '01', title: 'Eventy Korporacyjne', description: 'Profesjonalna muzyka dopasowana do kultury firmy i formatu eventu — od konferencji i gali po imprezy biurowe i uroczystości firmowe.' },
+        { id: '01', title: 'Eventy Firmowe', description: 'Profesjonalna muzyka dopasowana do kultury firmy i formatu eventu — od konferencji i gali po imprezy biurowe i uroczystości firmowe.' },
         { id: '02', title: 'Wesela', description: 'Starannie dobrana muzyka na każdy moment dnia, od ceremonii i kolacji po energiczny parkiet dla wszystkich pokoleń.' },
         { id: '03', title: 'Eventy Brandowe', description: 'Dźwięk odzwierciedlający tożsamość marki i wspierający atmosferę premier produktów, otwarć sklepów i eventów promocyjnych.' },
         { id: '04', title: 'Eventy Fashion', description: 'Starannie dobrana muzyka, która uzupełnia wizualną koncepcję, tempo i estetykę pokazów mody.' },

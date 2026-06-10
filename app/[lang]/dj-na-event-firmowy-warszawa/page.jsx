@@ -8,25 +8,25 @@ export async function generateStaticParams() {
 const CONTENT = {
   pl: {
     meta: {
-      title: 'DJ na event korporacyjny Warszawa — DJ Litvin | Eventy firmowe',
-      description: 'DJ na eventy korporacyjne w Warszawie. Gale, launche marek, konferencje, imprezy firmowe. 6+ lat, 500+ eventów. Zaufały mu Disney, Coca-Cola, Volkswagen.',
+      title: 'DJ na event firmowy Warszawa — DJ Litvin | Eventy firmowe',
+      description: 'DJ na eventy firmowe w Warszawie. Gale, launche marek, konferencje, imprezy integracyjne. 6+ lat, 500+ eventów. Zaufały mu Disney, Coca-Cola, Volkswagen.',
     },
     back: '← Strona główna',
     label: 'Usługa',
     h1a: 'DJ na event',
     h1b: 'Firmowy',
-    intro: 'Event korporacyjny rządzi się innymi prawami niż prywatna impreza. Muzyka nie może być zbyt głośna podczas networkingu, nie może przyćmić prezentacji i powinna zsynchronizować się z każdym momentem programu. Mam doświadczenie w pracy z agencjami eventowymi, hostem i techniczną obsługą sceny.',
+    intro: 'Event firmowy rządzi się innymi prawami niż prywatna impreza. Muzyka nie może być zbyt głośna podczas networkingu, nie może przyćmić prezentacji i powinna zsynchronizować się z każdym momentem programu. Mam doświadczenie w pracy z agencjami eventowymi, hostem i techniczną obsługą sceny.',
     benefitsLabel: 'Jak pracuję',
     benefits: [
       { num: '01', title: 'Muzyka dopasowana do marki', desc: 'Gatunek, tempo i klimat dobierane pod tożsamość klienta — nie każda firma brzmi tak samo.' },
       { num: '02', title: 'Synchronizacja z programem', desc: 'Ścisła współpraca z MC, reżyserem sceny i technikami. Wejścia, przerwy, prezentacje — każdy moment ma właściwe tło dźwiękowe.' },
       { num: '03', title: 'Dyskretny background lub energetyczny parkiet', desc: 'Od ambient na cocktail hour przez lounge podczas kolacji po pełną imprezę na zakończenie eventu.' },
       { num: '04', title: 'Sprzęt klasy pro', desc: 'Pioneer DJ CDJ-3000 + DJM-A9. Mogę też pracować ze sprzętem AV zainstalowanym przez obsługę techniczną.' },
-      { num: '05', title: 'Dyspozycyjność i doświadczenie', desc: '500+ eventów dla Disney, Coca-Cola, Deloitte, Santander Bank, Volkswagen, Philips. Wiem, czego oczekują korporacyjni klienci.' },
+      { num: '05', title: 'Dyspozycyjność i doświadczenie', desc: '500+ eventów dla Disney, Coca-Cola, Deloitte, Santander Bank, Volkswagen, Philips. Wiem, czego oczekują klienci firmowi.' },
     ],
     eventsLabel: 'Rodzaje eventów',
     events: [
-      'Gale i kolacje korporacyjne',
+      'Gale i kolacje firmowe',
       'Launche produktów i marek',
       'Konferencje i eventy hybrydowe',
       'Imprezy integracyjne i team building',
@@ -42,7 +42,7 @@ const CONTENT = {
       { q: 'Czy możesz dostosować muzykę do brief\'u klienta lub agencji?', a: 'Tak. Pracuję z briefami od agencji eventowych i bezpośrednio od klientów. Dobór muzyki uwzględnia tone of voice marki i format eventu.' },
       { q: 'Czy współpracujesz z agencjami eventowymi?', a: 'Tak, chętnie. Mam doświadczenie w pracy jako podwykonawca dla agencji — terminowość, komunikacja i profesjonalizm to moje standardy.' },
       { q: 'Czy przywozisz własny sprzęt?', a: 'Tak. Pioneer DJ CDJ-3000 + DJM-A9. Mogę też pracować z instalacją AV na miejscu — wystarczy wcześniej ustalić specyfikację techniczną.' },
-      { q: 'Czy gram po całej Polsce i za granicą?', a: 'Tak. Baza to Warszawa, ale eventy korporacyjne prowadzę na terenie całej Polski i w Europie. Logistykę ustalamy indywidualnie.' },
+      { q: 'Czy gram po całej Polsce i za granicą?', a: 'Tak. Baza to Warszawa, ale eventy firmowe prowadzę na terenie całej Polski i w Europie. Logistykę ustalamy indywidualnie.' },
     ],
     ctaTitle: 'Wyślij zapytanie',
     ctaDesc: 'Napisz o swoim evencie — data, typ, przybliżona liczba gości. Odpowiem w ciągu 24 godzin.',
@@ -168,7 +168,7 @@ export default async function CorporateDJPage({ params }) {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: lang === 'pl' ? 'DJ na event korporacyjny Warszawa' : lang === 'ru' ? 'Диджей на корпоратив Варшава' : 'Corporate Events DJ Warsaw',
+    name: lang === 'pl' ? 'DJ na event firmowy Warszawa' : lang === 'ru' ? 'DJ на корпоратив Варшава' : 'Corporate Events DJ Warsaw',
     description: c.meta.description,
     provider: { '@id': 'https://litvindj.com/#business' },
     areaServed: [
@@ -208,7 +208,7 @@ export default async function CorporateDJPage({ params }) {
           <div className="relative w-full h-[420px] md:h-[560px] overflow-hidden">
             <Image
               src="/images/about.JPG"
-              alt="DJ Litvin — DJ na event korporacyjny Warszawa"
+              alt="DJ Litvin — DJ na event firmowy Warszawa"
               fill
               className="object-cover object-top"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -256,7 +256,7 @@ export default async function CorporateDJPage({ params }) {
       {/* Photo strip */}
       <div className="w-full grid grid-cols-3 h-52 md:h-80">
         <div className="relative overflow-hidden">
-          <Image src="/images/100047381147.jpg" alt="DJ Litvin przy konsoli — event korporacyjny" fill className="object-cover" sizes="33vw" />
+          <Image src="/images/100047381147.jpg" alt="DJ Litvin przy konsoli — event firmowy" fill className="object-cover" sizes="33vw" />
         </div>
         <div className="relative overflow-hidden border-l border-r border-white/10">
           <Image src="/images/100210379934.jpg" alt="Parkiet na evencie firmowym" fill className="object-cover" sizes="33vw" />
