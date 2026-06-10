@@ -1,5 +1,5 @@
 ---
-title: "How Tempo Controls People Without Them Knowing"
+title: "Why the DJ Controls the Room — and You Don't Even Notice"
 date: "2026-05-22"
 description: "BPM is the most powerful invisible tool in a DJ's arsenal. It shapes the behaviour of everyone in the room — whether they're listening to the music or not."
 ---
@@ -49,3 +49,7 @@ If you've ever been to an event where the dancefloor felt forced — where peopl
 And if you've been to an event where the evening just seemed to flow — where everything felt natural and the energy was exactly right at every moment — tempo was working perfectly behind the scenes, invisible and deliberate.
 
 The music you hear is only part of what a DJ does. The tempo you don't notice is the rest of it.
+
+---
+
+*Want a DJ who actually reads the room? [Book a wedding DJ in Warsaw →](/en/dj-na-wesele-warszawa)*

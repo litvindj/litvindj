@@ -1,5 +1,5 @@
 ---
-title: "Why Empty Dancefloors Are Never The Guests' Fault"
+title: "Empty Dancefloor? Here's What Went Wrong with the DJ"
 date: "2026-05-20"
 description: "When the dancefloor stays empty, the instinct is to blame the guests. It's almost never true."
 ---
@@ -51,3 +51,7 @@ If you've been to events where the dancefloor never really happened, the guests 
 The fix is not a different crowd. It's a DJ who understands that filling a dancefloor is a craft — one that starts long before the first beat drops, and depends entirely on the decisions made in the hour before anyone steps onto the floor.
 
 Your guests want to have a good time. Give them the right conditions, and they will.
+
+---
+
+*Planning a wedding in Warsaw and looking for a DJ? [How I work with wedding clients →](/en/dj-na-wesele-warszawa)*

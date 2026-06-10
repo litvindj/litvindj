@@ -1,5 +1,5 @@
 ---
-title: "Dlaczego pusty parkiet nigdy nie jest winą gości"
+title: "Pusty parkiet? To nie wina gości — to wina DJ-a"
 date: "2026-05-20"
 description: "Kiedy parkiet świeci pustkami, instynkt podpowiada, żeby winić gości. To prawie nigdy nie jest prawda."
 ---
@@ -51,3 +51,7 @@ Jeśli byłeś na eventach, gdzie parkiet nigdy nie zaistniał — wina nie leż
 Rozwiązaniem nie jest inna publiczność. To DJ, który rozumie, że wypełnienie parkietu to rzemiosło — zaczynające się na długo przed pierwszym beatem i zależne całkowicie od decyzji podjętych zanim ktokolwiek wejdzie na parkiet.
 
 Twoi goście chcą dobrze spędzić wieczór. Daj im odpowiednie warunki, a na pewno tak będzie.
+
+---
+
+*Szukasz DJ-a na wesele w Warszawie? [Jak pracuję z parami młodymi →](/pl/dj-na-wesele-warszawa)*

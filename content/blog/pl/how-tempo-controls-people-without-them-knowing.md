@@ -1,5 +1,5 @@
 ---
-title: "Jak tempo muzyki kontroluje ludzi bez ich wiedzy"
+title: "Dlaczego DJ kontroluje salę — i nikt tego nie zauważa"
 date: "2026-05-22"
 description: "BPM to najpotężniejsze niewidoczne narzędzie DJ-a. Kształtuje zachowanie wszystkich w sali — niezależnie od tego, czy słuchają muzyki, czy nie."
 ---
@@ -49,3 +49,7 @@ Jeśli byłeś kiedyś na evencie, gdzie parkiet wydawał się wymuszony — gdz
 A jeśli byłeś na evencie, gdzie wieczór po prostu płynął — gdzie wszystko wydawało się naturalne, a energia była dokładnie taka, jakiej potrzeba w każdym momencie — tempo działało perfekcyjnie w tle, niewidocznie i celowo.
 
 Muzyka, którą słyszysz, to tylko część tego, co robi DJ. Tempo, którego nie zauważasz, to reszta.
+
+---
+
+*Chcesz DJ-a, który naprawdę czyta salę? [DJ na wesele w Warszawie →](/pl/dj-na-wesele-warszawa)*

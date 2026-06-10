@@ -1,5 +1,5 @@
 ---
-title: "Co sprawia, że DJ set na brand launchu jest wyjątkowy"
+title: "DJ na brand launch: co decyduje o tym, czy sala żyje"
 date: "2026-05-18"
 description: "Brand launch to nie impreza. To komunikat."
 ---
@@ -35,3 +35,7 @@ Na imprezie celem jest energia. Na brand launchu celem jest precyzja. DJ na impr
 Grałem sety na launchach dla Disney, Volkswagen, Coca-Cola i Philips. Każdy z tych eventów miał inne brzmienie, inną energię, inny cel. Wspólnym mianownikiem było to, że muzyka służyła marce — nie odwrotnie.
 
 To właśnie sprawia, że DJ set na brand launchu jest wyjątkowy.
+
+---
+
+*Szukasz DJ-a na event korporacyjny lub brand launch w Warszawie? [Zobacz, jak pracuję z klientami firmowymi →](/pl/dj-korporacyjny-warszawa)*
