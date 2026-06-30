@@ -17,6 +17,7 @@ jobs:
         run: sleep $((RANDOM % 50400))
 
       - name: Publish today's articles
+        id: publish
         run: |
           TODAY=$(date +%Y-%m-%d)
           PUBLISHED=0
@@ -37,6 +38,16 @@ jobs:
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git commit -m "Publish scheduled articles for ${TODAY}"
             git push
+            echo "articles_published=true" >> "$GITHUB_OUTPUT"
           else
             echo "No articles scheduled for ${TODAY}"
+            echo "articles_published=false" >> "$GITHUB_OUTPUT"
           fi
+
+      - name: Ping sitemap for indexing
+        if: steps.publish.outputs.articles_published == 'true'
+        run: |
+          sleep 180
+          curl -sf "https://www.google.com/ping?sitemap=https://litvindj.com/sitemap.xml" || true
+          curl -sf "https://www.bing.com/ping?sitemap=https://litvindj.com/sitemap.xml" || true
+          echo "Sitemap ping sent"

@@ -1,0 +1,142 @@
+name: Generate daily articles
+
+on:
+  schedule:
+    - cron: '0 20 * * *'
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate articles via Claude API
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          set -e
+          TOMORROW=$(date -u -d tomorrow +%Y-%m-%d)
+          EXISTING=$(ls content/blog/en/ | sed 's/\.md$//' | paste -sd ',' -)
+
+          call_claude() {
+            curl -sf https://api.anthropic.com/v1/messages \
+              -H "x-api-key: $ANTHROPIC_API_KEY" \
+              -H "anthropic-version: 2023-06-01" \
+              -H "content-type: application/json" \
+              -d "$(jq -n --arg p "$1" '{
+                model: "claude-sonnet-4-6",
+                max_tokens: 2000,
+                messages: [{ role: "user", content: $p }]
+              }')"
+          }
+
+          extract_json() {
+            python3 -c "
+import sys, json
+r = json.load(sys.stdin)
+text = r['content'][0]['text']
+start = text.find('{')
+end = text.rfind('}') + 1
+print(text[start:end])
+"
+          }
+
+          mkdir -p content/blog/scheduled/en content/blog/scheduled/pl content/blog/scheduled/ru
+
+          # English
+          EN_JSON=$(call_claude "You write blog articles for Dmitrii Litvindj, professional DJ in Warsaw specialising in corporate events, brand launches, galas, fashion shows and weddings.
+
+Existing articles (do NOT repeat these topics): $EXISTING
+
+Write one new original article. Choose a fresh angle on event music psychology, DJ craft, crowd dynamics, or how music shapes event atmosphere.
+
+Return ONLY a raw JSON object, no markdown fences, no extra text:
+{
+  \"slug\": \"kebab-case-unique-slug\",
+  \"title\": \"Article Title\",
+  \"description\": \"One descriptive sentence.\",
+  \"body\": \"Full article in markdown with ## headings, 450-550 words, professional authoritative tone.\"
+}" | extract_json)
+
+          EN_SLUG=$(echo "$EN_JSON" | jq -r '.slug')
+          EN_TITLE=$(echo "$EN_JSON" | jq -r '.title')
+          EN_DESC=$(echo "$EN_JSON" | jq -r '.description')
+          EN_BODY=$(echo "$EN_JSON" | jq -r '.body')
+
+          {
+            printf '---\ntitle: "%s"\ndate: "%s"\ndescription: "%s"\n---\n\n' \
+              "$EN_TITLE" "$TOMORROW" "$EN_DESC"
+            printf '%s\n' "$EN_BODY"
+          } > "content/blog/scheduled/en/${TOMORROW}-${EN_SLUG}.md"
+
+          # Polish
+          PL_JSON=$(call_claude "Jesteś autorem artykułów dla Dmitrija Litvindzha, profesjonalnego DJ w Warszawie, specjalizującego się w eventach firmowych, premierach marek, galach, pokazach mody i weselach.
+
+Temat powiązany z angielskim artykułem: \"$EN_TITLE\"
+
+Napisz oryginalny artykuł po polsku na ten sam temat, zoptymalizowany pod polskie SEO. Używaj naturalnych fraz jak 'DJ na event firmowy', 'DJ Warszawa' gdzie pasuje. Profesjonalny ton, 450-550 słów.
+
+Zwróć TYLKO obiekt JSON bez markdown:
+{
+  \"slug\": \"slug-po-polsku-seo\",
+  \"title\": \"Tytuł po polsku\",
+  \"description\": \"Jedno zdanie po polsku.\",
+  \"body\": \"Artykuł po polsku z nagłówkami ##.\"
+}" | extract_json)
+
+          PL_SLUG=$(echo "$PL_JSON" | jq -r '.slug')
+          PL_TITLE=$(echo "$PL_JSON" | jq -r '.title')
+          PL_DESC=$(echo "$PL_JSON" | jq -r '.description')
+          PL_BODY=$(echo "$PL_JSON" | jq -r '.body')
+
+          {
+            printf '---\ntitle: "%s"\ndate: "%s"\ndescription: "%s"\n---\n\n' \
+              "$PL_TITLE" "$TOMORROW" "$PL_DESC"
+            printf '%s\n' "$PL_BODY"
+          } > "content/blog/scheduled/pl/${TOMORROW}-${PL_SLUG}.md"
+
+          # Russian
+          RU_JSON=$(call_claude "Вы автор статей для Дмитрия Литвинджа, профессионального DJ в Варшаве, специализирующегося на корпоративных мероприятиях, презентациях брендов, гала-вечерах, показах мод и свадьбах.
+
+Тема связана с английской статьёй: \"$EN_TITLE\"
+
+Напишите оригинальную статью на русском на ту же тему. Профессиональный тон, 450-550 слов.
+
+Верните ТОЛЬКО JSON объект без markdown:
+{
+  \"slug\": \"slug-latinitsey\",
+  \"title\": \"Заголовок на русском\",
+  \"description\": \"Одно предложение на русском.\",
+  \"body\": \"Полный текст с заголовками ##.\"
+}" | extract_json)
+
+          RU_SLUG=$(echo "$RU_JSON" | jq -r '.slug')
+          RU_TITLE=$(echo "$RU_JSON" | jq -r '.title')
+          RU_DESC=$(echo "$RU_JSON" | jq -r '.description')
+          RU_BODY=$(echo "$RU_JSON" | jq -r '.body')
+
+          {
+            printf '---\ntitle: "%s"\ndate: "%s"\ndescription: "%s"\n---\n\n' \
+              "$RU_TITLE" "$TOMORROW" "$RU_DESC"
+            printf '%s\n' "$RU_BODY"
+          } > "content/blog/scheduled/ru/${TOMORROW}-${RU_SLUG}.md"
+
+          echo "Scheduled: en/${TOMORROW}-${EN_SLUG}.md, pl/${TOMORROW}-${PL_SLUG}.md, ru/${TOMORROW}-${RU_SLUG}.md"
+
+      - name: Commit and push
+        run: |
+          TOMORROW=$(date -u -d tomorrow +%Y-%m-%d)
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content/blog/scheduled/
+          if git diff --cached --quiet; then
+            echo "Nothing to commit"
+          else
+            git commit -m "Schedule articles for $TOMORROW
+
+Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
+            git push
+          fi
