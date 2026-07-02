@@ -15,7 +15,9 @@ jobs:
 
       # Keep the delay well under the 6-hour GitHub Actions job timeout,
       # otherwise the job is killed and nothing gets published.
+      # Skipped on manual runs so workflow_dispatch publishes immediately.
       - name: Random delay
+        if: github.event_name == 'schedule'
         run: sleep $((RANDOM % 14400))
 
       - name: Publish due articles
