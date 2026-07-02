@@ -134,16 +134,28 @@ export default async function WeddingDJPage({ params }) {
 
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: lang === 'pl' ? 'DJ na wesele Warszawa' : lang === 'ru' ? 'Диджей на свадьбу Варшава' : 'Wedding DJ Warsaw',
-    description: c.meta.description,
-    provider: { '@id': 'https://litvindj.com/#business' },
-    areaServed: [
-      { '@type': 'City', name: 'Warsaw' },
-      { '@type': 'Country', name: 'Poland' },
-      { '@type': 'AdministrativeArea', name: 'Europe' },
+    '@graph': [
+      {
+        '@type': 'Service',
+        name: lang === 'pl' ? 'DJ na wesele Warszawa' : lang === 'ru' ? 'Диджей на свадьбу Варшава' : 'Wedding DJ Warsaw',
+        description: c.meta.description,
+        provider: { '@id': 'https://litvindj.com/#business' },
+        areaServed: [
+          { '@type': 'City', name: 'Warsaw' },
+          { '@type': 'Country', name: 'Poland' },
+          { '@type': 'AdministrativeArea', name: 'Europe' },
+        ],
+        url: `https://litvindj.com/${lang}/dj-na-wesele-warszawa`,
+      },
+      {
+        '@type': 'FAQPage',
+        mainEntity: c.faq.map(({ q, a }) => ({
+          '@type': 'Question',
+          name: q,
+          acceptedAnswer: { '@type': 'Answer', text: a },
+        })),
+      },
     ],
-    url: `https://litvindj.com/${lang}/dj-na-wesele-warszawa`,
   };
 
   return (

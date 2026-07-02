@@ -10,7 +10,27 @@ export async function generateMetadata({ params }) {
     ru: 'Взгляд изнутри — советы диджея, истории с мероприятий и музыкальная философия DJ Litvin.',
     pl: 'Spojrzenie zza konsolety — wskazówki DJ-a, historie z eventów i filozofia muzyczna DJ Litvin.',
   };
-  return { title: titles[lang] || titles.en, description: descs[lang] || descs.en };
+  const base = 'https://litvindj.com';
+  return {
+    title: titles[lang] || titles.en,
+    description: descs[lang] || descs.en,
+    alternates: {
+      canonical: `${base}/${lang}/blog`,
+      languages: {
+        'en': `${base}/en/blog`,
+        'ru': `${base}/ru/blog`,
+        'pl': `${base}/pl/blog`,
+        'x-default': `${base}/en/blog`,
+      },
+    },
+    openGraph: {
+      title: titles[lang] || titles.en,
+      description: descs[lang] || descs.en,
+      url: `${base}/${lang}/blog`,
+      siteName: 'DJ Litvin',
+      images: [{ url: `${base}/og-image.jpg`, width: 1200, height: 630 }],
+    },
+  };
 }
 
 export default async function BlogIndexPage({ params }) {

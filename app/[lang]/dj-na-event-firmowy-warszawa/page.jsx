@@ -167,16 +167,28 @@ export default async function CorporateDJPage({ params }) {
 
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: lang === 'pl' ? 'DJ na event firmowy Warszawa' : lang === 'ru' ? 'DJ на корпоратив Варшава' : 'Corporate Events DJ Warsaw',
-    description: c.meta.description,
-    provider: { '@id': 'https://litvindj.com/#business' },
-    areaServed: [
-      { '@type': 'City', name: 'Warsaw' },
-      { '@type': 'Country', name: 'Poland' },
-      { '@type': 'AdministrativeArea', name: 'Europe' },
+    '@graph': [
+      {
+        '@type': 'Service',
+        name: lang === 'pl' ? 'DJ na event firmowy Warszawa' : lang === 'ru' ? 'DJ на корпоратив Варшава' : 'Corporate Events DJ Warsaw',
+        description: c.meta.description,
+        provider: { '@id': 'https://litvindj.com/#business' },
+        areaServed: [
+          { '@type': 'City', name: 'Warsaw' },
+          { '@type': 'Country', name: 'Poland' },
+          { '@type': 'AdministrativeArea', name: 'Europe' },
+        ],
+        url: `https://litvindj.com/${lang}/dj-na-event-firmowy-warszawa`,
+      },
+      {
+        '@type': 'FAQPage',
+        mainEntity: c.faq.map(({ q, a }) => ({
+          '@type': 'Question',
+          name: q,
+          acceptedAnswer: { '@type': 'Answer', text: a },
+        })),
+      },
     ],
-    url: `https://litvindj.com/${lang}/dj-na-event-firmowy-warszawa`,
   };
 
   return (

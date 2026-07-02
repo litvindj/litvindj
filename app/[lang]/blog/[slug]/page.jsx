@@ -18,14 +18,36 @@ export async function generateMetadata({ params }) {
   params = await params;
   const post = getPost(params.lang, params.slug);
   if (!post) return {};
+  const base = 'https://litvindj.com';
+  const url = `${base}/${params.lang}/blog/${params.slug}`;
+  const locales = { en: 'en_US', ru: 'ru_RU', pl: 'pl_PL' };
   return {
     title: `${post.title} — DJ Litvin`,
     description: post.description,
+    alternates: {
+      canonical: url,
+      languages: {
+        'en': `${base}/en/blog/${params.slug}`,
+        'ru': `${base}/ru/blog/${params.slug}`,
+        'pl': `${base}/pl/blog/${params.slug}`,
+        'x-default': `${base}/en/blog/${params.slug}`,
+      },
+    },
     openGraph: {
       title: `${post.title} — DJ Litvin`,
       description: post.description,
       type: 'article',
       publishedTime: post.date,
+      url,
+      siteName: 'DJ Litvin',
+      locale: locales[params.lang] || 'en_US',
+      images: [{ url: `${base}/og-image.jpg`, width: 1200, height: 630, alt: post.title }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${post.title} — DJ Litvin`,
+      description: post.description,
+      images: [`${base}/og-image.jpg`],
     },
   };
 }
@@ -44,8 +66,39 @@ export default async function BlogPostPage({ params }) {
   };
   const t = labels[lang] || labels.en;
 
+  const base = 'https://litvindj.com';
+  const url = `${base}/${lang}/blog/${params.slug}`;
+  const blogLabel = { en: 'Blog', ru: 'Блог', pl: 'Blog' }[lang] || 'Blog';
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Article',
+        '@id': `${url}#article`,
+        headline: post.title,
+        description: post.description,
+        datePublished: post.date,
+        dateModified: post.date,
+        inLanguage: lang,
+        mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+        image: `${base}/og-image.jpg`,
+        author: { '@id': `${base}/#person` },
+        publisher: { '@id': `${base}/#business` },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'DJ Litvin', item: `${base}/${lang}` },
+          { '@type': 'ListItem', position: 2, name: blogLabel, item: `${base}/${lang}/blog` },
+          { '@type': 'ListItem', position: 3, name: post.title, item: url },
+        ],
+      },
+    ],
+  };
+
   return (
     <div className="bg-dark text-white min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <div className="border-b border-white/5 py-6 px-6 md:px-12">
         <Link href={`/${lang}/blog`} className="font-header text-beige uppercase tracking-widest text-xs hover:text-white transition-colors duration-300">
           {t.back}

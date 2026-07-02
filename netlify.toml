@@ -15,3 +15,21 @@
   to = "/ru/dj-na-event-firmowy-warszawa"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/en/blog/what-happens-when-a-dj-plays-a-funeral-reception"
+  to = "/en/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pl/blog/what-happens-when-a-dj-plays-a-funeral-reception"
+  to = "/pl/blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ru/blog/what-happens-when-a-dj-plays-a-funeral-reception"
+  to = "/ru/blog"
+  status = 301
+  force = true
