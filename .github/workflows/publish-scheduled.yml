@@ -13,23 +13,31 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Keep the delay well under the 6-hour GitHub Actions job timeout,
+      # otherwise the job is killed and nothing gets published.
       - name: Random delay
-        run: sleep $((RANDOM % 50400))
+        run: sleep $((RANDOM % 14400))
 
-      - name: Publish today's articles
+      - name: Publish due articles
         id: publish
         run: |
           TODAY=$(date +%Y-%m-%d)
           PUBLISHED=0
 
+          # Publish everything dated today OR earlier, so days missed by a
+          # failed run are caught up automatically on the next run.
           for lang in en pl ru; do
-            for file in content/blog/scheduled/$lang/${TODAY}-*.md; do
+            for file in content/blog/scheduled/$lang/*.md; do
               [ -f "$file" ] || continue
-              slug=$(basename "$file" | sed "s/^${TODAY}-//")
-              mv "$file" "content/blog/$lang/$slug"
-              git add "content/blog/$lang/$slug"
-              git rm "$file" 2>/dev/null || true
-              PUBLISHED=1
+              fname=$(basename "$file")
+              fdate=${fname:0:10}
+              if [[ "$fdate" < "$TODAY" || "$fdate" == "$TODAY" ]]; then
+                slug=${fname:11}
+                mv "$file" "content/blog/$lang/$slug"
+                git add "content/blog/$lang/$slug"
+                git rm "$file" 2>/dev/null || true
+                PUBLISHED=1
+              fi
             done
           done
 
@@ -37,17 +45,25 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git commit -m "Publish scheduled articles for ${TODAY}"
+            git pull --rebase origin main
             git push
             echo "articles_published=true" >> "$GITHUB_OUTPUT"
           else
-            echo "No articles scheduled for ${TODAY}"
+            echo "No articles due on ${TODAY}"
             echo "articles_published=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Ping sitemap for indexing
+      - name: Ping search engines
         if: steps.publish.outputs.articles_published == 'true'
+        env:
+          SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
         run: |
           sleep 180
-          curl -sf "https://www.google.com/ping?sitemap=https://litvindj.com/sitemap.xml" || true
+          if [ -n "$SERVICE_ACCOUNT_JSON" ]; then
+            printf '%s' "$SERVICE_ACCOUNT_JSON" > service-account.json
+            node submit-indexing.js || true
+            rm -f service-account.json
+          else
+            echo "GOOGLE_SERVICE_ACCOUNT_JSON secret not set — skipping Indexing API"
+          fi
           curl -sf "https://www.bing.com/ping?sitemap=https://litvindj.com/sitemap.xml" || true
-          echo "Sitemap ping sent"
