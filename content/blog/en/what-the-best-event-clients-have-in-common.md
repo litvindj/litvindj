@@ -1,6 +1,6 @@
 ---
 title: "What The Best Event Clients Have In Common"
-date: "2026-07-03"
+date: "2026-07-02"
 description: "After 500+ events, certain client traits predict a great outcome every time — and none of them are about budget."
 ---
 
