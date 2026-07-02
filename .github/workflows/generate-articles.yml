@@ -47,7 +47,7 @@ print(text[start:end])
           mkdir -p content/blog/scheduled/en content/blog/scheduled/pl content/blog/scheduled/ru
 
           # English
-          EN_JSON=$(call_claude "You write blog articles for Dmitrii Litvindj, professional DJ in Warsaw specialising in corporate events, brand launches, galas, fashion shows and weddings.
+          EN_JSON=$(call_claude "You write blog articles for Gennady Litvin (DJ Litvin), professional DJ in Warsaw specialising in corporate events, brand launches, galas, fashion shows and weddings.
 
 Existing articles (do NOT repeat these topics): $EXISTING
 
@@ -73,7 +73,7 @@ Return ONLY a raw JSON object, no markdown fences, no extra text:
           } > "content/blog/scheduled/en/${TOMORROW}-${EN_SLUG}.md"
 
           # Polish
-          PL_JSON=$(call_claude "Jesteś autorem artykułów dla Dmitrija Litvindzha, profesjonalnego DJ w Warszawie, specjalizującego się w eventach firmowych, premierach marek, galach, pokazach mody i weselach.
+          PL_JSON=$(call_claude "Jesteś autorem artykułów dla Gennadego Litvina (DJ Litvin), profesjonalnego DJ w Warszawie, specjalizującego się w eventach firmowych, premierach marek, galach, pokazach mody i weselach.
 
 Temat powiązany z angielskim artykułem: \"$EN_TITLE\"
 
@@ -99,7 +99,7 @@ Zwróć TYLKO obiekt JSON bez markdown:
           } > "content/blog/scheduled/pl/${TOMORROW}-${PL_SLUG}.md"
 
           # Russian
-          RU_JSON=$(call_claude "Вы автор статей для Дмитрия Литвинджа, профессионального DJ в Варшаве, специализирующегося на корпоративных мероприятиях, презентациях брендов, гала-вечерах, показах мод и свадьбах.
+          RU_JSON=$(call_claude "Вы автор статей для Геннадия Литвина (DJ Litvin), профессионального DJ в Варшаве, специализирующегося на корпоративных мероприятиях, презентациях брендов, гала-вечерах, показах мод и свадьбах.
 
 Тема связана с английской статьёй: \"$EN_TITLE\"
 
