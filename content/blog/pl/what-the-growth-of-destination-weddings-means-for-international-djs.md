@@ -2,6 +2,7 @@
 title: "Co oznacza boom na śluby za granicą dla DJ-ów pracujących międzynarodowo"
 date: "2026-08-16"
 description: "Przylot DJ-a z Warszawy na Santorini to nie tylko kwestia logistyki — to osobna kategoria zawodowa z własnymi kosztami, ryzykami i oczekiwaniami."
+image: "/images/IMG_4315.JPG"
 ---
 
 Rynek ślubów destination rozrósł się wyraźnie przez ostatnią dekadę. Pary, które kiedyś wybierały lokalne venue i lokalnych vendorów, coraz częściej decydują się na ślub w Toskanii, na Mykonos, w Algarve czy na Majorce — i przywożą ze sobą własnych dostawców usług. Dla DJ-ów ta zmiana stworzyła kategorię pracy, która z zewnątrz wygląda jak każde inne wesele, ale jest fundamentalnie inna w niemal każdym praktycznym aspekcie.
