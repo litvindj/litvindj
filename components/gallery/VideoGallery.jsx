@@ -41,9 +41,9 @@ const VideoGallery = () => {
           {content.title}{' '}
           <span className="text-transparent" style={{ WebkitTextStroke: '1px #D8C3A5' }}>{content.titleStroke}</span>
         </h2>
-        <a href="https://www.youtube.com/@litvindj" target="_blank" rel="noopener noreferrer"
+        <a href="https://www.youtube.com/@litvindj" target="_blank" rel="noopener noreferrer" aria-label="YouTube"
           className="group relative flex items-center justify-center w-24 h-16 md:w-32 md:h-24 transition-transform duration-500 hover:scale-110">
-          <svg viewBox="0 0 24 24" fill="currentColor" className="relative z-10 w-full h-full text-beige group-hover:text-white transition-colors duration-300 drop-shadow-2xl">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" className="relative z-10 w-full h-full text-beige group-hover:text-white transition-colors duration-300 drop-shadow-2xl">
             <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
           </svg>
         </a>
