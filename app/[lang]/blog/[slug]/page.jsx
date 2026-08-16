@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getPost, getAllSlugs } from '../../../../lib/blog';
 
@@ -21,6 +22,7 @@ export async function generateMetadata({ params }) {
   const base = 'https://litvindj.com';
   const url = `${base}/${params.lang}/blog/${params.slug}`;
   const locales = { en: 'en_US', ru: 'ru_RU', pl: 'pl_PL' };
+  const ogImage = post.image ? `${base}${post.image}` : `${base}/og-image.jpg`;
   return {
     title: `${post.title} — DJ Litvin`,
     description: post.description,
@@ -41,13 +43,13 @@ export async function generateMetadata({ params }) {
       url,
       siteName: 'DJ Litvin',
       locale: locales[params.lang] || 'en_US',
-      images: [{ url: `${base}/og-image.jpg`, width: 1200, height: 630, alt: post.title }],
+      images: [{ url: ogImage, width: 1200, height: 630, alt: post.title }],
     },
     twitter: {
       card: 'summary_large_image',
       title: `${post.title} — DJ Litvin`,
       description: post.description,
-      images: [`${base}/og-image.jpg`],
+      images: [ogImage],
     },
   };
 }
@@ -81,7 +83,7 @@ export default async function BlogPostPage({ params }) {
         dateModified: post.date,
         inLanguage: lang,
         mainEntityOfPage: { '@type': 'WebPage', '@id': url },
-        image: `${base}/og-image.jpg`,
+        image: post.image ? `${base}${post.image}` : `${base}/og-image.jpg`,
         author: { '@id': `${base}/#person` },
         publisher: { '@id': `${base}/#business` },
       },
@@ -104,6 +106,19 @@ export default async function BlogPostPage({ params }) {
           {t.back}
         </Link>
       </div>
+
+      {post.image && (
+        <div className="relative w-full h-[40vh] md:h-[50vh] overflow-hidden">
+          <Image
+            src={post.image}
+            alt={post.title}
+            fill
+            priority
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-dark via-dark/20 to-transparent" />
+        </div>
+      )}
 
       <article className="max-w-3xl mx-auto px-6 md:px-12 py-16 md:py-24">
         <div className="font-header text-beige uppercase tracking-[0.3em] text-xs mb-6 flex items-center gap-3">

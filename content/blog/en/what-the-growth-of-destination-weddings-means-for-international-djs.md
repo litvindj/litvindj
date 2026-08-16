@@ -2,6 +2,7 @@
 title: "What The Growth Of Destination Weddings Means For International DJs"
 date: "2026-08-16"
 description: "Flying a DJ from Warsaw to Santorini is more than a logistics exercise — it's a different professional category with different costs, risks, and expectations."
+image: "/images/IMG_4315.JPG"
 ---
 
 The destination wedding market has grown substantially over the past decade. Couples who once defaulted to a local venue and local vendors are increasingly choosing to marry in Tuscany, Mykonos, the Algarve, or Mallorca — and they're bringing their own vendors with them. For DJs, this shift has created a category of work that looks superficially like any other wedding but is fundamentally different in almost every practical respect.
