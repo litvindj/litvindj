@@ -56,7 +56,7 @@ const Hero = () => {
           loop
           playsInline
           preload="none"
-          className="absolute inset-0 w-full h-full object-cover grayscale transition-opacity duration-700"
+          className="absolute inset-0 w-full h-full object-cover grayscale-[65%] transition-opacity duration-700"
           style={{ backfaceVisibility: 'hidden', opacity: videoReady ? 0.6 : 0 }}
         />
         <div className="absolute inset-0 bg-dark/10 z-10" />
