@@ -3,33 +3,53 @@ import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 
+// Final stat values — these are the real numbers and must be what renders
+// on the server (and thus in the HTML Google/no-JS users see).
+const STAT_VALUES = { events: 500, years: 6, brands: 25 };
+const ANIMATION_DURATION = 1600; // ms
+const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
+
 const Stats = ({ language }) => {
   const ref = useRef(null);
-  const [events, setEvents] = useState(0);
-  const [years,  setYears]  = useState(0);
-  const [brands, setBrands] = useState(0);
+  const hasAnimated = useRef(false);
+
+  // Initialize to the FINAL values, not 0 — this is what the server renders
+  // and what shows up before/without JS. The count-up below is purely a
+  // client-side enhancement layered on top of already-correct numbers.
+  const [events, setEvents] = useState(STAT_VALUES.events);
+  const [years,  setYears]  = useState(STAT_VALUES.years);
+  const [brands, setBrands] = useState(STAT_VALUES.brands);
 
   useEffect(() => {
-    const vh = window.innerHeight;
-    const onScroll = () => {
-      let progress;
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (prefersReducedMotion || !ref.current) return; // keep final values, skip animation entirely
 
-      if (window.innerWidth >= 1024) {
-        const raw = window.scrollY / vh;
-        progress = Math.max(0, Math.min(1, (raw - 0.15) / (0.7 - 0.15)));
-      } else {
-        if (!ref.current) return;
-        const rect = ref.current.getBoundingClientRect();
-        progress = Math.max(0, Math.min(1, (vh * 0.8 - rect.top) / (vh * 0.7)));
-      }
+    const runAnimation = () => {
+      if (hasAnimated.current) return;
+      hasAnimated.current = true;
 
-      setEvents(Math.floor(progress * 500));
-      setYears( Math.floor(progress * 6));
-      setBrands(Math.floor(progress * 25));
+      setEvents(0);
+      setYears(0);
+      setBrands(0);
+
+      const start = performance.now();
+      const tick = (now) => {
+        const progress = Math.min(1, (now - start) / ANIMATION_DURATION);
+        const eased = easeOutCubic(progress);
+        setEvents(Math.round(eased * STAT_VALUES.events));
+        setYears(Math.round(eased * STAT_VALUES.years));
+        setBrands(Math.round(eased * STAT_VALUES.brands));
+        if (progress < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
     };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
-    return () => window.removeEventListener('scroll', onScroll);
+
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach((entry) => { if (entry.isIntersecting) runAnimation(); }),
+      { threshold: 0.4 }
+    );
+    observer.observe(ref.current);
+    return () => observer.disconnect();
   }, []);
 
   const labels = {
@@ -39,15 +59,20 @@ const Stats = ({ language }) => {
   };
   const [l1, l2, l3] = labels[language] || labels.en;
 
+  const stats = [
+    { count: events, final: STAT_VALUES.events, suffix: '+', label: l1 },
+    { count: years,  final: STAT_VALUES.years,  suffix: '+', label: l2 },
+    { count: brands, final: STAT_VALUES.brands, suffix: '+', label: l3 },
+  ];
+
   return (
     <div ref={ref} className="grid grid-cols-3 gap-4 border-t border-white/10 pt-8 mb-10">
-      {[
-        { count: events, suffix: '+', label: l1 },
-        { count: years,  suffix: '+', label: l2 },
-        { count: brands, suffix: '+', label: l3 },
-      ].map(({ count, suffix, label }) => (
+      {stats.map(({ count, final, suffix, label }) => (
         <div key={label} className="flex flex-col">
-          <span className="font-header text-3xl md:text-4xl text-white leading-none tabular-nums">
+          <span
+            className="font-header text-3xl md:text-4xl text-white leading-none tabular-nums inline-block"
+            style={{ minWidth: `${String(final).length + suffix.length}ch` }}
+          >
             {count}{suffix}
           </span>
           <span className="text-beige text-[10px] uppercase tracking-widest mt-1 font-bold">{label}</span>
