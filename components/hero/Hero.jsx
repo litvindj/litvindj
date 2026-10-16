@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import { useEffect, useRef, useState } from 'react';
 
 const GENNADY = 'GENNADY'.split('');
 const LITVIN  = 'LITVIN'.split('');
@@ -11,6 +12,33 @@ const letterStyle = (delay) => ({
 });
 
 const Hero = () => {
+  const videoRef = useRef(null);
+  const [videoReady, setVideoReady] = useState(false);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const isMobile = window.innerWidth < 1024;
+    const connection = navigator.connection;
+    const savesData = connection?.saveData || ['slow-2g', '2g'].includes(connection?.effectiveType);
+
+    // Video is shot portrait — only worth showing on phone-sized viewports.
+    // Desktop keeps the static image; nothing is fetched there.
+    if (prefersReducedMotion || !isMobile || savesData) return;
+
+    const onCanPlay = () => {
+      video.play().catch(() => {});
+      setVideoReady(true);
+    };
+    video.addEventListener('canplay', onCanPlay);
+    video.src = '/videos/hero-mobile.mp4';
+    video.load();
+
+    return () => video.removeEventListener('canplay', onCanPlay);
+  }, []);
+
   return (
     <section className="relative w-full flex flex-col items-center justify-center overflow-hidden bg-dark" style={{ height: 'var(--app-height, 100svh)' }}>
       <div className="absolute inset-0 z-0 pointer-events-none">
@@ -22,6 +50,15 @@ const Hero = () => {
           priority
           className="object-cover opacity-60 grayscale"
           style={{ backfaceVisibility: 'hidden' }}
+        />
+        <video
+          ref={videoRef}
+          muted
+          loop
+          playsInline
+          preload="none"
+          className="absolute inset-0 w-full h-full object-cover grayscale transition-opacity duration-700"
+          style={{ backfaceVisibility: 'hidden', opacity: videoReady ? 0.6 : 0 }}
         />
       </div>
 
