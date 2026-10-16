@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 
 const GENNADY = 'GENNADY'.split('');
@@ -41,6 +42,14 @@ const Hero = () => {
   return (
     <section className="relative w-full flex flex-col items-center justify-center overflow-hidden bg-dark" style={{ height: 'var(--app-height, 100svh)' }}>
       <div className="absolute inset-0 z-0 pointer-events-none">
+        {/* Desktop: static photo, as before. Hidden (not fetched) on mobile, where the video covers it. */}
+        <Image
+          src="/images/hero.png"
+          alt="Gennady Litvin DJ"
+          fill
+          className="hidden lg:block object-cover opacity-60 grayscale"
+          style={{ backfaceVisibility: 'hidden' }}
+        />
         <video
           ref={videoRef}
           muted
@@ -64,7 +73,7 @@ const Hero = () => {
         </h2>
 
         <div className="relative">
-          <h1 className="font-header text-[18vw] md:text-[13rem] leading-[0.8] text-white uppercase tracking-[0.1em] md:tracking-[0.2em]">
+          <h1 className="font-header text-[18vw] md:text-[13rem] leading-[0.8] text-white uppercase lg:mix-blend-overlay tracking-[0.1em] md:tracking-[0.2em]">
             {LITVIN.map((l, i) => (
               <span key={i} style={letterStyle(0.38 + i * 0.08)}>{l}</span>
             ))}
