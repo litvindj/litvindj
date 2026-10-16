@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 
 const GENNADY = 'GENNADY'.split('');
@@ -25,7 +24,7 @@ const Hero = () => {
     const savesData = connection?.saveData || ['slow-2g', '2g'].includes(connection?.effectiveType);
 
     // Video is shot portrait — only worth showing on phone-sized viewports.
-    // Desktop keeps the static image; nothing is fetched there.
+    // Desktop stays a flat dark background; nothing is fetched there.
     if (prefersReducedMotion || !isMobile || savesData) return;
 
     const onCanPlay = () => {
@@ -42,27 +41,19 @@ const Hero = () => {
   return (
     <section className="relative w-full flex flex-col items-center justify-center overflow-hidden bg-dark" style={{ height: 'var(--app-height, 100svh)' }}>
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="absolute inset-0 bg-dark/10 z-10" />
-        <Image
-          src="/images/hero.png"
-          alt="Gennady Litvin DJ"
-          fill
-          priority
-          className="object-cover opacity-60 grayscale"
-          style={{ backfaceVisibility: 'hidden' }}
-        />
         <video
           ref={videoRef}
           muted
           loop
           playsInline
           preload="none"
-          className="absolute inset-0 w-full h-full object-cover grayscale transition-opacity duration-700"
+          className="absolute inset-0 w-full h-full object-cover transition-opacity duration-700"
           style={{ backfaceVisibility: 'hidden', opacity: videoReady ? 0.6 : 0 }}
         />
+        <div className="absolute inset-0 bg-dark/10 z-10" />
       </div>
 
-      <div className="relative z-20 text-center flex flex-col items-center select-none px-4" style={{ marginTop: 'calc(var(--app-height, 100svh) * 0.32)' }}>
+      <div className="relative z-20 text-center flex flex-col items-center select-none px-4">
         <h2
           className="font-header text-5xl md:text-7xl lg:text-8xl text-transparent uppercase tracking-widest mb-2 md:mb-4"
           style={{ WebkitTextStroke: '1px #D8C3A5' }}
@@ -73,7 +64,7 @@ const Hero = () => {
         </h2>
 
         <div className="relative">
-          <h1 className="font-header text-[18vw] md:text-[13rem] leading-[0.8] text-white uppercase mix-blend-overlay tracking-[0.1em] md:tracking-[0.2em]">
+          <h1 className="font-header text-[18vw] md:text-[13rem] leading-[0.8] text-white uppercase tracking-[0.1em] md:tracking-[0.2em]">
             {LITVIN.map((l, i) => (
               <span key={i} style={letterStyle(0.38 + i * 0.08)}>{l}</span>
             ))}
