@@ -24,6 +24,9 @@ const PHOTOS = [
   'IMG_0833.JPG',
   'IMG_3419.JPG',
   'IMG_5752.JPG',
+  'IMG_8330.JPG',
+  'IMG_8331.JPG',
+  'IMG_8332.JPG',
 ];
 
 const PhotoGallery = () => {
