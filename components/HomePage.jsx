@@ -3,6 +3,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import Navbar from './layout/Navbar';
 import Hero from './hero/Hero';
 import About from './about/About';
+import Events from './offer/Events';
 import Music from './music/Music';
 import VideoGallery from './gallery/VideoGallery';
 import PhotoGallery from './gallery/PhotoGallery';
@@ -87,6 +88,7 @@ export default function HomePage() {
             </div>
           </div>
 
+          <div                       className="relative z-30 bg-dark"><Events /></div>
           <div id="music-section"    className="relative z-30 bg-dark"><Music /></div>
           <div id="gallery-section" className="relative z-30 bg-dark"><PhotoGallery /></div>
           <div                      className="relative z-30 bg-dark"><VideoGallery /></div>
