@@ -63,7 +63,7 @@ export default async function BlogPostPage({ params }) {
 
   const labels = {
     en: { back: '← Back to Blog', tag: 'Article', ctaTitle: 'Ready to discuss your event?', ctaBtn: 'Get in Touch', ctaDesc: 'Tell me about your event — dates, format, venue. I\'ll get back to you within 24 hours.' },
-    ru: { back: '← Назад к блогу', tag: 'Статья', ctaTitle: 'Готовы обсудить ваше мероприятие?', ctaBtn: 'Написать мне', ctaDesc: 'Расскажите о вашем мероприятии — дата, формат, площадка. Отвечу в течение 24 часов.' },
+    ru: { back: '← Назад к блогу', tag: 'Статья', ctaTitle: 'Готовы обсудить ваше мероприятие?', ctaBtn: 'Написать мне', ctaDesc: 'Расскажите о вашем мероприятии: дата, формат, площадка. Отвечу в течение 24 часов.' },
     pl: { back: '← Wróć do bloga', tag: 'Artykuł', ctaTitle: 'Gotowy omówić swój event?', ctaBtn: 'Napisz do mnie', ctaDesc: 'Powiedz mi o swoim evencie — data, format, venue. Odezwę się w ciągu 24 godzin.' },
   };
   const t = labels[lang] || labels.en;

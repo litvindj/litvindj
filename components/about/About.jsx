@@ -54,7 +54,7 @@ const Stats = ({ language }) => {
 
   const labels = {
     en: ['Events', 'Years', 'Brands'],
-    ru: ['Ивентов', 'Лет', 'Брендов'],
+    ru: ['Мероприятий', 'Лет', 'Брендов'],
     pl: ['Eventów', 'Lat', 'Marek'],
   };
   const [l1, l2, l3] = labels[language] || labels.en;

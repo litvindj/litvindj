@@ -5,7 +5,7 @@ import { useLanguage } from '../../context/LanguageContext';
 
 const labels = {
   en: { label: 'Blog', title1: 'Latest',   title2: 'Articles', viewAll: 'View all articles' },
-  ru: { label: 'Блог', title1: 'Последние', title2: 'Статьи',   viewAll: 'Все статьи' },
+  ru: { label: 'Блог', title1: 'Последние', title2: 'статьи',   viewAll: 'Все статьи' },
   pl: { label: 'Blog', title1: 'Ostatnie', title2: 'Artykuły',  viewAll: 'Wszystkie artykuły' },
 };
 
