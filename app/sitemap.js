@@ -1,5 +1,5 @@
 import { getAllPosts } from '../lib/blog';
-import { SITE, LANGS, SERVICES, servicePath, servicesHubPath, hreflang } from '../lib/services';
+import { SITE, LANGS, SERVICES, servicePath, servicesHubPath, pagePath, hreflang } from '../lib/services';
 
 const today = new Date().toISOString().split('T')[0];
 
@@ -33,6 +33,7 @@ export default function sitemap() {
     { url: SITE, lastModified: today, changeFrequency: 'monthly', priority: 1.0 },
     ...localized((l) => `/${l}`, { changeFrequency: 'monthly', priority: 0.9 }),
     ...servicePages,
+    ...localized((l) => pagePath(l, 'gallery'), { changeFrequency: 'monthly', priority: 0.7 }),
     ...blogIndexPages,
     ...blogArticles,
     ...LANGS.map((l) => ({ url: `${SITE}/${l}/privacy-policy`, lastModified: '2026-05-16', changeFrequency: 'yearly', priority: 0.1 })),

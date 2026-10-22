@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { useLanguage } from '../../context/LanguageContext';
-import { servicesHubPath, SERVICES_SEGMENT, localizedPath } from '../../lib/services';
+import { servicesHubPath, pagePath, PAGE_SLUGS, SERVICES_SEGMENT, localizedPath } from '../../lib/services';
 
 const glassStyle = {
   backdropFilter: 'blur(8px)',
@@ -21,6 +21,7 @@ function sectionFromPath(pathname) {
   if (!seg) return 'Home';
   if (seg === 'blog') return 'Blog';
   if (Object.values(SERVICES_SEGMENT).includes(seg)) return 'Services';
+  if (Object.values(PAGE_SLUGS.gallery).includes(seg)) return 'Gallery';
   return null;
 }
 
@@ -47,7 +48,7 @@ const Navbar = () => {
     { key: 'About',    href: `/${language}#about-section`, scrollTo: 'about-section', isProfile: true },
     { key: 'Services', href: servicesHubPath(language) },
     { key: 'Music',    href: `/${language}#music-section`, scrollTo: 'music-section' },
-    { key: 'Gallery',  href: `/${language}#gallery-section`, scrollTo: 'gallery-section' },
+    { key: 'Gallery',  href: pagePath(language, 'gallery') },
     { key: 'Blog',     href: `/${language}/blog` },
     { key: 'Contact',  href: `/${language}#footer-section`, scrollTo: 'footer-section', anyPage: true },
   ];
@@ -55,7 +56,7 @@ const Navbar = () => {
   // Scroll spy for the sections that live on the homepage
   useEffect(() => {
     if (!onHome) return;
-    const spy = { 'about-section': 'About', 'music-section': 'Music', 'gallery-section': 'Gallery' };
+    const spy = { 'about-section': 'About', 'music-section': 'Music' };
     const handleScrollSpy = () => {
       if (isManualScroll.current) return;
       const vh = window.innerHeight;
