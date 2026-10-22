@@ -7,6 +7,7 @@ export const translations = {
       Gallery: "Gallery",
       Contact: "Contact",
       Blog: "Blog",
+      Services: "Services",
     },
     about: {
       label: "Biography",
@@ -92,7 +93,7 @@ export const translations = {
         },
         {
           id: '06',
-          title: 'Private & VIP Parties',
+          title: 'Private Events',
           description: 'Personalized music selection adapted live to guests’ energy, preferences, and the unique character of the event.'
         },
         {
@@ -102,7 +103,7 @@ export const translations = {
         },
         {
           id: '08',
-          title: 'Dance & Club Events',
+          title: 'Club / Party',
           description: 'High-energy sets designed to build momentum, read the crowd, and keep the dancefloor engaged throughout the night.'
         },
       ]
@@ -157,6 +158,7 @@ export const translations = {
       Gallery: "Галерея",
       Contact: "Контакты",
       Blog: "Блог",
+      Services: "Услуги",
     },
     about: {
       label: "Обо мне",
@@ -220,9 +222,9 @@ export const translations = {
         { id: '03', title: 'Брендовые Ивенты', description: 'Звук, отражающий айдентику бренда и поддерживающий атмосферу запусков и открытий.' },
         { id: '04', title: 'Фэшн-События', description: 'Тщательно отобранная музыка, дополняющая визуальную концепцию и эстетику показов.' },
         { id: '05', title: 'Бизнес / Нетворкинг', description: 'Легкая фоновая музыка, способствующая общению и создающая деловую среду.' },
-        { id: '06', title: 'Частные и VIP', description: 'Персонализированный выбор, адаптируемый под энергию гостей и характер события.' },
+        { id: '06', title: 'Частные мероприятия', description: 'Персонализированный выбор, адаптируемый под энергию гостей и характер события.' },
         { id: '07', title: 'Рестораны и Лаунж', description: 'Атмосферная музыка, плавно переходящая от фонового звучания к оживлённому вечернему настроению.' },
-        { id: '08', title: 'Клубные Ивенты', description: 'Энергичные сеты для удержания танцпола всю ночь.' },
+        { id: '08', title: 'Клуб / Вечеринка', description: 'Энергичные сеты для удержания танцпола всю ночь.' },
       ]
     },
     rider: {
@@ -276,6 +278,7 @@ export const translations = {
       Gallery: "Galeria",
       Contact: "Kontakt",
       Blog: "Blog",
+      Services: "Usługi",
     },
     about: {
       label: "O mnie",
@@ -316,9 +319,9 @@ export const translations = {
         { id: '03', title: 'Eventy Brandowe', description: 'Dźwięk odzwierciedlający tożsamość marki i wspierający atmosferę premier produktów, otwarć sklepów i eventów promocyjnych.' },
         { id: '04', title: 'Eventy Fashion', description: 'Starannie dobrana muzyka, która uzupełnia wizualną koncepcję, tempo i estetykę pokazów mody.' },
         { id: '05', title: 'Biznes / Networking', description: 'Subtelna muzyka w tle, która ułatwia komunikację i tworzy komfortowe, profesjonalne środowisko.' },
-        { id: '06', title: 'Imprezy Prywatne i VIP', description: 'Spersonalizowana selekcja muzyczna dostosowana na żywo do energii gości i wyjątkowego charakteru eventu.' },
+        { id: '06', title: 'Imprezy Prywatne', description: 'Spersonalizowana selekcja muzyczna dostosowana na żywo do energii gości i wyjątkowego charakteru eventu.' },
         { id: '07', title: 'Restauracje i Lounge', description: 'Atmosferyczna muzyka, która wzbogaca doświadczenie kulinarne i płynnie przechodzi od tła do żywego nastroju wieczornego.' },
-        { id: '08', title: 'Eventy Klubowe', description: 'Energiczne sety zaprojektowane tak, aby budować momentum, czytać tłum i utrzymać parkiet w ruchu przez całą noc.' },
+        { id: '08', title: 'Klub / Impreza', description: 'Energiczne sety zaprojektowane tak, aby budować momentum, czytać tłum i utrzymać parkiet w ruchu przez całą noc.' },
       ]
     },
     rider: {

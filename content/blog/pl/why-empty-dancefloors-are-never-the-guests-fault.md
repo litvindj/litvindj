@@ -54,4 +54,4 @@ Twoi goście chcą dobrze spędzić wieczór. Daj im odpowiednie warunki, a na p
 
 ---
 
-*Szukasz DJ-a na wesele w Warszawie? [Jak pracuję z parami młodymi →](/pl/dj-na-wesele-warszawa)*
+*Szukasz DJ-a na wesele w Warszawie? [Jak pracuję z parami młodymi →](/pl/uslugi/dj-na-wesele)*

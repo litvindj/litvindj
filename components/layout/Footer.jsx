@@ -64,8 +64,8 @@ const Footer = () => {
                 {content.subtitle}
               </p>
             </div>
-            <form onSubmit={handleSubmit}
-              className="w-full flex flex-col gap-5 text-left p-8 md:p-10 rounded-2xl"
+            <form id="contact-form" onSubmit={handleSubmit}
+              className="w-full flex flex-col gap-5 text-left p-8 md:p-10 rounded-2xl scroll-mt-32"
               style={{
                 backdropFilter: 'blur(72px) saturate(210%) brightness(1.08)',
                 WebkitBackdropFilter: 'blur(72px) saturate(210%) brightness(1.08)',

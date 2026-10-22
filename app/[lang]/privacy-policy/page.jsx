@@ -1,9 +1,12 @@
 import PrivacyPolicyContent from './PrivacyPolicyContent';
 
-export async function generateMetadata() {
+const TITLES = { en: 'Privacy Policy | DJ Litvin', pl: 'Polityka prywatności | DJ Litvin', ru: 'Политика конфиденциальности | DJ Litvin' };
+
+export async function generateMetadata({ params }) {
+  const { lang } = await params;
   return {
     robots: { index: false, follow: false },
-    title: 'Privacy Policy — DJ Litvin',
+    title: { absolute: TITLES[lang] || TITLES.en },
   };
 }
 

@@ -1,18 +1,18 @@
 [[redirects]]
   from = "/en/dj-korporacyjny-warszawa"
-  to = "/en/dj-na-event-firmowy-warszawa"
+  to = "/en/services/corporate-event-dj"
   status = 301
   force = true
 
 [[redirects]]
   from = "/pl/dj-korporacyjny-warszawa"
-  to = "/pl/dj-na-event-firmowy-warszawa"
+  to = "/pl/uslugi/dj-na-event-firmowy"
   status = 301
   force = true
 
 [[redirects]]
   from = "/ru/dj-korporacyjny-warszawa"
-  to = "/ru/dj-na-event-firmowy-warszawa"
+  to = "/ru/services/dj-na-korporativ"
   status = 301
   force = true
 
@@ -31,5 +31,43 @@
 [[redirects]]
   from = "/ru/blog/what-happens-when-a-dj-plays-a-funeral-reception"
   to = "/ru/blog"
+  status = 301
+  force = true
+
+# Old landing pages merged into service pages
+
+[[redirects]]
+  from = "/pl/dj-na-wesele-warszawa"
+  to = "/pl/uslugi/dj-na-wesele"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pl/dj-na-event-firmowy-warszawa"
+  to = "/pl/uslugi/dj-na-event-firmowy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/dj-na-wesele-warszawa"
+  to = "/en/services/wedding-dj"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/dj-na-event-firmowy-warszawa"
+  to = "/en/services/corporate-event-dj"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ru/dj-na-wesele-warszawa"
+  to = "/ru/services/dj-na-svadbu"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ru/dj-na-event-firmowy-warszawa"
+  to = "/ru/services/dj-na-korporativ"
   status = 301
   force = true

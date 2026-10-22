@@ -54,4 +54,4 @@ Your guests want to have a good time. Give them the right conditions, and they w
 
 ---
 
-*Planning a wedding in Warsaw and looking for a DJ? [How I work with wedding clients →](/en/dj-na-wesele-warszawa)*
+*Planning a wedding in Warsaw and looking for a DJ? [How I work with wedding clients →](/en/services/wedding-dj)*

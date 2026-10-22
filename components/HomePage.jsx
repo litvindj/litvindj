@@ -7,10 +7,10 @@ import Events from './offer/Events';
 import Music from './music/Music';
 import VideoGallery from './gallery/VideoGallery';
 import PhotoGallery from './gallery/PhotoGallery';
-import BrandsMarquee from './layout/BrandsMarquee';
+import ClientLogos from './layout/ClientLogos';
 import Footer from './layout/Footer';
 
-export default function HomePage() {
+export default function HomePage({ logos = [] }) {
   const heroWrapperRef = useRef(null);
   const aboutWrapperRef = useRef(null);
   const [isMobile, setIsMobile] = useState(false);
@@ -28,13 +28,21 @@ export default function HomePage() {
     }
   }, []);
 
+  // Links like /ru#footer-section (blog CTA, menu from other pages): the browser's own anchor jump
+  // happens before the sticky hero is laid out, so scroll to the section ourselves once it has rendered.
   useEffect(() => {
-    if (window.location.hash) {
-      const timer = setTimeout(() => {
-        history.replaceState(null, '', window.location.pathname);
-      }, 300);
-      return () => clearTimeout(timer);
-    }
+    const hash = window.location.hash.slice(1);
+    if (!hash) return;
+    const go = () => {
+      const el = document.getElementById(hash);
+      if (!el) return;
+      const extra = hash === 'about-section' ? window.innerHeight * (window.innerWidth < 1024 ? 1.0 : 0.55) : 0;
+      window.scrollTo({ top: el.getBoundingClientRect().top + window.pageYOffset + extra, behavior: 'instant' });
+    };
+    const t1 = setTimeout(go, 50);
+    const t2 = setTimeout(go, 600); // again after images and fonts have settled
+    const t3 = setTimeout(() => history.replaceState(null, '', window.location.pathname), 700);
+    return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); };
   }, []);
 
   useEffect(() => {
@@ -92,7 +100,7 @@ export default function HomePage() {
           <div id="music-section"    className="relative z-30 bg-dark"><Music /></div>
           <div id="gallery-section" className="relative z-30 bg-dark"><PhotoGallery /></div>
           <div                      className="relative z-30 bg-dark"><VideoGallery /></div>
-          <div                      className="relative z-30 bg-dark"><BrandsMarquee /></div>
+          <div                      className="relative z-30 bg-dark"><ClientLogos logos={logos} /></div>
           <div id="footer-section"  className="relative z-30"><Footer /></div>
         </main>
       </div>

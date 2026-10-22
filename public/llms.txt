@@ -14,12 +14,17 @@ YouTube: https://www.youtube.com/@litvindj
 - [Home (EN)](https://litvindj.com/en) — Main page: biography, services, photo gallery, and contact form. DJ for weddings and corporate events in Warsaw.
 - [Home (PL)](https://litvindj.com/pl) — Strona główna: biografia, oferta, galeria i formularz kontaktowy. DJ na wesele i eventy firmowe w Warszawie.
 - [Home (RU)](https://litvindj.com/ru) — Главная: биография, услуги, галерея и форма для заявки. DJ на свадьбу и корпоратив в Варшаве.
-- [Wedding DJ Warsaw (EN)](https://litvindj.com/en/dj-na-wesele-warszawa) — Wedding DJ service page: benefits, FAQ, pricing process, and booking for Warsaw and Poland.
-- [DJ na wesele Warszawa (PL)](https://litvindj.com/pl/dj-na-wesele-warszawa) — Strona usługi: DJ na wesele w Warszawie. Zalety, FAQ, sprzęt, rezerwacja.
-- [DJ на свадьбу Варшава (RU)](https://litvindj.com/ru/dj-na-wesele-warszawa) — Страница услуги: DJ на свадьбу в Варшаве. Преимущества, FAQ, оборудование, бронирование.
-- [Corporate DJ Warsaw (EN)](https://litvindj.com/en/dj-na-event-firmowy-warszawa) — Corporate events DJ: galas, brand launches, conferences, networking. Warsaw and Europe.
-- [DJ na event firmowy Warszawa (PL)](https://litvindj.com/pl/dj-na-event-firmowy-warszawa) — DJ na eventy korporacyjne w Warszawie: gale, launche, konferencje, imprezy firmowe.
-- [DJ на корпоратив Варшава (RU)](https://litvindj.com/ru/dj-na-event-firmowy-warszawa) — DJ на корпоративные мероприятия в Варшаве: гала-ужины, запуски брендов, конференции.
+- [Services (EN)](https://litvindj.com/en/services) — All DJ services: corporate events, weddings, product launches, fashion shows, networking, private parties, restaurants and clubs.
+- [Usługi (PL)](https://litvindj.com/pl/uslugi) — Wszystkie usługi DJ-a: eventy firmowe, wesela, premiery produktów, pokazy mody, networking, imprezy prywatne, restauracje i kluby.
+- [Услуги (RU)](https://litvindj.com/ru/services) — Все услуги DJ: корпоративы, свадьбы, презентации брендов, показы мод, нетворкинг, частные вечеринки, рестораны и клубы.
+- [Corporate Event DJ (EN)](https://litvindj.com/en/services/corporate-event-dj) — Corporate events, galas and company parties.
+- [Wedding DJ Warsaw (EN)](https://litvindj.com/en/services/wedding-dj) — Weddings in Warsaw, Poland and destination weddings.
+- [Product Launch DJ (EN)](https://litvindj.com/en/services/product-launch-dj) — Product launches, brand events and store openings.
+- [Fashion Show DJ (EN)](https://litvindj.com/en/services/fashion-show-dj) — Runway shows, presentations and fashion events.
+- [Networking Event DJ (EN)](https://litvindj.com/en/services/networking-event-dj) — Conferences, networking and business events.
+- [Private Party DJ (EN)](https://litvindj.com/en/services/private-party-dj) — Birthdays, anniversaries and private parties.
+- [Restaurant & Lounge DJ (EN)](https://litvindj.com/en/services/restaurant-lounge-dj) — Restaurant and lounge sets, DJ residencies in Warsaw.
+- [Club & Party DJ (EN)](https://litvindj.com/en/services/club-party-dj) — Club nights, dance events and parties.
 - [Blog (EN)](https://litvindj.com/en/blog) — Articles on event music, DJ craft, and sound strategy for corporate and private clients.
 - [Blog (PL)](https://litvindj.com/pl/blog) — Artykuły o muzyce eventowej, pracy DJ-a i strategii dźwięku na imprezach.
 - [Blog (RU)](https://litvindj.com/ru/blog) — Статьи о музыке на мероприятиях, профессии диджея и работе со звуком.

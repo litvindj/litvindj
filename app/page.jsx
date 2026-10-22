@@ -1,11 +1,16 @@
 import HomePage from '../components/HomePage';
-import { getAllPosts } from '../lib/blog';
+import { buildSchema } from '../lib/schema';
+import { getClientLogos } from '../lib/clientLogos.server';
 
-export default function RootPage() {
-  const allLatestPosts = {
-    en: getAllPosts('en').slice(0, 3),
-    ru: getAllPosts('ru').slice(0, 3),
-    pl: getAllPosts('pl').slice(0, 3),
-  };
-  return <HomePage allLatestPosts={allLatestPosts} />;
+export const metadata = {
+  title: 'DJ Litvin — Event & Wedding DJ in Warsaw and Europe',
+};
+
+export default async function RootPage() {
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(buildSchema('en')) }} />
+      <HomePage logos={await getClientLogos()} />
+    </>
+  );
 }

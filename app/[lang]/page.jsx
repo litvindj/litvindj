@@ -1,5 +1,5 @@
 import HomePage from '../../components/HomePage';
-import { getAllPosts } from '../../lib/blog';
+import { getClientLogos } from '../../lib/clientLogos.server';
 
 export async function generateStaticParams() {
   return [{ lang: 'en' }, { lang: 'ru' }, { lang: 'pl' }];
@@ -7,10 +7,5 @@ export async function generateStaticParams() {
 
 export default async function Page({ params }) {
   params = await params;
-  const allLatestPosts = {
-    en: getAllPosts('en').slice(0, 3),
-    ru: getAllPosts('ru').slice(0, 3),
-    pl: getAllPosts('pl').slice(0, 3),
-  };
-  return <HomePage allLatestPosts={allLatestPosts} />;
+  return <HomePage logos={await getClientLogos()} />;
 }

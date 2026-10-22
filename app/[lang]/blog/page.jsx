@@ -4,7 +4,7 @@ import { getAllPosts } from '../../../lib/blog';
 export async function generateMetadata({ params }) {
   params = await params;
   const lang = params.lang || 'en';
-  const titles = { en: 'Blog — DJ Litvin', ru: 'Блог — DJ Litvin', pl: 'Blog — DJ Litvin' };
+  const titles = { en: 'DJ Blog: Events, Weddings and Music | DJ Litvin', ru: 'Блог DJ: мероприятия, свадьбы и музыка | DJ Litvin', pl: 'Blog DJ-a: eventy, wesela i muzyka | DJ Litvin' };
   const descs = {
     en: 'Insights from behind the decks — DJ tips, event stories, and music philosophy from DJ Litvin.',
     ru: 'Взгляд изнутри — советы диджея, истории с мероприятий и музыкальная философия DJ Litvin.',
@@ -12,7 +12,7 @@ export async function generateMetadata({ params }) {
   };
   const base = 'https://litvindj.com';
   return {
-    title: titles[lang] || titles.en,
+    title: { absolute: titles[lang] || titles.en },
     description: descs[lang] || descs.en,
     alternates: {
       canonical: `${base}/${lang}/blog`,

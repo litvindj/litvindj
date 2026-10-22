@@ -1,11 +1,17 @@
 'use client';
+import Link from 'next/link';
 import Container from '../layout/Container';
+import { SERVICES, servicePath, servicesHubPath } from '../../lib/services';
 import { useLanguage } from '../../context/LanguageContext';
 
 const Events = () => {
   const { getData, language } = useLanguage();
   const content = getData('events');
   const eventTypes = content.items;
+  const hrefFor = (id) => {
+    const s = SERVICES.find((x) => x.id === id);
+    return s ? servicePath(language, s.key) : servicesHubPath(language);
+  };
 
   return (
     <section id="events-section" className="py-24 md:py-32 bg-dark relative z-30 border-t border-white/5">
@@ -42,9 +48,9 @@ const Events = () => {
               {eventTypes.map((item) => (
                 <li 
                   key={item.id} 
-                  className="relative border-b border-white/10 py-8 md:py-10 cursor-default transition-all duration-500 hover:text-white! lg:hover:pl-4 hover:border-beige/30 group/item"
+                  className="relative border-b border-white/10 transition-all duration-500 hover:text-white! lg:hover:pl-4 hover:border-beige/30 group/item"
                 >
-                  <div className="flex flex-col gap-4">
+                  <Link href={hrefFor(item.id)} className="flex flex-col gap-4 py-8 md:py-10 cursor-pointer">
                     
                     <div className="flex items-center justify-between">
                       <div className="flex items-baseline gap-4 md:gap-6">
@@ -68,7 +74,7 @@ const Events = () => {
                         {item.description}
                     </p>
 
-                  </div>
+                  </Link>
                 </li>
               ))}
             </ul>

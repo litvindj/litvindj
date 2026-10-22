@@ -52,4 +52,4 @@ The music you hear is only part of what a DJ does. The tempo you don't notice is
 
 ---
 
-*Want a DJ who actually reads the room? [Book a wedding DJ in Warsaw →](/en/dj-na-wesele-warszawa)*
+*Want a DJ who actually reads the room? [Book a wedding DJ in Warsaw →](/en/services/wedding-dj)*

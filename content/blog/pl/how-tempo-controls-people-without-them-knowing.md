@@ -52,4 +52,4 @@ Muzyka, którą słyszysz, to tylko część tego, co robi DJ. Tempo, którego n
 
 ---
 
-*Chcesz DJ-a, który naprawdę czyta salę? [DJ na wesele w Warszawie →](/pl/dj-na-wesele-warszawa)*
+*Chcesz DJ-a, który naprawdę czyta salę? [DJ na wesele w Warszawie →](/pl/uslugi/dj-na-wesele)*
