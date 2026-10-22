@@ -40,7 +40,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative w-full flex flex-col items-center justify-center overflow-hidden bg-dark" style={{ height: 'var(--app-height, 100svh)' }}>
+    <section className="relative w-full flex flex-col items-center justify-center overflow-hidden bg-dark" style={{ height: 'var(--app-height, 100svh)', paddingBottom: 'var(--app-extra, 0px)' }}>
       <div className="absolute inset-0 z-0 pointer-events-none">
         {/* Desktop: static photo, as before. Hidden (not fetched) on mobile, where the video covers it. */}
         <Image

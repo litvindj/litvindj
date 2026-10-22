@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
   return (
     <html suppressHydrationWarning className={`${oswald.variable} ${manrope.variable}`}>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: `history.scrollRestoration="manual";document.documentElement.style.setProperty('--app-height',window.CSS&&CSS.supports('height','100lvh')?'100lvh':window.innerHeight+'px');` }} />
+        <script dangerouslySetInnerHTML={{ __html: `history.scrollRestoration="manual";(function(){var lvh=window.CSS&&CSS.supports('height','100lvh');var phone=window.matchMedia('(pointer:coarse)').matches&&window.innerWidth<1024;var h=lvh?(phone?'calc(100lvh + env(safe-area-inset-bottom, 0px) + 4.5rem)':'100lvh'):window.innerHeight+'px';var r=document.documentElement.style;r.setProperty('--app-height',h);if(lvh&&phone)r.setProperty('--app-extra','calc(env(safe-area-inset-bottom, 0px) + 4.5rem)');})();` }} />
       </head>
       <body className="bg-dark text-white min-h-screen">
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGFZW2NR" height="0" width="0" style={{display:'none',visibility:'hidden'}} /></noscript>
