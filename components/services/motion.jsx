@@ -52,19 +52,22 @@ export function Reveal({ children, className = '', delay = 0, as: Tag = 'div' })
   );
 }
 
-// Hero photo that drifts slower than the page and slowly zooms out
+// Hero photo: anchored to the top so faces are never cropped; as you scroll it gently
+// slides up inside the frame and zooms out a little
 export function ParallaxImage({ src, alt, sizes, className = '' }) {
   const box = useRef(null);
   const img = useRef(null);
-  const fn = useRef((p) => {
+  const fn = useRef((p, r, vh) => {
     if (!img.current) return;
-    img.current.style.transform = `translate3d(0, ${(p - 0.5) * 18}%, 0) scale(${1.18 - p * 0.12})`;
+    // 0 while the frame is fully below the top of the screen, 1 when it has scrolled out
+    const k = Math.min(1, Math.max(0, -r.top / r.height));
+    img.current.style.transform = `translate3d(0, ${-k * 12}%, 0) scale(${1.06 - k * 0.06})`;
   }).current;
   useScrollProgress(box, fn);
   return (
     <div ref={box} className={`relative overflow-hidden ${className}`}>
-      <div ref={img} className="absolute inset-0 will-change-transform" style={{ transform: 'scale(1.12)' }}>
-        <Image src={src} alt={alt} fill priority className="object-cover" sizes={sizes} />
+      <div ref={img} className="absolute inset-x-0 top-0 h-[114%] will-change-transform" style={{ transform: 'scale(1.06)', transformOrigin: '50% 0' }}>
+        <Image src={src} alt={alt} fill priority className="object-cover" style={{ objectPosition: '50% 12%' }} sizes={sizes} />
       </div>
     </div>
   );
