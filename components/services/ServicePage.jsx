@@ -18,7 +18,7 @@ const Label = ({ children }) => (
 const SideTitle = ({ t }) => (
   <div className="lg:col-span-4">
     <div className="lg:sticky lg:top-32">
-      <h2 className="font-header uppercase text-white leading-none text-5xl md:text-7xl">
+      <h2 className={`font-header uppercase leading-none text-5xl md:text-7xl ${t.big[1] ? 'text-white' : 'text-beige'}`}>
         {t.big[0]}
         {t.big[1] && <><br /><span className="text-transparent" style={{ WebkitTextStroke: '1px #D8C3A5' }}>{t.big[1]}</span></>}
       </h2>
