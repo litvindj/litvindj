@@ -32,6 +32,7 @@ const Navbar = () => {
   const onHome = isHomePath(pathname);
   const [activeSection, setActiveSection] = useState(onHome ? 'Home' : sectionFromPath(pathname));
   const isManualScroll = useRef(false);
+  const settleTimer = useRef(null);
   const { language, setLanguage, t } = useLanguage();
 
   useEffect(() => {
@@ -49,26 +50,34 @@ const Navbar = () => {
     { key: 'Services', href: servicesHubPath(language) },
     { key: 'Music',    href: `/${language}#music-section`, scrollTo: 'music-section' },
     { key: 'Gallery',  href: pagePath(language, 'gallery') },
-    { key: 'Blog',     href: `/${language}/blog` },
     { key: 'Contact',  href: `/${language}#footer-section`, scrollTo: 'footer-section', anyPage: true },
+    { key: 'Blog',     href: `/${language}/blog` },
   ];
 
   // Scroll spy for the sections that live on the homepage
   useEffect(() => {
     if (!onHome) return;
-    const spy = { 'about-section': 'About', 'music-section': 'Music' };
+    // Section ids in page order; null = no menu item (client logos)
+    const spy = [
+      ['about-section', 'About'],
+      ['services-section', 'Services'],
+      ['music-section', 'Music'],
+      ['gallery-section', 'Gallery'],
+      ['clients-section', null],
+      ['footer-section', 'Contact'],
+    ];
     const handleScrollSpy = () => {
       if (isManualScroll.current) return;
       const vh = window.innerHeight;
       const y = window.scrollY;
       if (y < vh * 0.3) { setActiveSection('Home'); return; }
-      if (vh + y >= document.body.offsetHeight - 50) { setActiveSection('Contact'); return; }
+      if (vh + y >= document.documentElement.scrollHeight - 50) { setActiveSection('Contact'); return; }
+      // The last section whose top has passed 40% of the viewport is the current one
       let current = null;
-      for (const [id, name] of Object.entries(spy)) {
+      for (const [id, name] of spy) {
         const el = document.getElementById(id);
         if (!el) continue;
-        const top = el.offsetTop;
-        if (y >= top - vh * 0.4 && y < top + el.offsetHeight - vh * 0.4) current = name;
+        if (el.getBoundingClientRect().top <= vh * 0.4) current = name;
       }
       setActiveSection(current);
     };
@@ -85,13 +94,23 @@ const Navbar = () => {
     e.preventDefault();
     isManualScroll.current = true;
     setActiveSection(link.key);
-    setTimeout(() => { isManualScroll.current = false; }, 1000);
+    setTimeout(() => { isManualScroll.current = false; }, 1600);
     if (link.scrollTo === 'root') { window.scrollTo({ top: 0, behavior: 'smooth' }); return; }
     const el = document.getElementById(link.scrollTo);
     if (!el) return;
     // The About block sits inside a sticky cross-fade on desktop, so scroll past the hero
     const extra = link.isProfile ? window.innerHeight * (window.innerWidth < 1024 ? 1.0 : 0.55) : 0;
-    window.scrollTo({ top: el.getBoundingClientRect().top + window.pageYOffset + extra, behavior: 'smooth' });
+    const target = () => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      return Math.min(max, Math.round(el.getBoundingClientRect().top + window.pageYOffset + extra));
+    };
+    window.scrollTo({ top: target(), behavior: 'smooth' });
+    // Lazy images and reveal animations can move the section while we scroll: settle on the final spot
+    clearTimeout(settleTimer.current);
+    settleTimer.current = setTimeout(() => {
+      const t = target();
+      if (Math.abs(window.pageYOffset - t) > 4) window.scrollTo({ top: t, behavior: 'smooth' });
+    }, 900);
   };
 
   const switchLanguage = (code) => {

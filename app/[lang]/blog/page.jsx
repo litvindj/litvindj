@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { getAllPosts } from '../../../lib/blog';
+import PageShell from '../../../components/layout/PageShell';
+import Breadcrumbs, { breadcrumbSchema } from '../../../components/layout/Breadcrumbs';
 
 export async function generateMetadata({ params }) {
   params = await params;
@@ -50,21 +52,20 @@ export default async function BlogIndexPage({ params }) {
       { day: 'numeric', month: 'short', year: 'numeric' }
     ).toUpperCase();
 
+  const home = { en: 'Home', ru: 'Главная', pl: 'Strona główna' }[lang] || 'Home';
+  const crumbs = [{ name: home, href: `/${lang}` }, { name: t.heading, href: `/${lang}/blog` }];
+  const schema = { '@context': 'https://schema.org', '@graph': [breadcrumbSchema(crumbs)] };
+
   return (
-    <div className="bg-dark text-white min-h-screen">
+    <PageShell>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <Breadcrumbs items={crumbs} />
 
-      {/* Top bar */}
-      <div className="border-b border-white/5 py-6 px-6 md:px-12">
-        <Link href={`/${lang}`} className="font-header text-beige uppercase tracking-widest text-xs hover:text-white transition-colors duration-300">
-          {t.back}
-        </Link>
-      </div>
-
-      <div className="max-w-5xl mx-auto px-6 md:px-12">
+      <div className="max-w-6xl mx-auto px-6 md:px-12">
 
         {/* Header */}
-        <div className="pt-16 pb-12 md:pt-20 md:pb-16 border-b border-white/10">
-          <h1 className="font-header text-white uppercase text-4xl md:text-6xl leading-none">{t.heading}</h1>
+        <div className="pt-10 pb-12 md:pt-14 md:pb-16 border-b border-white/10">
+          <h1 className="font-header text-white uppercase text-5xl md:text-8xl leading-none">{t.heading}</h1>
         </div>
 
         {/* Posts */}
@@ -97,6 +98,7 @@ export default async function BlogIndexPage({ params }) {
           </div>
         )}
       </div>
-    </div>
+      <div className="pb-24 md:pb-32" />
+    </PageShell>
   );
 }

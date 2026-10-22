@@ -2,6 +2,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getPost, getAllSlugs } from '../../../../lib/blog';
+import PageShell from '../../../../components/layout/PageShell';
+import Breadcrumbs from '../../../../components/layout/Breadcrumbs';
 
 export async function generateStaticParams() {
   const langs = ['en', 'ru', 'pl'];
@@ -71,6 +73,12 @@ export default async function BlogPostPage({ params }) {
   const base = 'https://litvindj.com';
   const url = `${base}/${lang}/blog/${params.slug}`;
   const blogLabel = { en: 'Blog', ru: 'Блог', pl: 'Blog' }[lang] || 'Blog';
+  const homeLabel = { en: 'Home', ru: 'Главная', pl: 'Strona główna' }[lang] || 'Home';
+  const crumbs = [
+    { name: homeLabel, href: `/${lang}` },
+    { name: blogLabel, href: `/${lang}/blog` },
+    { name: post.title, href: `/${lang}/blog/${params.slug}` },
+  ];
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -90,7 +98,7 @@ export default async function BlogPostPage({ params }) {
       {
         '@type': 'BreadcrumbList',
         itemListElement: [
-          { '@type': 'ListItem', position: 1, name: 'DJ Litvin', item: `${base}/${lang}` },
+          { '@type': 'ListItem', position: 1, name: homeLabel, item: `${base}/${lang}` },
           { '@type': 'ListItem', position: 2, name: blogLabel, item: `${base}/${lang}/blog` },
           { '@type': 'ListItem', position: 3, name: post.title, item: url },
         ],
@@ -99,16 +107,12 @@ export default async function BlogPostPage({ params }) {
   };
 
   return (
-    <div className="bg-dark text-white min-h-screen">
+    <PageShell>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      <div className="border-b border-white/5 py-6 px-6 md:px-12">
-        <Link href={`/${lang}/blog`} className="font-header text-beige uppercase tracking-widest text-xs hover:text-white transition-colors duration-300">
-          {t.back}
-        </Link>
-      </div>
+      <Breadcrumbs items={crumbs} />
 
       {post.image && (
-        <div className="relative w-full h-[40vh] md:h-[50vh] overflow-hidden">
+        <div className="relative w-full h-[40vh] md:h-[50vh] overflow-hidden mt-10 md:mt-14">
           <Image
             src={post.image}
             alt={post.title}
@@ -120,7 +124,7 @@ export default async function BlogPostPage({ params }) {
         </div>
       )}
 
-      <article className="max-w-3xl mx-auto px-6 md:px-12 py-16 md:py-24">
+      <article className="max-w-3xl mx-auto px-6 md:px-12 pt-10 md:pt-14 pb-24 md:pb-32">
         <div className="font-header text-beige uppercase tracking-[0.3em] text-xs mb-6 flex items-center gap-3">
           <span className="w-8 h-px bg-beige/50" />
           {t.tag}
@@ -146,13 +150,13 @@ export default async function BlogPostPage({ params }) {
           <h2 className="font-header text-white uppercase text-2xl md:text-3xl leading-tight mb-4 w-full">
             {t.ctaTitle}
           </h2>
-          <a href={`/${lang}#footer-section`}
+          <a href="#footer-section"
             className="group relative inline-flex items-center justify-center bg-beige text-dark font-header text-sm uppercase px-10 py-4 overflow-hidden transition-transform duration-300 hover:scale-105 active:scale-95 shadow-lg tracking-wider">
             <span className="absolute inset-0 w-full h-full bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
             <span className="relative z-10">{t.ctaBtn}</span>
           </a>
         </div>
       </article>
-    </div>
+    </PageShell>
   );
 }

@@ -96,11 +96,13 @@ export default function HomePage({ logos = [] }) {
             </div>
           </div>
 
-          <div                       className="relative z-30 bg-dark"><Events /></div>
+          <div id="services-section" className="relative z-30 bg-dark"><Events /></div>
           <div id="music-section"    className="relative z-30 bg-dark"><Music /></div>
-          <div id="gallery-section" className="relative z-30 bg-dark"><PhotoGallery /></div>
-          <div                      className="relative z-30 bg-dark"><VideoGallery /></div>
-          <div                      className="relative z-30 bg-dark"><ClientLogos logos={logos} /></div>
+          <div id="gallery-section" className="relative z-30 bg-dark">
+            <PhotoGallery />
+            <VideoGallery />
+          </div>
+          <div id="clients-section" className="relative z-30 bg-dark"><ClientLogos logos={logos} /></div>
           <div id="footer-section"  className="relative z-30"><Footer /></div>
         </main>
       </div>
