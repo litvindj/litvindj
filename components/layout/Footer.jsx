@@ -38,13 +38,13 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { name: 'Instagram', url: 'https://www.instagram.com/litvin.dj?igsh=MWJmZDl6d3dzanh4ag==', action: 'Follow',
+    { name: 'Instagram', url: 'https://www.instagram.com/litvin.dj?igsh=MWJmZDl6d3dzanh4ag==', action: content.follow,
       icon: <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8 md:w-9 md:h-9"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.069-4.85.069-3.204 0-3.584-.012-4.849-.069-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg> },
-    { name: 'Spotify', url: 'https://open.spotify.com/playlist/2yhvcmtTMF4D86l7XIkDoR?si=kQ-Y0BNOSnWVBBWnGccRvg', action: 'Listen',
+    { name: 'Spotify', url: 'https://open.spotify.com/playlist/2yhvcmtTMF4D86l7XIkDoR?si=kQ-Y0BNOSnWVBBWnGccRvg', action: content.listen,
       icon: <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8 md:w-9 md:h-9"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141 4.32-1.38 9.841-.719 13.44 1.5.42.3.6.84.301 1.32zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.32z"/></svg> },
-    { name: 'Telegram', url: 'https://t.me/litdj', action: 'Chat',
+    { name: 'Telegram', url: 'https://t.me/litdj', action: content.chat,
       icon: <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8 md:w-9 md:h-9"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 11.944 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg> },
-    { name: 'WhatsApp', url: 'https://wa.me/48884325413', action: 'Chat',
+    { name: 'WhatsApp', url: 'https://wa.me/48884325413', action: content.chat,
       icon: <svg viewBox="0 0 24 24" fill="currentColor" className="w-8 h-8 md:w-9 md:h-9"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg> },
   ];
 
@@ -79,7 +79,7 @@ const Footer = () => {
               </div>
               <textarea name="message" placeholder={content.formMessage} required rows="4" className={`${inputStyles} resize-none`}></textarea>
               {status === 'error' && (
-                <p className="text-red-400 text-sm font-header uppercase tracking-wider">Something went wrong. Please try again.</p>
+                <p className="text-red-400 text-sm font-header uppercase tracking-wider">{content.formError}</p>
               )}
               <div className="flex justify-center lg:justify-start mt-4">
                 <button type="submit" disabled={status === 'loading'} className="group relative inline-flex items-center justify-center bg-beige text-dark font-header text-lg md:text-xl uppercase px-14 py-4 rounded-2xl overflow-hidden transition-transform duration-300 hover:scale-105 active:scale-95 shadow-lg disabled:opacity-60 disabled:scale-100">
@@ -96,7 +96,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-6 border-y border-white/5 py-8 w-full">
               <a href="tel:+48884325413" className="font-header text-white uppercase hover:text-beige transition-colors duration-300 text-lg md:text-2xl tracking-wider whitespace-nowrap">+48 884 325 413</a>
               <span className="w-2 h-2 bg-beige rounded-full opacity-60 shrink-0 hidden md:block" />
-              <span className="font-header text-grey uppercase text-lg md:text-2xl tracking-wider whitespace-nowrap">Warsaw, Poland</span>
+              <span className="font-header text-grey uppercase text-lg md:text-2xl tracking-wider whitespace-nowrap">{content.location}</span>
               <span className="w-2 h-2 bg-beige rounded-full opacity-60 shrink-0 hidden md:block" />
               <a href="mailto:booking@litvindj.com" className="font-header text-white uppercase hover:text-beige transition-colors duration-300 text-lg md:text-2xl tracking-wider whitespace-nowrap">booking@litvindj.com</a>
             </div>

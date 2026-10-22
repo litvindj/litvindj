@@ -1,7 +1,10 @@
 'use client';
 import { useEffect, useState } from 'react';
+import { useLanguage } from '../../context/LanguageContext';
 
 const Preloader = ({ finishLoading }) => {
+  const { getData } = useLanguage();
+  const content = getData('preloader');
   const [progress, setProgress] = useState(0);
   const [isLoaded, setIsLoaded] = useState(false);
   const [animationFinished, setAnimationFinished] = useState(false);
@@ -58,7 +61,7 @@ const Preloader = ({ finishLoading }) => {
 
       <div className="absolute bottom-10 md:bottom-16 flex flex-col items-center">
         <span className="font-header text-beige text-6xl md:text-8xl font-bold tracking-tighter tabular-nums leading-none">{progress}%</span>
-        <span className="text-white/40 text-xs uppercase tracking-[0.4em] mt-2 animate-pulse">Loading...</span>
+        <span className="text-white/40 text-xs uppercase tracking-[0.4em] mt-2 animate-pulse">{content.loading}</span>
       </div>
     </div>
   );

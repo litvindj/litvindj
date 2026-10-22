@@ -1,3 +1,5 @@
+import { privacyPolicy } from './privacyPolicy';
+
 export const translations = {
   en: {
     navbar: {
@@ -147,7 +149,22 @@ export const translations = {
       formEmail: "Your Email",
       formMessage: "Event details (Date, Location, Format)",
       formSend: "Send Message",
+      formError: "Something went wrong. Please try again.",
+      follow: "Follow",
+      listen: "Listen",
+      chat: "Chat",
+      location: "Warsaw, Poland",
     },
+    thankYou: {
+      label: "Message Received",
+      title: "Thank You",
+      text: "I'll get back to you within 24 hours to discuss your event.",
+      back: "Back to Home",
+    },
+    preloader: {
+      loading: "Loading...",
+    },
+    privacy: privacyPolicy.en,
   },
 
   ru: {
@@ -244,8 +261,8 @@ export const translations = {
     },
     music: {
       label: "В эфире",
-      title: "Party",
-      titleStroke: "Playlists",
+      title: "Плейлисты",
+      titleStroke: "для вечеринок",
       desc: "Авторская подборка треков, которая определяет моё текущее звучание.",
     },
     gallery: {
@@ -267,7 +284,22 @@ export const translations = {
       formEmail: "Ваш email",
       formMessage: "Детали (дата, место, формат)",
       formSend: "Отправить запрос",
+      formError: "Что-то пошло не так. Попробуйте ещё раз.",
+      follow: "Подписаться",
+      listen: "Слушать",
+      chat: "Написать",
+      location: "Варшава, Польша",
     },
+    thankYou: {
+      label: "Сообщение получено",
+      title: "Спасибо",
+      text: "Я свяжусь с вами в течение 24 часов, чтобы обсудить ваше мероприятие.",
+      back: "На главную",
+    },
+    preloader: {
+      loading: "Загрузка...",
+    },
+    privacy: privacyPolicy.ru,
   },
 
   pl: {
@@ -340,8 +372,8 @@ export const translations = {
     },
     music: {
       label: "Na Antenie",
-      title: "Party",
-      titleStroke: "Playlists",
+      title: "Imprezowe",
+      titleStroke: "Playlisty",
       desc: "Starannie dobrana kolekcja utworów definiujących moje obecne brzmienie.",
     },
     gallery: {
@@ -362,6 +394,21 @@ export const translations = {
       formEmail: "Twój Email",
       formMessage: "Szczegóły eventu (Data, Miejsce, Format)",
       formSend: "Wyślij wiadomość",
+      formError: "Coś poszło nie tak. Spróbuj ponownie.",
+      follow: "Obserwuj",
+      listen: "Słuchaj",
+      chat: "Napisz",
+      location: "Warszawa, Polska",
     },
+    thankYou: {
+      label: "Wiadomość otrzymana",
+      title: "Dziękuję",
+      text: "Odezwę się w ciągu 24 godzin, aby omówić Twój event.",
+      back: "Powrót na stronę główną",
+    },
+    preloader: {
+      loading: "Ładowanie...",
+    },
+    privacy: privacyPolicy.pl,
   },
 };

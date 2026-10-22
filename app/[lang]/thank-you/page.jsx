@@ -2,10 +2,12 @@
 import { useEffect } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
+import { translations } from '../../../utils/translations';
 
 export default function ThankYouPage() {
   const params = useParams();
   const lang = params?.lang || 'en';
+  const content = (translations[lang] || translations.en).thankYou;
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -20,18 +22,18 @@ export default function ThankYouPage() {
 
         <div className="font-header text-beige uppercase tracking-[0.3em] text-xs md:text-sm mb-8 flex items-center gap-3">
           <span className="w-8 h-px bg-beige/50" />
-          Message Received
+          {content.label}
           <span className="w-8 h-px bg-beige/50" />
         </div>
 
         <h1 className="font-header text-white uppercase text-6xl md:text-8xl leading-none mb-10 tracking-tight w-full">
-          Thank You
+          {content.title}
         </h1>
 
         <div className="w-16 h-px bg-beige/40 mb-10" />
 
         <p className="text-grey text-base md:text-lg mb-16 leading-relaxed max-w-sm">
-          I'll get back to you within 24 hours to discuss your event.
+          {content.text}
         </p>
 
         <Link
@@ -40,7 +42,7 @@ export default function ThankYouPage() {
         >
           <span className="absolute inset-0 w-full h-full bg-white translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
           <span className="relative z-10 tracking-wider group-hover:tracking-widest">
-            Back to Home
+            {content.back}
           </span>
         </Link>
 

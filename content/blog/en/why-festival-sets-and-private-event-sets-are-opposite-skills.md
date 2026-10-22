@@ -28,7 +28,7 @@ This means at a private event, every decision has to be about inclusion. Not adv
 
 At a festival, you are literally competing. There are other stages with other DJs and other music, and people choose with their feet every five minutes. You have to be compelling enough to hold people who are constantly evaluating their options.
 
-This creates a particular kind of playing — more dramatic arc, bigger builds, more willingness to make bold moves because timid moves won't keep anyone standing in front of your stage when Berghain's stage manager is playing fifty meters away.
+This creates a particular kind of playing — more dramatic arc, bigger builds, more willingness to make bold moves because timid moves won't keep anyone standing in front of your stage when another artist is playing on a neighbouring stage fifty meters away.
 
 At a private event, there's no competition. You're the only music in the room. This seems like an advantage, but it's actually a responsibility. You can't hide behind festival energy or the permission structure that comes with a big stage. If the room goes flat, there's nowhere to blame it except you.
 
