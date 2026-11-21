@@ -93,11 +93,11 @@ const About = () => {
         <div className="relative h-[50vh] sm:h-[60vh] lg:h-auto lg:min-h-screen w-full group overflow-hidden border-b lg:border-b-0 lg:border-r border-white/10">
           <div className="absolute inset-0 bg-beige/5 mix-blend-overlay z-10 pointer-events-none"></div>
           <Image
-            src="/images/about.JPG"
+            src="/images/IMG_9047.JPG"
             alt="Gennady Litvin"
             fill
             className="object-cover transition-all duration-1000"
-            style={{ objectPosition: '50% 5%' }}
+            style={{ objectPosition: '50% 40%' }}
           />
         </div>
 
