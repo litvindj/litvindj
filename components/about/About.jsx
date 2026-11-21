@@ -90,7 +90,7 @@ const About = () => {
 
       <div className="w-full lg:min-h-screen grid grid-cols-1 lg:grid-cols-2 lg:items-stretch">
 
-        <div className="relative aspect-square lg:aspect-auto lg:h-auto lg:min-h-screen w-full group overflow-hidden border-b lg:border-b-0 lg:border-r border-white/10">
+        <div className="relative aspect-[4/5] lg:aspect-auto lg:h-auto lg:min-h-screen w-full group overflow-hidden border-b lg:border-b-0 lg:border-r border-white/10">
           <div className="absolute inset-0 bg-beige/5 mix-blend-overlay z-10 pointer-events-none"></div>
           <Image
             src="/images/IMG_9047.JPG"
