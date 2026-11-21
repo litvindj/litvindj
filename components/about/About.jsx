@@ -97,7 +97,7 @@ const About = () => {
             alt="Gennady Litvin"
             fill
             className="object-cover transition-all duration-1000"
-            style={{ objectPosition: '50% 40%' }}
+            style={{ objectPosition: '0% 50%' }}
           />
         </div>
 
